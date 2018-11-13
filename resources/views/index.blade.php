@@ -37,7 +37,7 @@
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    
+
     <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -50,7 +50,10 @@
                     <!-- Logo -->
                     <div class="header-logo">
                         <a class="logo" href="#">
-                            <img src="./img/logo.png" alt="">
+                            <img src="./img/logo_azul_rosa.png" alt="">
+                            <!--
+                                <img src="./img/logo_rosa.png" alt="">
+                            -->
                         </a>
                     </div>
                     <!-- /Logo -->
@@ -311,7 +314,7 @@
     </section>
     <!--================End Our Latest Product Area =================-->
     ->
-    
+
     <!-- section -->
     <div class="section">
         <!-- container -->
@@ -351,7 +354,7 @@
                     </a>
                 </div>
                 <!-- /banner -->
-                
+
                 <!-- banner -->
                 <div class="col-md-2">
                     <a class="banner banner-1" href="#">
@@ -362,7 +365,7 @@
                     </a>
                 </div>
                 <!-- /banner -->
-                
+
                 <!-- banner -->
                 <div class="col-md-2">
                     <a class="banner banner-1" href="#">
@@ -373,7 +376,7 @@
                     </a>
                 </div>
                 <!-- /banner -->
-                
+
                 <!-- banner -->
                 <div class="col-md-2">
                     <a class="banner banner-1" href="#">
@@ -384,7 +387,7 @@
                     </a>
                 </div>
                 <!-- /banner -->
-                
+
                 <!-- banner -->
                 <div class="col-md-2">
                     <a class="banner banner-1" href="#">
@@ -402,7 +405,7 @@
         <!-- /container -->
     </div>
     <!-- /section -->
-    
+
 </body>
 
 </html>
