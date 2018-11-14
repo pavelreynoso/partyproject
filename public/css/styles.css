@@ -78,8 +78,9 @@ html {
 /*=========================================================
 	02 -> HEADER
 ===========================================================*/
-header {
-    background: url("{{asset('/resources/assets/home_slider1.jpg')}}");
+header
+{
+    background: {{url('../public/img/home-slider.jpg')}}
 }
 
 #header {
