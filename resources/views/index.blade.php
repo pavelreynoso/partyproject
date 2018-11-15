@@ -8,6 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP">
     <meta name="Description" content="Feval main page">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!--Meta-->
     <title>Feval</title>
 
@@ -28,9 +45,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Owl Slider -->
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/owl.theme.default.css">
 
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -38,96 +55,95 @@
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-    <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+    <link href="../vendors/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <header>
+    <header style="background:url('/img/home_slider1.jpg'); background-repeat:no-repeat background-size:auto">
         <!-- header -->
         <div id="header">
-            <div class="container">
-                <div class="pull-left">
-                    <!-- Logo -->
-                    <div class="header-logo">
-                        <a class="logo" href="#">
-                            <img src="./img/logo_azul_rosa.png" alt="">
-                            <!--
-                                <img src="./img/logo_rosa.png" alt="">
-                            -->
-                        </a>
-                    </div>
-                    <!-- /Logo -->
-
-                    <!-- Search -->
-                    <div class="header-search">
-                        <form>
-                            <input class="input search-input" type="text" placeholder="Enter your keyword">
-                            <select class="input search-categories">
-                                <option value="0">All Categories</option>
-                                <option value="1">Category 01</option>
-                                <option value="1">Category 02</option>
-                            </select>
-                            <button class="search-btn"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                    <!-- /Search -->
-                </div>
-                <div class="pull-right">
-                    <ul class="header-btns">
-                        <!-- Account -->
-                        <li class="header-account dropdown default-dropdown">
-                            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                                <div class="header-btns-icon">
-                                    <i class="fa fa-user-o"></i>
-                                </div>
-                                <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
-                            </div>
-                            <a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
-                            <ul class="custom-menu">
-                                <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
-                                <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
-                                <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
-                                <li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
-                                <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><strong class="text-uppercase">Ayuda</strong></a></li>
-                        <li><a href="#"><strong class="text-uppercase">Vender</strong></a></li>
-                        <li><a href="#"><strong class="text-uppercase">Wishlist</strong></a></li>
-                        <!-- Cart -->
-                        <li class="header-cart dropdown default-dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                <div class="header-btns-icon">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    <span class="qty">3</span>
-                                </div>
-                                <strong class="text-uppercase">My Cart:</strong>
-                                <br>
-                                <span>35.20$</span>
+            <div id="header_background">
+                <div class="container">
+                    <div class="pull-left">
+                        <!-- Logo -->
+                        <div class="header-logo">
+                            <a class="logo" href="#">
+                                <img src="./img/logo.png" style="width:250px; max-height:150px" alt="">
                             </a>
-                            <div class="custom-menu">
-                                <div id="shopping-cart">
-                                    <div class="shopping-cart-list">
-                                        <div class="product product-widget">
-                                            <div class="product-thumb">
-                                                <img src="./img/thumb-product01.jpg" alt="">
+                        </div>
+                        <!-- /Logo -->
+
+                        <!-- Search -->
+                        <div class="header-search">
+                            <form>
+                                <input class="input search-input" type="text" placeholder="Enter your keyword">
+                                <select class="input search-categories">
+                                    <option value="0">All Categories</option>
+                                    <option value="1">Category 01</option>
+                                    <option value="1">Category 02</option>
+                                </select>
+                                <button class="search-btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- /Search -->
+                    </div>
+                    <div class="pull-right">
+                        <ul class="header-btns">
+                            <!-- Account -->
+                            <li class="header-account dropdown default-dropdown">
+                                <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                                    <div class="header-btns-icon">
+                                        <i class="fa fa-user-o"></i>
+                                    </div>
+                                    <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+                                </div>
+                                <a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
+                                <ul class="custom-menu">
+                                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
+                                    <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
+                                    <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
+                                    <li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
+                                    <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><strong class="text-uppercase">Ayuda</strong></a></li>
+                            <li><a href="#"><strong class="text-uppercase">Vender</strong></a></li>
+                            <li><a href="#"><strong class="text-uppercase">Wishlist</strong></a></li>
+                            <!-- Cart -->
+                            <li class="header-cart dropdown default-dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <div class="header-btns-icon">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <span class="qty">3</span>
+                                    </div>
+                                    <strong class="text-uppercase">My Cart:</strong>
+                                    <br>
+                                    <span>35.20$</span>
+                                </a>
+                                <div class="custom-menu">
+                                    <div id="shopping-cart">
+                                        <div class="shopping-cart-list">
+                                            <div class="product product-widget">
+                                                <div class="product-thumb">
+                                                    <img src="./img/thumb-product01.jpg" alt="">
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
+                                                    <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+                                                </div>
+                                                <button class="cancel-btn"><i class="fa fa-trash"></i></button>
                                             </div>
-                                            <div class="product-body">
-                                                <h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
-                                                <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
+                                            <div class="shopping-cart-btns">
+                                                <button class="main-btn">View Cart</button>
+                                                <button class="primary-btn">Checkout <i class="fa fa-arrow-circle-right"></i></button>
                                             </div>
-                                            <button class="cancel-btn"><i class="fa fa-trash"></i></button>
-                                        </div>
-                                        <div class="shopping-cart-btns">
-                                            <button class="main-btn">View Cart</button>
-                                            <button class="primary-btn">Checkout <i class="fa fa-arrow-circle-right"></i></button>
                                         </div>
                                     </div>
-                                </div>
-                        </li>
-                        <!-- /Cart -->
-                    </ul>
+                            </li>
+                            <!-- /Cart -->
+                        </ul>
+                    </div>
                 </div>
                 <!-- Mobile nav toggle-->
                 <li class="nav-toggle">

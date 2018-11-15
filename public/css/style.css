@@ -323,6 +323,12 @@ textarea.input {
 	02 -> HEADER
 ===========================================================*/
 
+#header-background
+{
+    position: absolute;
+    background: url('../img/home_slider1.jpg');
+}
+
 #header {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -599,8 +605,8 @@ textarea.input {
     left: 212px;
     bottom: 0px;
     width: 150px;
-    
-    
+
+
 }
 /*--------------------*\
     Top Navigation Bar
@@ -913,7 +919,7 @@ textarea.input {
 }
 
 .banner_cover > img {
-    
+
 }
 .banner.banner-1 .banner-caption {
     position: absolute;
