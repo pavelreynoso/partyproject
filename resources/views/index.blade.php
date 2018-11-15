@@ -59,115 +59,112 @@
 </head>
 
 <body>
-    <header style="background:url('/img/home_slider1.jpg'); background-repeat:no-repeat background-size:auto">
+    <header>
         <!-- header -->
-        <div id="header">
-            <div id="header_background">
-                <div class="container">
-                    <div class="pull-left">
-                        <!-- Logo -->
-                        <div class="header-logo">
-                            <a class="logo" href="#">
-                                <img src="./img/logo.png" style="width:250px; max-height:150px" alt="">
-                            </a>
-                        </div>
-                        <!-- /Logo -->
-
-                        <!-- Search -->
-                        <div class="header-search">
-                            <form>
-                                <input class="input search-input" type="text" placeholder="Enter your keyword">
-                                <select class="input search-categories">
-                                    <option value="0">All Categories</option>
-                                    <option value="1">Category 01</option>
-                                    <option value="1">Category 02</option>
-                                </select>
-                                <button class="search-btn"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                        <!-- /Search -->
+        <div id="header" class="my-container">
+            <div class="container">
+                <div class="pull-left">
+                    <!-- Logo -->
+                    <div class="header-logo">
+                        <a class="logo" href="#">
+                            <img src="./img/logo.png" style="width:250px; max-height:150px" alt="">
+                        </a>
                     </div>
-                    <div class="pull-right">
-                        <ul class="header-btns">
-                            <!-- Account -->
-                            <li class="header-account dropdown default-dropdown">
-                                <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                                    <div class="header-btns-icon">
-                                        <i class="fa fa-user-o"></i>
-                                    </div>
-                                    <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+                    <!-- /Logo -->
+
+                    <!-- Search -->
+                    <div class="header-search">
+                        <form>
+                            <input class="input search-input" type="text" placeholder="Enter your keyword">
+                            <select class="input search-categories">
+                                <option value="0">All Categories</option>
+                                <option value="1">Category 01</option>
+                                <option value="1">Category 02</option>
+                            </select>
+                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- /Search -->
+                </div>
+                <div class="pull-right">
+                    <ul class="header-btns">
+                        <!-- Account -->
+                        <li class="header-account dropdown default-dropdown">
+                            <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                                <div class="header-btns-icon">
+                                    <i class="fa fa-user-o"></i>
                                 </div>
-                                <a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
-                                <ul class="custom-menu">
-                                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
-                                    <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
-                                    <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
-                                    <li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
-                                    <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><strong class="text-uppercase">Ayuda</strong></a></li>
-                            <li><a href="#"><strong class="text-uppercase">Vender</strong></a></li>
-                            <li><a href="#"><strong class="text-uppercase">Wishlist</strong></a></li>
-                            <!-- Cart -->
-                            <li class="header-cart dropdown default-dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                    <div class="header-btns-icon">
-                                        <i class="fa fa-shopping-cart"></i>
-                                        <span class="qty">3</span>
-                                    </div>
-                                    <strong class="text-uppercase">My Cart:</strong>
-                                    <br>
-                                    <span>35.20$</span>
-                                </a>
-                                <div class="custom-menu">
-                                    <div id="shopping-cart">
-                                        <div class="shopping-cart-list">
-                                            <div class="product product-widget">
-                                                <div class="product-thumb">
-                                                    <img src="./img/thumb-product01.jpg" alt="">
-                                                </div>
-                                                <div class="product-body">
-                                                    <h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
-                                                    <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
-                                                </div>
-                                                <button class="cancel-btn"><i class="fa fa-trash"></i></button>
+                                <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+                            </div>
+                            <a href="#" class="text-uppercase">Login</a> / <a href="#" class="text-uppercase">Join</a>
+                            <ul class="custom-menu">
+                                <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                                <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
+                                <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
+                                <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
+                                <li><a href="#"><i class="fa fa-unlock-alt"></i> Login</a></li>
+                                <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><strong class="text-uppercase">Ayuda</strong></a></li>
+                        <li><a href="#"><strong class="text-uppercase">Vender</strong></a></li>
+                        <li><a href="#"><strong class="text-uppercase">Wishlist</strong></a></li>
+                        <!-- Cart -->
+                        <li class="header-cart dropdown default-dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <div class="header-btns-icon">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span class="qty">3</span>
+                                </div>
+                                <strong class="text-uppercase">My Cart:</strong>
+                                <br>
+                                <span>35.20$</span>
+                            </a>
+                            <div class="custom-menu">
+                                <div id="shopping-cart">
+                                    <div class="shopping-cart-list">
+                                        <div class="product product-widget">
+                                            <div class="product-thumb">
+                                                <img src="./img/thumb-product01.jpg" alt="">
                                             </div>
-                                            <div class="shopping-cart-btns">
-                                                <button class="main-btn">View Cart</button>
-                                                <button class="primary-btn">Checkout <i class="fa fa-arrow-circle-right"></i></button>
+                                            <div class="product-body">
+                                                <h3 class="product-price">$32.50 <span class="qty">x3</span></h3>
+                                                <h2 class="product-name"><a href="#">Product Name Goes Here</a></h2>
                                             </div>
+                                            <button class="cancel-btn"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                        <div class="shopping-cart-btns">
+                                            <button class="main-btn">View Cart</button>
+                                            <button class="primary-btn">Checkout <i class="fa fa-arrow-circle-right"></i></button>
                                         </div>
                                     </div>
-                            </li>
-                            <!-- /Cart -->
-                        </ul>
-                    </div>
+                                </div>
+                        </li>
+                        <!-- /Cart -->
+                    </ul>
                 </div>
-                <!-- Mobile nav toggle-->
-                <li class="nav-toggle">
-                    <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
-                </li>
-                <!-- / Mobile nav toggle -->
             </div>
-            <div id="navBarTop">
-                <ul>
-                    <li><a href="#">Cumpleaños</a></li>
-                    <li><a href="#">Reuniones</a></li>
-                    <li><a href="#">Fiestas Infantiles</a></li>
-                    <li><a href="#">XV años</a></li>
-                    <li><a href="#">Religiosas</a></li>
-                    <li><a href="#">Baby Shower</a></li>
-                    <li><a href="#">Despedida de Soltera</a></li>
-                    <li><a href="#">Bodas</a></li>
-                    <li><a href="#">Graduaciones</a></li>
-                    <li><a href="#">Eventos Empresariales</a></li>
-                </ul>
-            </div>
+            <!-- Mobile nav toggle-->
+            <li class="nav-toggle">
+                <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+            </li>
+            <!-- / Mobile nav toggle -->
+        </div>
+        <div id="navBarTop">
+            <ul>
+                <li><a href="#">Cumpleaños</a></li>
+                <li><a href="#">Reuniones</a></li>
+                <li><a href="#">Fiestas Infantiles</a></li>
+                <li><a href="#">XV años</a></li>
+                <li><a href="#">Religiosas</a></li>
+                <li><a href="#">Baby Shower</a></li>
+                <li><a href="#">Despedida de Soltera</a></li>
+                <li><a href="#">Bodas</a></li>
+                <li><a href="#">Graduaciones</a></li>
+                <li><a href="#">Eventos Empresariales</a></li>
+            </ul>
         </div>
     </header>
-    <br>
     <div class="nav-search">
         <form>
             <button class="nav-btn"><i class="fa fa-search"></i></button>
@@ -175,30 +172,21 @@
             <input class="input nav-date-input" type="date" name="trip" min="2018-01-01" max="2018-12-31" />
         </form>
     </div>
-    <!-- HOME -->
+    <!--
     <div id="home">
-        <!-- container -->
         <div class="container">
-            <!-- home wrap -->
             <div class="home-wrap">
-                <!-- home slick -->
                 <div id="home-slick">
-                    <!-- banner -->
                     <div class="banner banner_cover banner-1">
                         <img src="./img/home_slider1.jpg" alt="">
                         <div class="banner-caption text-center">
                         </div>
                     </div>
-                    <!-- /banner -->
                 </div>
-                <!-- /home slick -->
             </div>
-            <!-- /home wrap -->
         </div>
-        <!-- /container -->
     </div>
-    <!-- /HOME -->
-    <!--
+
     <section class="our_latest_product">
         <div class="ccontainer">
             <div class="s_m_title">
@@ -329,7 +317,6 @@
         </div>
     </section>
     <!--================End Our Latest Product Area =================-->
-    ->
 
     <!-- section -->
     <div class="section">
