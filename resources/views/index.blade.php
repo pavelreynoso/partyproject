@@ -149,7 +149,6 @@
                 <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
             </li>
             <!-- / Mobile nav toggle -->
-        </div>
         <div id="navBarTop">
             <ul>
                 <li><a href="#">Cumpleaños</a></li>
@@ -163,6 +162,8 @@
                 <li><a href="#">Graduaciones</a></li>
                 <li><a href="#">Eventos Empresariales</a></li>
             </ul>
+        </div>
+        <br>
         </div>
     </header>
     <div class="nav-search">
