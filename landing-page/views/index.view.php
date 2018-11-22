@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
@@ -56,10 +57,7 @@
                 <a href=""><i class="fa fa-facebook"></i></a>
               </li>
               <li>
-                <a href=""><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
           </div>

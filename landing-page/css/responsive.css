@@ -1,0 +1,9 @@
+@media screen and (max-width:1200px){
+    #catalogo section{width:100%;}
+    #catalogo section article{width: 49%; height:350px;}
+    #catalogo section article img{height:300px;}
+}
+@media screen and (max-width:800px){
+    #catalogo section article{width: 80%; height:auto;}
+    #catalogo section article img{height:300px;}
+}
