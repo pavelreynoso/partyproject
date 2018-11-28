@@ -8,11 +8,11 @@ use Session;
 
 class Crud
 {
-    public static function create($model, $request)
+    public static function create($mod, $request)
     {
         DB::beginTransaction();
         try {
-            $model = 'App\\' . $model;
+            $model = 'App\\' . $mod;
             //return $model;
             $registry = $model::create($request->all());
             DB::commit();
@@ -29,16 +29,16 @@ class Crud
         return "1|" . $registry->id;
     }
 
-    public static function update($idToUpdate, $model, $request, $data)
+    public static function update($idToUpdate, $mod, $request, $data)
     {
 
         DB::beginTransaction();
         try {
-            $model = 'App\\' . $model;
+            $model = 'App\\' . $mod;
             $registry = $model::find($idToUpdate);
             $registry->fill($data);
             $registry->save();
-            if ($model == 'User') {
+            if ($mod == 'User') {
                 if (Auth::user()->id == $registry->id) {
                     $request->session()->put('user', $registry);
                 }
@@ -57,15 +57,15 @@ class Crud
         return "1|" . $registry->id;
     }
 
-    public static function elimina($idToDelete, $model, $request)
+    public static function delete($idToDelete, $mod, $request)
     {
 
         DB::beginTransaction();
         try {
-            $model = 'App\\' . $model;
+            $model = 'App\\' . $mod;
             $registry = $model::find($idToDelete);
             $registry->delete();
-            if (Auth::user()->id == $idToDelete && $model == 'User') {
+            if (Auth::user()->id == $idToDelete && $mod == 'User') {
                 DB::rollback();
                 return '-1|User to be deleted is being used. Try another time.';
             }
@@ -87,7 +87,7 @@ class Crud
                     }
                     $registry->save();
                 } else {
-                    $deshabilitado = "Change the relations in your system befire deleting this " . $model;
+                    $deshabilitado = "Change the relations in your system before deleting this " . $mod;
                 }
 
                 return "0|The registry couldn't be deleted as<br/>there is data related to it.<br/>" . $deshabilitado;
@@ -117,7 +117,6 @@ class Crud
                 break;
             case 1054:$error = "Houston, column not found!";
                 break;
-
             case 1654:$error = "Houston, there's a field that doesn't match the database!";
                 break;
             case 1048:$error = "Houston, there's information that can't be empty in the database!";

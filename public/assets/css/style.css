@@ -115,6 +115,7 @@ hr {
     border-color: #DADADA;
 }
 
+
 /*----------------------------*\
 	Buttons
 \*----------------------------*/
@@ -320,12 +321,12 @@ textarea.input {
 	02 -> HEADER
 ===========================================================*/
 
-.my-container {
+.back-container {
     position: relative;
     background: #ffffff;
     overflow: hidden;
 }
-.my-container:before {
+.back-container:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -334,7 +335,7 @@ textarea.input {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.5;
     background-image: url('/img/home_slider1.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -345,7 +346,7 @@ textarea.input {
     background-size: cover;
 }
 
-.my-container a, form, ul, li{
+.back-container a, form, ul, li{
     text-align: center;
     z-index: 2;
     position: relative;
@@ -457,6 +458,11 @@ textarea.input {
 /*----------------------------*\
 	Account header
 \*----------------------------*/
+
+.header-btns #text {
+    color: #30323A;
+    display: inline;
+}
 
 .header-btns > li {
     display: inline-block;
@@ -622,8 +628,8 @@ textarea.input {
 
 .nav-search {
     display: inline-block;
-    padding: 50px 0px;
-    padding-left: 80px;
+    padding: 15px 0px;
+    padding-left: 100px;
     max-width: 330px;
 }
 
@@ -642,8 +648,16 @@ textarea.input {
     width: 40px;
     height: 40px;
     background-color: transparent;
+    color:black;
     border: none;
 }
+.nav-search > form .nav-btn:hover {
+    color:#FB3C61;
+}
+.nav-search > form .nav-btn:active {
+    color:#1BCCC3;
+}
+
 
 .nav-search > form .nav-date-input{
     position: absolute;
@@ -665,7 +679,7 @@ textarea.input {
     margin: 0 0 1em 0;
     padding: 0;
     position: absolute;
-    background-color: rgba(204, 195, 27, .5);
+    background-color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
 }
 
@@ -687,12 +701,12 @@ textarea.input {
     padding: 15px 20px;
     text-decoration: none;
     font-family: "Arial";
-    color: rgb(44, 54, 233);
+    color: slategray;
 }
 
 #navBarTop li a:hover {
     background-color: rgba(27,204,195,.5);
-    color: #cc1b24;
+    color: #FB3C61;
     font-weight: bold;
 }
 
