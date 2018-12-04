@@ -15,15 +15,17 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/login', function() {
-    return view('auth.login');
-});
-
 Auth::routes();
+
+Route::get('/login', 'AuthController@showLogin');
 
 Route::get('activate/{token}', 'Auth\RegisterController@activate')
     ->name('activate');
 
 Route::get('/', 'DashboardController@index');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

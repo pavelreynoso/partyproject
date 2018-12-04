@@ -28,14 +28,13 @@
 
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
 
 </head>
 
 <body class="gray-bg">
 
-    <div class="middle-box text-center loginscreen animated fadeInDown">
-        @yield('content')
-    </div>
+    @yield('content')
 
     <!-- Mainly scripts -->
     <script src="{{ asset('/js/jquery-3.2.1.min.js') }}" defer></script>

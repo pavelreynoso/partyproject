@@ -96,16 +96,16 @@
                                     <i class="fa fa-user-o"></i>
                                 </div>
                                 <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
+                                <ul class="custom-menu">
+                                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                                    <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
+                                    <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
+                                    <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
+                                    <li><a href=" {{ route('login') }} "><i class="fa fa-unlock-alt"></i> Login</a></li>
+                                    <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
+                                </ul>
                             </div>
-                        <a href="{{ url('/login')}}" class="text-uppercase">Login</a> <div id="text">/</div> <a href="#" class="text-uppercase">Join</a>
-                            <ul class="custom-menu">
-                                <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
-                                <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
-                                <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
-                            <li><a href="{{ route('login') }}"><i class="fa fa-unlock-alt"></i> Login</a></li>
-                                <li><a href="#"><i class="fa fa-user-plus"></i> Create An Account</a></li>
-                            </ul>
+                        <a href="{{ url('/login')}}" class="text-uppercase">Login</a> <div id="text">/</div> <a href="{{ url('/register') }}" class="text-uppercase">Join</a>
                         </li>
                         <li><a href="#"><strong class="text-uppercase">Ayuda</strong></a></li>
                         <li><a href="#"><strong class="text-uppercase">Vender</strong></a></li>
