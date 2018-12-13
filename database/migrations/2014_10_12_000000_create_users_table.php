@@ -15,12 +15,19 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->integer('profile_id')->unsigned();
+            $table->string('name', 40);
+            $table->string('last_names', 50);
+            $table->string('email', 50)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password', 20);
+            $table->date('date_of_birth');
             $table->rememberToken();
             $table->timestamps();
+            $table->engine = 'InnoDB';
+        });
+        Schema::table('users',function ($table) {
+            $table->foreign('profile_id')->references('id')->on('profiles');
         });
     }
 
