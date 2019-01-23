@@ -18,7 +18,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'id_profile',
+        'profile_id',
         'password',
         'address',
         'name',
@@ -33,8 +33,38 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password'  ,
+        'password',
     ];
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new MailResetPasswordNotification($token));
+    }
+
+    public function Profile()
+    {
+        return $this->hasOne('App\Profile', 'id', 'profile_id');
+    }
+
+    public function Admin()
+    {
+        return $this->hasOne('App\Admin', 'user_id', 'id');
+    }
+
+    public function Client()
+    {
+        return $this->hasOne('App\Client', 'user_id', 'id');
+    }
+
+    public function Provider()
+    {
+        return $this->hasOne('App\Provider', 'user_id', 'id');
+    }
+
+    public function FullName()
+    {
+        return $this->name.' '.$this->last;
+    }
 
     public $timestamps = false;
 }
