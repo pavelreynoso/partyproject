@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommentsProductsTable extends Migration
+class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCommentsProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('comments_products', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id')->unsigned();
             $table->integer('client_id')->unsigned();
@@ -22,7 +22,7 @@ class CreateCommentsProductsTable extends Migration
             $table->timestamps();
             $table->engine='InnoDB';
         });
-        Schema::table('comments_products',function ($table) {
+        Schema::table('comments',function ($table) {
             $table->foreign('product_id')->references('id')->on('products');
             $table->foreign('client_id')->references('id')->on('clients');
         });

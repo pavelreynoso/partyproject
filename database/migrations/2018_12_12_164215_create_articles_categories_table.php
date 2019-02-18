@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProviderTypesTable extends Migration
+class CreateArticlesCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateProviderTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('provider_types', function (Blueprint $table) {
+        Schema::create('articles_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description', 20);
+            $table->string('type', 20);
             $table->engine = 'InnoDB';
         });
     }
@@ -27,6 +27,7 @@ class CreateProviderTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('provider_types');
+        Schema::dropIfExists('services_categories');
+        Schema::dropIfExists('articles_categories');
     }
 }

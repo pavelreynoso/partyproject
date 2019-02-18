@@ -18,8 +18,8 @@ class CreateContactsTable extends Migration
             $table->integer('provider_id')->unsigned();
             $table->integer('phone');
             $table->integer('cellphone');
-            $table->engine = 'InnoDB';
             $table->timestamps();
+            $table->engine = 'InnoDB';
         });
         Schema::table('contacts',function ($table) {
             $table->foreign('provider_id')->references('id')->on('providers');

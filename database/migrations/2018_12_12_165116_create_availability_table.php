@@ -15,8 +15,6 @@ class CreateAvailabilityTable extends Migration
     {
         Schema::create('availability', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('description');
-            $table->string('place');
             $table->date('start_date');
             $table->date('end_date');
             $table->timestamps();

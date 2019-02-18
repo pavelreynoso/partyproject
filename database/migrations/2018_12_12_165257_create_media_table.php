@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePaymentMethodsTable extends Migration
+class CreateMediaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreatePaymentMethodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('payment_methods', function (Blueprint $table) {
+        Schema::create('media', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('client_id')->unsigned();
-            $table->string('type',20);
-            $table->timestamps();
+            $table->integer('article_id')->unsigned();
+            $table->string('type');
+            $table->string('route');
             $table->engine='InnoDB';
         });
-        Schema::table('payment_methods',function ($table) {
-            $table->foreign('client_id')->references('id')->on('clients');
+        Schema::table('media',function ($table) {
+            $table->foreign('article_id')->references('id')->on('articles');
         });
     }
 
@@ -32,6 +32,6 @@ class CreatePaymentMethodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payment_methods');
+        Schema::dropIfExists('media');
     }
 }

@@ -16,19 +16,9 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('client_id')->unsigned();
+            $table->integer('address_id')->unsigned();
             $table->double('total_price',13,2);
-            $table->integer('payment_method_id')->unsigned();
             $table->string('status');
-            $table->integer('phone');
-            $table->integer('id_estado');
-            $table->string('estado');
-            $table->integer('id_municipio');
-            $table->string('municipio');
-            $table->string('ciudad')->nullable();
-            $table->string('zona')->nullable();
-            $table->integer('cp');
-            $table->string('asentamiento');
-            $table->string('tipo');
             $table->dateTimeTz('ordered_at');
             $table->dateTimeTz('delivery_date');
             $table->engine = 'InnoDB';
@@ -36,7 +26,7 @@ class CreateOrdersTable extends Migration
         });
         Schema::table('orders',function ($table) {
             $table->foreign('client_id')->references('id')->on('clients');
-            $table->foreign('payment_method_id')->references('id')->on('payment_methods');
+            $table->foreign('address_id')->references('id')->on('addresses');
         });
     }
 

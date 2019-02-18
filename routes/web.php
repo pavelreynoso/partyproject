@@ -12,20 +12,18 @@
  */
 
 Route::get('/', function () {
-    return view('index');
-});
-
-Auth::routes();
+    return view('dashboard.index');
+})->name('index');
 
 Route::get('/login', 'AuthController@showLogin');
+
+Route::get('/register','ClientController@register');
 
 Route::get('activate/{token}', 'Auth\RegisterController@activate')
     ->name('activate');
 
 Route::get('/', 'DashboardController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('{user-id}/home', 'HomeController@index')->name('home');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProductsTable extends Migration
+class CreateDeliveryAddressesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,18 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('delivery_address', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('article_id')->unsigned();
-            $table->integer('stock');
-            $table->boolean('available');
-            $table->integer('min_quantity')->unsigned();
-            $table->integer('max_quantity')->unsigned();
+            $table->string('city');
+            $table->string('zip_code');
+            $table->string('country');
+            $table->string('state');
+            $table->string('street_number');
             $table->timestamps();
-            $table->engine='InnoDB';
+            $table->engine = 'InnoDB';
         });
-        Schema::table('products',function ($table) {
+        Schema::table('delivery_address',function ($table) {
             $table->foreign('article_id')->references('id')->on('articles');
         });
     }
@@ -35,6 +36,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('delivery_address');
     }
 }

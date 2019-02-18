@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOrderServiceTable extends Migration
+class CreateOrderArticleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,19 @@ class CreateOrderServiceTable extends Migration
      */
     public function up()
     {
-        Schema::create('order_service', function (Blueprint $table) {
+        Schema::create('order_article', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id')->unsigned();
-            $table->integer('service_id')->unsigned();
+            $table->integer('article_id')->unsigned();
             $table->integer('quantity')->unsigned();
             $table->dateTimeTz('delivery_time');
+            $table->string('description');
+            $table->string('status');
             $table->engine='InnoDB';
             $table->timestamps();
         });
-        Schema::table('order_service',function ($table) {
-            $table->foreign('service_id')->references('id')->on('services');
+        Schema::table('order_article',function ($table) {
+            $table->foreign('article_id')->references('id')->on('articles');
             $table->foreign('order_id')->references('id')->on('orders');
         });
     }
@@ -35,6 +37,6 @@ class CreateOrderServiceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order_service');
+        Schema::dropIfExists('order_article');
     }
 }

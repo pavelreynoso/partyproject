@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePhotosProductsTable extends Migration
+class CreateProviderLogosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreatePhotosProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('photos_services', function (Blueprint $table) {
+        Schema::create('provider_logos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('service_id')->unsigned();
-            $table->string('description');
+            $table->integer('provider_id')->unsigned();
             $table->string('route');
             $table->engine='InnoDB';
         });
-        Schema::table('photos_services',function ($table) {
-            $table->foreign('service_id')->references('id')->on('services');
+        Schema::table('provider_logos',function ($table) {
+            $table->foreign('provider_id')->references('id')->on('providers');
         });
     }
 
@@ -33,5 +32,6 @@ class CreatePhotosProductsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('photos');
+        Schema::dropIfExists('provider_logos');
     }
 }

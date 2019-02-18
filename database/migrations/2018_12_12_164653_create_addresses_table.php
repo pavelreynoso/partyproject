@@ -16,15 +16,11 @@ class CreateAddressesTable extends Migration
         Schema::create('addresses', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('id_estado');
-            $table->string('estado');
-            $table->integer('id_municipio');
-            $table->string('municipio');
-            $table->string('ciudad')->nullable();
-            $table->string('zona')->nullable();
-            $table->integer('cp');
-            $table->string('asentamiento');
-            $table->string('tipo');
+            $table->string('state');
+            $table->string('city');
+            $table->integer('zip_code')->unsigned();
+            $table->string('location');
+            $table->string('street_number');
             $table->engine = 'InnoDB';
         });
         Schema::table('addresses',function ($table) {

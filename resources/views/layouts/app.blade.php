@@ -33,9 +33,41 @@
 
     <!-- Styles -->
     <link href="{{ asset('/assets/css/app.css') }}" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="assets/css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="assets/css/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Owl Slider -->
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="../vendors/OwlCarousel2-2.2.1/owl.theme.default.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/responsive.css')}}">
+
+    <link href="../vendors/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+
+
 </head>
 <body>
     <div id="app">
+        @include('dashboard.navbar')
+        <!--
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -46,14 +78,14 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
+                    <!-- Left Side Of Navbar --
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
+                    <!-- Right Side Of Navbar --
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
+                        <!-- Authentication Links --
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -86,6 +118,7 @@
                 </div>
             </div>
         </nav>
+    -->
 
         <main class="py-4">
             @yield('content')
