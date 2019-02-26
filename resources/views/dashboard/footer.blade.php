@@ -5,9 +5,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-6">
                     <aside class="f_widget f_about_widget">
-                        <img src="img/logo.png" alt="">
-                        <p>Persuit is a Premium PSD Template. Best choice for your online store. Let purchase it to
-                            enjoy now</p>
+                    <img src="" alt="" class="footer-logo">
                         <h6>Social:</h6>
                         <ul>
                             <li><a href="#"><i class="social_facebook"></i></a></li>
@@ -74,17 +72,19 @@
                 </div>
             </div>
         </div>
+        <!--
         <div class="footer_copyright">
             <h5>© <script>
                     document.write(new Date().getFullYear());
-                </script> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </script> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
                 </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>
                 by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
             </h5>
         </div>
+     -->
     </div>
 </footer>
 <!--================End Footer Area =================-->

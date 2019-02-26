@@ -24,6 +24,10 @@ Route::get('activate/{token}', 'Auth\RegisterController@activate')
 
 Route::get('/', 'DashboardController@index');
 
-Route::get('{user-id}/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/weddings/product', 'ClientController@product')->name('wedding.products');
+Route::get('/products', function () {
+    return view('dashboard.events.products');
+})->name('products');
 Auth::routes();

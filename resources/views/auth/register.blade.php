@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    }
+    if(mm<10){
+        mm='0'+mm
+    }
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("date_of_birth").setAttribute("max", today);
+</script>
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
     <div class="container">
 
@@ -29,43 +44,16 @@
 
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="last" type="text" placeholder="Apellidos" class="input-group form-control{{ $errors->has('last') ? ' is-invalid' : '' }}"
-                                        name="last" value="{{ old('last') }}" required autofocus>
+                                    <input id="last_names" type="text" placeholder="Apellidos" class="input-group form-control{{ $errors->has('last_names') ? ' is-invalid' : '' }}"
+                                        name="last_names" value="{{ old('last_names') }}" required>
 
-                                    @if ($errors->has('last'))
+                                    @if ($errors->has('last_names'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('last') }}</strong>
+                                        <strong>{{ $errors->first('last_names') }}</strong>
                                     </span>
                                     @endif
                                 </div>
                             </div>
-
-                            <div class="row row-space">
-                                <div class="col-md-6">
-                                    <input id="address" type="text" placeholder="Dirección" class="input-group form-control{{ $errors->has('address') ? ' is-invalid' : '' }}"
-                                        name="address" value="{{ old('address') }}" required autofocus>
-
-                                    @if ($errors->has('address'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('address') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="row row-space">
-                                <div class="col-md-6">
-                                    <input id="phone" type="text" placeholder="Teléfono" class="input-group form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}"
-                                        name="phone" value="{{ old('phone') }}" required autofocus>
-
-                                    @if ($errors->has('phone'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('phone') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
                             <div class="row row-space">
                                 <div class="col-md-6">
                                     <input id="email" type="text" placeholder="E-mail" class="input-group form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
@@ -78,15 +66,14 @@
                                     @endif
                                 </div>
                             </div>
-
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="username" type="text" placeholder="Username" class="input-group form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
-                                        name="username" value="{{ old('username') }}" required autofocus>
+                                    <input id="date_of_birth" type="date" min="01/01/1900" max="31/12/2100" placeholder="Fecha de Nacimiento" class="input-group form-control{{ $errors->has('date_of_birth') ? ' is-invalid' : '' }}"
+                                        name="date_of_birth" value="{{ old('date_of_birth') }}" required>
 
-                                    @if ($errors->has('username'))
+                                    @if ($errors->has('date_of_birth'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('username') }}</strong>
+                                        <strong>{{ $errors->first('date_of_birth') }}</strong>
                                     </span>
                                     @endif
                                 </div>
@@ -94,7 +81,7 @@
 
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="password" type="text" placeholder="Password" class="input-group form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                    <input id="password" type="password" placeholder="Contraseña" class="input-group form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                         name="password" required>
 
                                     @if ($errors->has('password'))
@@ -107,19 +94,19 @@
 
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="confirm-password" type="text" placeholder="Confirmar Password" class="input-group form-control"
-                                        name="password_confirmation" required>
+                                    <input id="confirm-password" type="password" placeholder="Confirmar Contraseña"
+                                        class="input-group form-control" name="password_confirmation" required>
                                 </div>
                             </div>
 
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="profile" type="text" placeholder="Perfil" class="input-group form-control{{ $errors->has('id_profile') ? ' is-invalid' : '' }}"
-                                        name="id_profile" value="{{ old('id_profile') }}" required autofocus>
+                                    <input id="profile_id" type="text" placeholder="Perfil" class="input-group form-control{{ $errors->has('profile_id') ? ' is-invalid' : '' }}"
+                                        name="profile_id" value="{{ old('profile_id') }}" required autofocus>
 
-                                    @if ($errors->has('id_profile'))
+                                    @if ($errors->has('profile_id'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('id_profile') }}</strong>
+                                        <strong>{{ $errors->first('profile_id') }}</strong>
                                     </span>
                                     @endif
                                 </div>

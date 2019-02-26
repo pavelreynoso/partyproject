@@ -29,4 +29,9 @@ class ClientController extends Controller
     {
         return view('dashboard.users.clients.register');
     }
+
+    public function product()
+    {
+        return view('dashboard.users.clients.product');
+    }
 }
