@@ -26,8 +26,8 @@ Route::get('/', 'DashboardController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/weddings/product', 'ClientController@product')->name('wedding.products');
-Route::get('/products', function () {
-    return view('dashboard.events.products');
-})->name('products');
+Route::get('/places/product', 'ProductController@product_details')->name('places.product');
+///Aquí se pondrá el id del producto en /product.
+
+Route::get('/places', 'ProductController@index')->name('products');
 Auth::routes();
