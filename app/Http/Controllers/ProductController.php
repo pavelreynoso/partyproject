@@ -18,7 +18,6 @@ class ProductController extends Controller
     {
         return view('dashboard.events.products');
     }
-
     public function product_details()
     {
         return view('dashboard.events.product');
