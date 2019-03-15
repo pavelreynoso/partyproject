@@ -1,10 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
 @section('content')
 @include('dashboard.navbar')
-@php
-    $profile_id=2;
-@endphp
+
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
 <div class="container">
 
@@ -37,7 +35,7 @@
 
                             <div class="col-md-6">
                                 <input id="last" type="text" class="form-control{{ $errors->has('last') ? ' is-invalid' : '' }}"
-                                    name="last" value="{{ old('last') }}" required autofocus>
+                                    name="last" value="{{ old('last') }}" required>
 
                                 @if ($errors->has('last'))
                                 <span class="invalid-feedback" role="alert">
@@ -52,7 +50,7 @@
 
                             <div class="col-md-6">
                                 <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}"
-                                    name="address" value="{{ old('address') }}" required autofocus>
+                                    name="address" value="{{ old('address') }}" required>
 
                                 @if ($errors->has('address'))
                                 <span class="invalid-feedback" role="alert">
@@ -67,7 +65,7 @@
 
                             <div class="col-md-6">
                                 <input id="phone" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}"
-                                    name="phone" value="{{ old('phone') }}" required autofocus>
+                                    name="phone" value="{{ old('phone') }}" required>
 
                                 @if ($errors->has('phone'))
                                 <span class="invalid-feedback" role="alert">
@@ -97,7 +95,7 @@
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}"
-                                    name="username" value="{{ old('username') }}" required autofocus>
+                                    name="username" value="{{ old('username') }}" required>
 
                                 @if ($errors->has('username'))
                                 <span class="invalid-feedback" role="alert">
@@ -137,7 +135,7 @@
 
                             <div class="col-md-6">
                                 <input id="id_profile" name="id_profile" type="hidden" class="form-control{{ $errors->has('id_profile') ? ' is-invalid' : '' }}"
-                                value="{{ $profile_id }}" required autofocus>
+                                value="{{ $profile_id }}" required>
 
                                 @if ($errors->has('id_profile'))
                                 <span class="invalid-feedback" role="alert">

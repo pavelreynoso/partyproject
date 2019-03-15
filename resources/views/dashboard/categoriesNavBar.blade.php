@@ -7,7 +7,7 @@
         <li><a href="#">Religiosas</a></li>
         <li><a href="#">Baby Shower</a></li>
         <li><a href="#">Despedida de Soltera</a></li>
-        <li><a href="{{url('/weddings/product')}}">Bodas</a></li>
+        <li><a href="">Bodas</a></li>
         <li><a href="#">Graduaciones</a></li>
         <li><a href="#">Eventos Empresariales</a></li>
     </ul>

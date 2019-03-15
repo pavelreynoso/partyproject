@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="header-logo">
                     <a class="logo" href="{{url('/')}}">
-                        <img src="{{asset('assets/img/logo.png')}}" style="width:250px; max-height:150px" alt="">
+                        <img src="{{asset('assets/img/logo.png')}}" alt="">
                     </a>
                 </div>
                 <!-- /Logo -->
@@ -37,12 +37,13 @@
                 <ul class="header-btns">
                     <!-- Account -->
                     <li class="header-account dropdown default-dropdown">
+
                         <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
                             <div class="header-btns-icon">
                                 <i class="fa fa-user-o"></i>
                             </div>
-                            <strong class="text-uppercase">My Account <i class="fa fa-caret-down"></i></strong>
                         </div>
+                    -->
                         @guest
                         <a href="{{ route('login') }}">{{ __('Login') }}</a>
                         <div id="text">/</div>
@@ -61,6 +62,7 @@
                             <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
                             <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
                             <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
+                            <li><a href="#"><i class="fa fa-money"></i> Vender</a></li>
                             <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
                             <li><a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
