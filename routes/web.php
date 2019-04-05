@@ -19,6 +19,8 @@ Route::get('/login', 'AuthController@showLogin');
 
 Route::get('/register','ClientController@register');
 
+Route::get('/203', 'ProviderController@register23');
+
 Route::get('activate/{token}', 'Auth\RegisterController@activate')
     ->name('activate');
 

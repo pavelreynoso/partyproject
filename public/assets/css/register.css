@@ -298,6 +298,10 @@ h6 {
   max-width: 480px;
 }
 
+.wrapper--w900 {
+  max-width: 900px;
+}
+
 /* ==========================================================================
    #BUTTON
    ========================================================================== */
@@ -713,3 +717,22 @@ text-align:center;
     padding: 50px 40px;
   }
 }
+
+/*dual list */
+
+.dual-list .list-group {
+  margin-top: 8px;
+}
+
+.list-left li, .list-right li {
+  cursor: pointer;
+}
+
+.list-arrows {
+  padding-top: 100px;
+}
+
+  .list-arrows button {
+      margin-bottom: 20px;
+  }
+  
