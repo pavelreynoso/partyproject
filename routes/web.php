@@ -24,6 +24,8 @@ Route::get('/affilliates', 'ProviderController@register22');
 Route::get('/affilliates', 'ProviderController@register31');
 Route::get('/affilliates', 'ProviderController@register32');
 
+Route::get('/203', 'ProviderController@register23');
+
 Route::get('activate/{token}', 'Auth\RegisterController@activate')
     ->name('activate');
 
