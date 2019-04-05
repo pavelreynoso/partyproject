@@ -3,8 +3,7 @@
 @section('content')
 @include('dashboard.navbar')
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-    <div class="container">
-
+    <div class="container" style="overflow:hidden">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card card-4">
