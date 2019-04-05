@@ -6,17 +6,21 @@
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
             <div class="card-body">
-                    <h2 class="title">Área de Cobertura</h2>
+                    <h2 class="title">Precio por paquete</h2>
                 <form method="POST">
-                        <div class="questions">¿Cuál es el área de cobertura para brindar tus servicios?
+                        <div class="questions">Define el precio base de tu paquete
 
                             </div>
                             <div>
-                                    <h6 class="explanations">Agrega todas las ciudades a las que podrías ofrecer tus servicios </h6>
+                                    <h6 class="explanations">después podrás modificar el precio de acorde al día y fecha </h6>
                                 </div>
 
                         <div class="p-b-100">
-                            <!--Dual list va aqui-->
+
+                            <input type="text" class="input_text" name="Based_package_price" placeholder="Precio">
+
+
+
                         </div>
                         <div class="p-b-15 center">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>

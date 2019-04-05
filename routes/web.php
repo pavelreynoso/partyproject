@@ -18,11 +18,13 @@ Route::get('/', function () {
 Route::get('/login', 'AuthController@showLogin');
 
 Route::get('/register', 'ClientController@register');
-Route::get('/affilliates', 'ProviderController@register1')->name('provider_register');
-Route::get('/affilliates', 'ProviderController@register21');
-Route::get('/affilliates', 'ProviderController@register22');
-Route::get('/affilliates', 'ProviderController@register31');
-Route::get('/affilliates', 'ProviderController@register32');
+Route::group(['prefix' => 'affilliates'], function () {
+    Route::get('/100', 'ProviderController@register1')->name('100');
+    Route::get('/200.1', 'ProviderController@register2.1')->name('200.1');
+    Route::get('/200.2', 'ProviderController@register2.2')->name('200.2');
+    Route::get('/301', 'ProviderController@register3.1');
+    Route::get('/302', 'ProviderController@register3.2');
+});
 
 Route::get('/203', 'ProviderController@register23');
 

@@ -1827,7 +1827,8 @@ li {
     padding-bottom: 30px;
     text-align: center
 }
-.footer-logo{
+
+.footer-logo {
     width: auto;
     max-height: 70px;
     margin-top: -15px;
@@ -2328,12 +2329,28 @@ li {
 /*============================================================================================
     Register Background */
 
+.bg-gra-01 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+    background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+
 .bg-gra-02 {
-    background: -webkit-gradient(linear, left bottom, right top, from(#FFFFFF), to(#1bccc3));
-    background: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #1bccc3 100%);
-    background: -moz-linear-gradient(bottom left, #FFFFFF 0%, #1bccc3 100%);
-    background: -o-linear-gradient(bottom left, #FFFFFF 0%, #1bccc3 100%);
-    background: linear-gradient(to top right, #FFFFFF 0%, #1bccc3 100%);
+    background: -webkit-gradient(linear, left bottom, right top, from(#fc2c77), to(#6c4079));
+    background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+    background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+}
+
+.bg-gra-03 {
+    background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), to(#1bccc3));
+    background: -webkit-linear-gradient(bottom left, #ffffff 0%, #1bccc3 100%);
+    f background: -moz-linear-gradient(bottom left, #ffffff 0%, #1bccc3 100%);
+    background: -o-linear-gradient(bottom left, #ffffff 0%, #1bccc3 100%);
+    background: linear-gradient(to top right, #ffffff 0%, ##1bccc3 100%);
 }
 
 input[type=date]::-webkit-inner-spin-button,
@@ -2727,3 +2744,155 @@ input[type=date]::-webkit-outer-spin-button {
 .l_product_item:hover .l_p_text h5 {
     opacity: 0;
 }
+
+
+/* ==========================================================================
+   PROVIDER REGISTER
+   ========================================================================== */
+
+.font-poppins {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+header .reg-pull-left,
+header .reg-pull-right {
+    float: none !important;
+}
+
+header .reg-pull-right {
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   #SPACING
+   ========================================================================== */
+   .p-t-100 {
+    padding-top: 100px;
+}
+
+.p-t-130 {
+    padding-top: 130px;
+}
+
+.p-t-180 {
+    padding-top: 180px;
+}
+
+.p-t-20 {
+    padding-top: 20px;
+}
+
+.p-t-15 {
+    padding-top: 15px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-t-30 {
+    padding-top: 30px;
+}
+
+.p-b-100 {
+    padding-bottom: 100px;
+}
+
+.p-b-15 {
+    padding-bottom: 15px;
+}
+
+.m-r-45 {
+    margin-right: 45px;
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.btn-reg {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 120px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.btn2-reg {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0px 70px;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn--radius-2 {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+}
+
+.btn-feval {
+    background: #1bccc3;
+}
+
+/* ==========================================================================
+   #TEXT BOXES
+   ========================================================================== */
+   .reg-input_text{
+    padding: 0;
+    width: 40%;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-radius:5px;
+    border-color: #1bccc3;
+    background-color: white;
+    font-size: 16px;
+  }
+
+  /*----------------------------*\
+	logo
+\*----------------------------*/
+
+.reg-header-logo {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.reg-header-logo .logo>img {
+    width: auto;
+    max-height: 60px;
+}
+
+.reg-foot-logo {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.reg-foot-logo .logo>img {
+    width: 100%;
+    max-height: 20px;
+}
+

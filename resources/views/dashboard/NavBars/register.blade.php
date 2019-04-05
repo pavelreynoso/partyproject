@@ -1,22 +1,18 @@
 <header>
     <!-- header -->
-    <div id="header" style="z-index: 1">
+    <div id="reg-header" style="z-index: 1">
 
-        <div class="head-container">
+        <div class="reg-head-container">
 
-            <div class="pull-left">
+            <div class="reg-pull-left">
                 <!-- Logo -->
-                <div class="header-logo">
-                    <a class="logo" href="{{url('/">
-                                    <img src="/assets/img/logo.png" alt="">
-
-                                </a>
-
-                            </div>
-
-                            <!-- /Logo -->
-                        </div>
+                <div class="reg-header-logo">
+                    <a class="logo" href="{{url('/')}}">
+                        <img src="/assets/img/logo.png" alt="">
+                    </a>
                 </div>
+                <!-- /Logo -->
             </div>
-            </div>
+        </div>
+    </div>
 </header>
