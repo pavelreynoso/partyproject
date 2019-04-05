@@ -17,7 +17,12 @@ Route::get('/', function () {
 
 Route::get('/login', 'AuthController@showLogin');
 
-Route::get('/register','ClientController@register');
+Route::get('/register', 'ClientController@register');
+Route::get('/affilliates', 'ProviderController@register1')->name('provider_register');
+Route::get('/affilliates', 'ProviderController@register21');
+Route::get('/affilliates', 'ProviderController@register22');
+Route::get('/affilliates', 'ProviderController@register31');
+Route::get('/affilliates', 'ProviderController@register32');
 
 Route::get('activate/{token}', 'Auth\RegisterController@activate')
     ->name('activate');
@@ -26,7 +31,7 @@ Route::get('/', 'DashboardController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/places/product', 'ProductController@product_details')->name('places.product');
+Route::get('/places/product', 'ProductController@product_details')->name('product_details');
 ///Aquí se pondrá el id del producto en /product.
 
 Route::get('/places', 'ProductController@index')->name('products');

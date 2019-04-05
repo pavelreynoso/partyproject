@@ -38,7 +38,7 @@
                                 <h3>{{__('Red Feval')}}</h3>
                             </div>
                             <ul>
-                                <li><a href="#">{{__('Sé afiliado Feval')}}</a></li>
+                            <li><a href="{{URL::Route('provider_register')}}">{{__('Sé afiliado Feval')}}</a></li>
                                 <li><a href="#">{{__('Políticas de Afiliados')}}</a></li>
                                 <li><a href="#">{{__('¿Por qué ser parte de Feval')}}</a></li>
                             </ul>
