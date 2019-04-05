@@ -78,7 +78,6 @@
 <body>
     @include('dashboard.NavBars.register')
     @yield('content')
-    @include('dashboard.footer')
 
     <!-- Jquery JS-->
     <script src="../js/jquery.min.js"></script>
