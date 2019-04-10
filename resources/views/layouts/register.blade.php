@@ -72,6 +72,8 @@
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/responsive.css')}}">
+    <!--Select2-->
+    <link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" />
 
     <link href="{{asset('../vendors/colorbox/colorbox.css')}}" rel="stylesheet" type="text/css">
 </head>
@@ -87,6 +89,7 @@
     <script src="/js/global.js"></script>
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/dist/js/select2.min.js"></script>
 
 </body>
 

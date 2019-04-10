@@ -1,7 +1,5 @@
 @extends('layouts.register')
-
 @section('content')
-
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
@@ -47,13 +45,6 @@
                                                     <input type="text" class="form-control-sm form control" name="start" value="05/06/2014">
 
                                                 </div>
-                                            </div>
-                                            <div class="p-b-15"></div>
-                                            </div>
-                                                    Desde:
-
-                                                <div class="p-b-15"></div>
-                                                    Hasta:
                                             </div>
 
                         <div class="p-b-15 center">
