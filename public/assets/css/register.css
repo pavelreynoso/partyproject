@@ -1,5 +1,5 @@
 .font-poppins {
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif,;
 }
 
 header .pull-left,
@@ -907,8 +907,8 @@ input {
    ========================================================================== */
 .title {
     font-size: 24px;
-    color: #525252;
-    font-weight: 400;
+    color: #000000;
+    font-weight: 500;
     margin-bottom: 5px;
     text-align: center;
 }

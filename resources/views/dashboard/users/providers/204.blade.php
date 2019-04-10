@@ -43,12 +43,18 @@
                                                 <label class="font-normal">Range select</label>
                                                 <div class="input-daterange input-group" id="datepicker">
                                                     <input type="text" class="form-control-sm form control" name="start" value="05/05/2014">
-                                                    <span class="input-group-addon">Hasta</span>
+                                                    <span class="input-group-addon">hasta</span>
                                                     <input type="text" class="form-control-sm form control" name="start" value="05/06/2014">
 
                                                 </div>
                                             </div>
-                                           
+                                            <div class="p-b-15"></div>
+                                            </div>
+                                                    Desde:
+
+                                                <div class="p-b-15"></div>
+                                                    Hasta:
+                                            </div>
 
                         <div class="p-b-15 center">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>

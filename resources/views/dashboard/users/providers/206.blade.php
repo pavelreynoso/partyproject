@@ -25,6 +25,7 @@
                                         con al menos 1 mes de antelación, tendrás más tiempo de preparación,
                                         pero perderás la oportunidad de aceptar reservaciones de última hora.
                                     </div>
+                                    <div class="p-b-15 center">
                                     </div>
                                     <div class="p-b-15 center">
                                         <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
