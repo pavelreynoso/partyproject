@@ -12,32 +12,27 @@ class ProviderController extends Controller
         return view('dashboard.users.providers.home');
     }
 
-    public function register1()
+    public function register100()
     {
         return view('dashboard.users.providers.100');
     }
 
-    public function register21()
+    public function register200()
+    {
+        return view('dashboard.users.providers.200');
+    }
+
+    public function register201()
     {
         return view('dashboard.users.providers.201');
     }
 
-    public function register22()
+    public function register202()
     {
         return view('dashboard.users.providers.202');
     }
 
-    public function register31()
-    {
-        return view('dashboard.users.providers.301');
-    }
-
-    public function register32()
-    {
-        return view('dashboard.users.providers.302');
-    }
-
-    public function register23()
+    public function register203()
     {
         return view('dashboard.users.providers.203');
     }
@@ -46,28 +41,56 @@ class ProviderController extends Controller
     {
         return view('dashboard.users.providers.204');
     }
+
     public function register205()
     {
         return view('dashboard.users.providers.205');
     }
+
     public function register206()
     {
         return view('dashboard.users.providers.206');
     }
+
+    public function register207()
+    {
+        return view('dashboard.users.providers.207');
+    }
+
+    public function register208()
+    {
+        return view('dashboard.users.providers.208');
+    }
+
     public function register209()
     {
         return view('dashboard.users.providers.209');
     }
+
     public function register210()
     {
         return view('dashboard.users.providers.210');
     }
+
     public function register211()
     {
         return view('dashboard.users.providers.211');
     }
+
     public function register212()
     {
         return view('dashboard.users.providers.212');
     }
+
+    public function register301()
+    {
+        return view('dashboard.users.providers.301');
+    }
+
+    public function register302()
+    {
+        return view('dashboard.users.providers.302');
+    }
+
+
 }

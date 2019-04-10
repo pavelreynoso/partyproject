@@ -2896,3 +2896,11 @@ header .reg-pull-right {
     max-height: 20px;
 }
 
+/*----------------------------*\
+	Select2 Boxes
+\*----------------------------*/
+
+#servicesSelect {
+    width: 150px;
+    color: #000000;
+}
