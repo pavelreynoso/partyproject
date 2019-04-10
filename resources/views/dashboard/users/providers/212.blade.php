@@ -16,16 +16,25 @@
                                 <input type="tel" class="input_text" id="phone" name="phone"
                                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                                        required>
-
-                                <span class="explanations">Formato: 1234567890</span>
-
-
+                                <div class="p-b-15"></div>
+                                <h5>Formato: 1234567890</h5>
                             <div class="p-b-15"></div>
                         </div>
-                        <div class="questions">Breve descripción de lo que ofreces, número de integrantes, etc.
+                        <div class="questions">Mail para que nosotros te contactemos y te lleguen las requisiciones de reservaciones
                                 <div class="p-b-15"></div>
-                                <textarea name="short_description_service" style="input_text"></textarea>
-                            </div>
+
+
+                                        <input id="email" type="email"
+                                            class="input_text{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                            name="email" value="{{ old('email') }}" required>
+
+                                        @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                        @endif
+                                    </div>
+
 
 
                                     </div>
