@@ -29,6 +29,14 @@ Route::group(['prefix' => 'affilliates'], function () {
 Route::get('/203', 'ProviderController@register23');
 
 Route::get('/204', 'ProviderController@register204');
+Route::get('/205', 'ProviderController@register205');
+Route::get('/206', 'ProviderController@register206');
+
+
+Route::get('/209', 'ProviderController@register209');
+Route::get('/210', 'ProviderController@register210');
+Route::get('/211', 'ProviderController@register211');
+Route::get('/212', 'ProviderController@register212');
 
 
 Route::get('activate/{token}', 'Auth\RegisterController@activate')

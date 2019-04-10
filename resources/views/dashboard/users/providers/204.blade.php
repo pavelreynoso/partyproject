@@ -9,14 +9,13 @@
                     <h2 class="title">Precio por paquete</h2>
                 <form method="POST">
                         <div class="questions">Define el precio base de tu paquete
-
-                            </div>
+                                <div class="p-b-15"></div>
+                                <input type="text" class="input_text" name="Based_package_price" placeholder="$"> MXN
+                        </div>
                             <div>
-                                    <h6 class="explanations">después podrás modificar el precio de acorde al día y fecha </h6>
-                                </div>
-
-                        <div class="p-b-100">
-                            <input type="text" class="input_text" name="Based_package_price" placeholder="$"> MXN
+                                    <h6 class="explanations">NOTA: Después podrás modificar el precio de
+                                        acorde al día y fecha </h6>
+                            </div>
                             <div class="questions">¿Quieres ofrecer alguna oferta temporal?
                                     <div class="checkbox checkbox-primary">
                                             <input id="OfertaTemporal" type="checkbox" checked="">
@@ -44,7 +43,7 @@
                                                 <div class="p-b-15"></div>
                                                     Hasta:
                                             </div>
-                                        </div>
+
                         <div class="p-b-15 center">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
