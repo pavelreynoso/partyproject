@@ -16,7 +16,7 @@ class ProviderController extends Controller
     public function register100()
     {
         $articles = ArticleCategory::all();
-        return view('dashboard.users.providers.100',['articles', $articles]);
+        return view('dashboard.users.providers.100')->with('articles', $articles);
     }
 
     public function register200()

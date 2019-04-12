@@ -11,6 +11,12 @@
 |
  */
 
+ /*======================================================
+    Cómo pasar información a Vistas en Laravel
+ ========================================================
+ https://vegibit.com/how-to-pass-data-to-views-in-laravel/
+ */
+
 Route::get('/', function () {
     return view('dashboard.index');
 })->name('index');
