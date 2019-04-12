@@ -9,34 +9,35 @@
             <div class="card-body">
                 <h2 class="title">Definamos a tu paquete</h2>
                     <form method="POST">
-                        <div class="questions">Escribe el nombre con el que quieres que se dé a conocer tu paquete 
-                            <div class="p-b-15"></div>
-                            <input type="Text" class="input_text_big" name="package_name" placeholder=""
-                            minlength="5" maxlength="50">
+                        <div id="packageName">
+                            <form id="messageForm">
+                                <div class="questions">Escribe el nombre con el que quieres que se dé a conocer tu paquete
+                                    <div class="p-b-15"></div>
+                                    <input type="Text" id="package_name" class="input_text_big" name="Business_name" placeholder="">
+                                    <span class="text-besides" id="charactersRemainingName">50</span> 
+                                    <span class="text-besides"> caracteres</span>
+                                </div>
+                            </form>        
                         </div>
-                        <div class="questions">Describe todo lo que se incluye en tu paquete
-                            <div class="p-b-15"></div>
-                            <textarea name="package_description" style="input_text_big"></textarea
-                                minlength="5" maxlength="200">
-                            <div id="page">
-                                <form id="messageForm">
-                                    <h2>Describe todo lo que se incluye en tu paquete</h2>
+                        <div class="p-b-15"></div>
+                        <div id="packageDescription">
+                            <form id="messageForm">
+                                <div class="questions">Describe todo lo que se incluye en tu paquete
+                                    <div class="p-b-15"></div>
                                     <textarea id="package_description" name="package_description" 
-                                    style="input_text_big"></textarea
-                                    minlength="5" maxlength="200">
-                                    <div id="charactersRemaining">180 characters</div>
-                                </form>
-                            </div>
-                                      
-
-
+                                    style="input_text_big"minlength="5" maxlength="200"></textarea>
+                                    <span class="text-besides" id="charactersRemainingDescription">200</span>
+                                    <span class="text-besides"> caracteres</span>
+                                </div>
+                            </form>
                         </div>
                         <div class="p-b-15"></div>
                         <div class="p-b-15 center">
-                                <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
-                                <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
                         </div>
                     </form>
+                </div>
             </div>
         </div>
     </div>
