@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/login', 'AuthController@showLogin');
 
-Route::get('/register', 'ClientController@register');
+Route::get('/register', 'ClientController@register')->name('clientRegister');
 Route::group(['prefix' => 'affilliates'], function () {
     Route::get('/', 'ProviderController@register100')->name('100');
     Route::get('/200', 'ProviderController@register200')->name('200');
@@ -38,8 +38,7 @@ Route::group(['prefix' => 'affilliates'], function () {
 });
 
 
-Route::get('activate/{token}', 'Auth\RegisterController@activate')
-    ->name('activate');
+Route::get('activate/{token}', 'Auth\RegisterController@activate')->name('activate');
 
 Route::get('/', 'DashboardController@index');
 

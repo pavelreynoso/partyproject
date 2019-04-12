@@ -15,7 +15,7 @@ class CreateEventsCategoriesTable extends Migration
     {
         Schema::create('events_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('type', 20);
+            $table->string('type', 40);
             $table->engine = 'InnoDB';
         });
     }

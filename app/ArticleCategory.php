@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ArticleCategory extends Model
+{
+    protected $table = 'articles_categories';
+
+    protected $fillable = [
+        'type',
+    ];
+}

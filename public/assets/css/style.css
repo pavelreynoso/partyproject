@@ -55,7 +55,7 @@ Table OF Contents
 /*----------------------------*\
 	Typography
 \*----------------------------*/
-
+@import 'app'
 body {
     font-family: 'Hind', sans-serif;
     color: $body;

@@ -17,7 +17,9 @@
                         </h6>
                     </div>
                     <select name="services" id="servicesSelect" >
-
+                        @foreach($articles as $article)
+                            <option value="{{$article[id]">{{$article[type]}}</option>
+                        @endforeach
                     </select>
 
                     <div class="p-b-100"></div>

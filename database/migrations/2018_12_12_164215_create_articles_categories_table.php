@@ -15,7 +15,7 @@ class CreateArticlesCategoriesTable extends Migration
     {
         Schema::create('articles_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('type', 20);
+            $table->string('type', 40);
             $table->engine = 'InnoDB';
         });
     }
