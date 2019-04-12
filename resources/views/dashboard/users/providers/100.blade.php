@@ -7,6 +7,7 @@
             <div class="card-body">
                 <h2 class="title">Bienvenido</h2>
                 <form method="POST">
+                    
                     <div class="questions">
                         ¡Hola! Por favor indica qué ofrece. Puede seleccionar ambas opciones:
                     </div>

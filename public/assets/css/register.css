@@ -1,5 +1,5 @@
 .font-poppins {
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif,;
 }
 
 header .pull-left,
@@ -272,6 +272,13 @@ h6 {
     padding-bottom: 15px;
 }
 
+.p-r-5 {
+    padding-right: 15px;
+}
+.p-l-5 {
+    padding-left: 15px;
+}
+
 .m-r-45 {
     margin-right: 45px;
 }
@@ -405,8 +412,8 @@ h6 {
   }
   .input_text_big{
     padding: 0;
-    width: 80%;
-    height: 90px;
+    width: 100%;
+    height: 30px;
     position: relative;
     left: 0;
     outline: none;
@@ -419,7 +426,7 @@ h6 {
   textarea {
     border: 1px solid #1bccc3;
     border-radius: 5px;
-    width: 80%;
+    width: 100%;
     height:90px;
   }
 /*input for phone*/
@@ -865,20 +872,20 @@ input {
 }
 
 .select_register{
-    display: block;
+   
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: poppins;
 	font-weight: 700;
 	color: #444;
 	line-height: 1.3;
 	padding: .6em 1.4em .5em .8em;
-	width: 200px;
-	box-sizing: border-box;
+	width: 100px;
+	
 	margin: 0;
 	border: 1px solid #aaa;
 	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
     border-radius: .4em;
-    align-items: right;
+    align-items: center;
 
 
 }
@@ -897,7 +904,7 @@ input {
 
 }
 .select_register option {
-    font-weight:normal;
+    font-weight:500px;
 
 }
 
@@ -906,9 +913,9 @@ input {
    #TITLE
    ========================================================================== */
 .title {
-    font-size: 24px;
-    color: #525252;
-    font-weight: 400;
+    font-size: 26px;
+    color: #fc2c77;
+    font-weight: 500;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -917,6 +924,16 @@ input {
 #QUESTION TEXT
 */
 .questions {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+
+}
+.questions_group {
     font-size: 18px;
     color: #525252;
     font-weight: 400;
@@ -945,6 +962,16 @@ input {
     margin-top: 25px;
     margin-bottom: 20px;
     text-align: justify;
+}
+.text-besides{
+    font-size: 15px;
+    color: #525252;
+    font-weight: 400;
+    position: relative;
+    display: center;
+    text-align: none;
+
+
 }
 
 /* ==========================================================================

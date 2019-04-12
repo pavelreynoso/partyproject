@@ -83,6 +83,10 @@ class ProviderController extends Controller
     {
         return view('dashboard.users.providers.212');
     }
+    public function register213()
+    {
+        return view('dashboard.users.providers.213');
+    }
 
     public function register301()
     {

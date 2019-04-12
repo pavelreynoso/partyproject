@@ -69,28 +69,28 @@
      /*-----js for the list of hours----------*/
 
     $(document).ready(function(){
-        quantityHours();
+        minquantityhours();
      })
 
-     function quantityHours()
+     function minquantityhours()
      {
        for (var i = 1; i <= 10; i++)
        {
-         $("#quantityHours").append( $("<option></option>").attr("value", i).text(i));
+         $("#minquantityhours").append( $("<option></option>").attr("value", i).text(i));
         }
      }
 
 
 
      $(document).ready(function(){
-        maxquantityHours();
+        maxquantityhours();
      })
 
-     function maxquantityHours()
+     function maxquantityhours()
      {
        for (var a = 1; a <= 10; a++)
        {
-         $("#maxquantityHours").append( $("<option></option>").attr("value", a).text(a));
+         $("#maxquantityhours").append( $("<option></option>").attr("value", a).text(a));
         }
      }
 /*-----end of js for the list of hours from 1 to 10----------*/
@@ -109,6 +109,18 @@ else{
 
 }
 /*-----end of js for checked box in 210---------*/
+function count(){
+    var el;                                                    
 
-
+    function countCharacters() {                                    
+    var textEntered, countRemaining, counter;          
+    textEntered = document.getElementById('package_description').value;  
+    counter = (140 - (textEntered.length));
+    countRemaining = document.getElementById('charactersRemaining'); 
+    countRemaining.textContent = counter;       
+    }
+    el = document.getElementById('package_description');                   
+    el.addEventListener('keyup', countCharacters, false);
+}
 })(jQuery);
+
