@@ -8,15 +8,10 @@
                 <h2 class="title">Bienvenido</h2>
                 <form method="POST">
 
-                    <div class="questions">Para empezar, indica que ofreces.
-                        
-
-
-                    </div>
+                    <div class="questions">Para empezar, indica que ofreces.</div>
                     <div>
                         <h6 class="explanations">
                             Nota: Si lo que ofrece necesita tener un control sobre la disponibilidad en alguna fecha y tiempo específico se define como <strong> servicio</strong>. Un <strong>producto</strong> sólo tiene disponibilidad y tiempo de entrega. Por ejemplo, una hora de música es un <strong>servicio </strong>; y una bolsa de globos de decoración es un <strong>producto</strong>.
-
                         </h6>
                     </div>
                     <select name="services" id="servicesSelect" >

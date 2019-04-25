@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\ArticleCategory;
+use App\ServiceCategory;
 
 class ProviderController extends Controller
 {
@@ -16,6 +17,7 @@ class ProviderController extends Controller
     public function register100()
     {
         $articles = ArticleCategory::all();
+        
         return view('dashboard.users.providers.100')->with('articles', $articles);
     }
 
