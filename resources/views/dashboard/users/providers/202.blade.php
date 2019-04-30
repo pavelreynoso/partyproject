@@ -9,21 +9,22 @@
             <div class="card-body">
                 <h2 class="title">Elige algunas fotos y video</h2>
                     <form method="POST">
-                            <div class="questions">Agrega la foto de portada que les aparecerá a tus clientes cuando hagan su búsqueda: 
-                                    <!--cambiar diseño de Boton-->
+                            <div class="questions">Agrega la foto de portada que les aparecerá a tus clientes cuando hagan su búsqueda:
+
                                     <div class="p-b-15"></div>
-                                    <button class="btn2 btn--radius-2" type="button" href=#><img src="{{asset('assets/img/Agregar_foto_portada.png')}}"></button>
+                                    <button class="btn_images" type="button" href=#><img src="{{asset('assets/img/Agregar_foto_portada.png' )}}" style="width:200px; left; height:150px;"></button>
                                 <div class="p-b-15"></div>
                             </div>
                             <div class="questions">Agrega un par de fotos más para que tus clientes conozcan mejor tu servicio
-                                    <div class="p-b-15"></div>    
-                                    <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Agregar otra foto</button>
-                                    <!--cambiar diseño de Boton-->
+                                    <div class="p-b-15"></div>
+                                    <button class="btn_images" name="add_first_picture" type="button" href=#><img src="{{asset('assets/img/Agregar_otra_foto.png' )}}" style="width:200px; left; height:150px;"></button>
+                                    <button class="btn_images" name="add_second_picture" type="button" href=#><img src="{{asset('assets/img/Agregar_otra_foto.png' )}}" style="width:200px; left; height:150px;"></button>
                                     <div class="p-b-15"></div>
                             </div>
-                            <div class="questions">Agrega un par de fotos más para que tus clientes conozcan mejor tu servicio
-                                    <div class="p-b-15"></div>             
-                                    <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Agregar video</button>
+                            <div class="questions">Puedes agregar un video para que muestres tus servicios de manera más dinámica
+                                    <div class="p-b-15"></div>
+
+                                    <button class="btn_images" name="add_second_picture" type="button" href=#><img src="{{asset('assets/img/Agregar_video.png' )}}" style="width:200px; left; height:150px;"></button>
                                     <!--cambiar diseño de Boton-->
                                     <div class="checkbox checkbox-primary">
                                             <input id="Agreeness" type="checkbox">
@@ -34,7 +35,7 @@
                                     </div>
                                     <div class="p-b-15"></div>
                             </div>
-                            
+
                         <div class="p-b-15"></div>
                         <div class="p-b-15 center">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>

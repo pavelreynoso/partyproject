@@ -1,26 +1,52 @@
-var el1;                                                    
+var el1;
 
-function countCharacters() {                                    
-  var textEntered, countRemaining, counter;          
-  textEntered = document.getElementById('package_name').value;  
+function countCharacters() {
+  var textEntered, countRemaining, counter;
+  textEntered = document.getElementById('package_name').value;
   counter = (50 - (textEntered.length));
-  countRemaining = document.getElementById('charactersRemainingName'); 
-  countRemaining.textContent = counter;       
+  countRemaining = document.getElementById('charactersRemainingName');
+  countRemaining.textContent = counter;
 }
-el1 = document.getElementById('package_name');                   
+el1 = document.getElementById('package_name');
 el1.addEventListener('keyup', countCharacters, false);
 
-var el2;                                                    
+var el2;
 
-function countCharacters2() {                                    
-  var textEntered, countRemaining, counter;          
-  textEntered = document.getElementById('package_description').value;  
+function countCharacters2() {
+  var textEntered, countRemaining, counter;
+  textEntered = document.getElementById('package_description').value;
   counter = (200 - (textEntered.length));
-  countRemaining = document.getElementById('charactersRemainingDescription'); 
-  countRemaining.textContent = counter;       
+  countRemaining = document.getElementById('charactersRemainingDescription');
+  countRemaining.textContent = counter;
 }
-el2 = document.getElementById('package_description');                   
+el2 = document.getElementById('package_description');
 el2.addEventListener('keyup', countCharacters2, false);
+
+$(document).ready(function(){
+    quantityHours();
+ })
+
+ function quantityHours()
+ {
+   for (var i = 1; i <= 10; i++)
+   {
+     $("#quantityHours").append( $("<option></option>").attr("value", i).text(i));
+    }
+ }
+
+
+
+ $(document).ready(function(){
+    maxquantityHours();
+ })
+
+ function maxquantityHours()
+ {
+   for (var a = 1; a <= 10; a++)
+   {
+     $("#maxquantityHours").append( $("<option></option>").attr("value", a).text(a));
+    }
+ }
 
 (function ($) {
     'use strict';
@@ -92,31 +118,7 @@ el2.addEventListener('keyup', countCharacters2, false);
 
      /*-----js for the list of hours----------*/
 
-    $(document).ready(function(){
-        minquantityhours();
-     })
 
-     function minquantityhours()
-     {
-       for (var i = 1; i <= 10; i++)
-       {
-         $("#minquantityhours").append( $("<option></option>").attr("value", i).text(i));
-        }
-     }
-
-
-
-     $(document).ready(function(){
-        maxquantityhours();
-     })
-
-     function maxquantityhours()
-     {
-       for (var a = 1; a <= 10; a++)
-       {
-         $("#maxquantityhours").append( $("<option></option>").attr("value", a).text(a));
-        }
-     }
 /*-----end of js for the list of hours from 1 to 10----------*/
 
 /*-----js for checked box in 210---------No funciona*/
