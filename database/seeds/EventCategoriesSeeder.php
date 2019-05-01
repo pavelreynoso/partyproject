@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class EventsCategoriesSeeder extends Seeder
+class EventCategoriesSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -43,9 +43,6 @@ class EventsCategoriesSeeder extends Seeder
         ]);
         DB::table('events_categories')->insert([
             'type'=> 'Todas las anteriores'
-        ]);
-        DB::table('events_categories')->insert([
-            'type'=> 'Otros'
         ]);
     }
 }

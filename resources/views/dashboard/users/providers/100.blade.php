@@ -20,10 +20,16 @@
                         @endforeach
                     </select>
 
+                    <select name="events" id="servicesSelect" >
+                        @foreach($events as $event)
+                            <option value="{{$event->id}}">{{$event->type}}</option>
+                        @endforeach
+                    </select>
                     <div class="p-b-100"></div>
-                    <div class="p-b-15 center">
-                        <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
-                        <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                    <div class="p-b-15 center">}
+                    <a  href="{{ route('200') }}">
+                        <button class="btn2 btn--radius-2 btn-feval" type="button"">Continuar</button>
+                    </a>
                     </div>
                 </form>
             </div>
