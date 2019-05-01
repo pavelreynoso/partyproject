@@ -9,7 +9,7 @@ class EventCategory extends Model
     protected $table = "events_categories";
 
     protected $fillable = [
-        'description',
+        'type',
     ];
 
     public function Provider()
