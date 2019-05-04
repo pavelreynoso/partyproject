@@ -9,11 +9,13 @@
 
                     <div class="questions">Elige la categoría de tu servicio de música:</div>
                         <select name="Music_categories" id="musicCetegories" class="select_register_medium" >
-                            <!-- here is the list from laravel of the Music cathegories table -->
+                            <!-- here is the list from laravel of the Music categories table with select2 -->
                         </select>
                     <div class="p-b-15"></div>
                     <div class="questions">¿Qué servicios ofreces?</div>
 
+                        <!-- here is the list from laravel of the Music services table with check boxes-->
+                    </select>
                     <div class="p-b-15"></div>
                     <div class="questions">¿Como se ofrece tu servicio?</div>
                     <select class="select_register_medium" name="article type">
