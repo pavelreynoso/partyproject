@@ -393,11 +393,6 @@ h6 {
     background: #1bccc3;
 }
 
-.yui3-button {
-    margin:10px 0px 10px 0px;
-    color: #fff;
-    background-color: #3476b7;
-
 /* ==========================================================================
    #TEXT BOXES
    ========================================================================== */
@@ -1077,4 +1072,3 @@ input {
 .list-arrows button {
     margin-bottom: 20px;
 }
-
