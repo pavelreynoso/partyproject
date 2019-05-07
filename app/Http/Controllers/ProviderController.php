@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ArticleCategory;
 use App\EventCategory;
+use App\MusicCategories;
+use App\MusicServices;
 
 class ProviderController extends Controller
 {
@@ -23,7 +25,9 @@ class ProviderController extends Controller
 
     public function register200()
     {
-        return view('dashboard.users.providers.200');
+        $categories = MusicCategories::all();
+        $services = MusicServices::all();
+        return view('dashboard.users.providers.200', compact('categories', 'services'));
     }
 
     public function register201()

@@ -14,7 +14,8 @@ class DatabaseSeeder extends Seeder
         Eloquent::unguard();
         $this->call(EventCategoriesSeeder::class);
         $this->call(ArticleCategoriesSeeder::class);
-
+        $this->call(MusicCategoriesSeeder::class);
+        $this->call(MusicServicesSeeder::class);
         //$this->call(UsersTableSeeder::class);
         //$this->call(SepomexSeeder::class);
     }
