@@ -47,7 +47,7 @@
 </div>
 <@script>
     $(document).ready(function(){
-    $('#service').select2({
+    $('#Music_services').select2({
     placeholder:"Servicios"
     });
     });
