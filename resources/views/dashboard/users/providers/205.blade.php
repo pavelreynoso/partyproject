@@ -11,7 +11,7 @@
                     <div class="title">Mantener tu calendario actualizado es un factor indispensable para ser un
                         afiliado exitoso
                         <div class="p-b-15 center"></div>
-                        <div class="explanations"> Las reservaciones siempre tendrán que ser aprovadas por ti. Los
+                        <div class="explanations"> Las reservaciones siempre tendrán que ser aprobadas por ti. Los
                             clientes
                             mandarán una requisición de reserva en los días que aparezcan como disponibles en tu
                             calendario.

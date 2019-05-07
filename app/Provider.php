@@ -9,7 +9,7 @@ class Provider extends Model
     protected $table = "providers";
 
     protected $fillable = [
-        'user_id', 'type_id', 'tradename', 'company_name', 'rfc', 'services', 'events',
+        'user_id', 'type_id', 'tradename', 'company_name', 'rfc', 'articles', 'events',
     ];
     public function User()
     {
@@ -19,13 +19,13 @@ class Provider extends Model
     {
         return $this->hasOne('App\Provider_Type','id','type_id');
     }
-    public function Services_Categories()
+    public function Articles_Categories()
     {
-        return $this->hasMany('App\ServiceCategory','id','services');
+        return $this->hasMany('App\ArticleCategory','id','articles');
     }
     public function Events_Categories()
     {
-        return $this->hasMany('App\ServiceCategory','id','events');
+        return $this->hasMany('App\EventCategory','id','events');
     }
 
     public function email()

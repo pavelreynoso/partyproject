@@ -49,10 +49,9 @@
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
                         </a>
                     </div>
-                </div>
+            </div>
             </form>
         </div>
     </div>
-</div>
 </div>
 @endsection

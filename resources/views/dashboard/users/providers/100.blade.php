@@ -31,8 +31,8 @@
                     </div>
 
                     <select name="events" id="eventsSelect" style="color:black">
-                        @foreach($events as $event)
-                        <option value="{{$event->id}}">{{$event->type}}</option>
+                        @foreach ($events as $event)
+                            <option value=" {{$event->id}} "> {{$event->type}} </option>
                         @endforeach
                     </select>
 
