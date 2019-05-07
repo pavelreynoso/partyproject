@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArticlesCategoriesTable extends Migration
+class MusicCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateArticlesCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles_categories', function (Blueprint $table) {
+        Schema::create('music_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('type', 40);
+            $table->string('description', 50);
             $table->engine = 'InnoDB';
         });
     }
@@ -27,6 +27,6 @@ class CreateArticlesCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_categories');
+        Schema::dropIfExists('music_categories');
     }
 }

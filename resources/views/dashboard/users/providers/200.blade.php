@@ -10,10 +10,16 @@
                     <div class="questions">Elige la categoría de tu servicio de música:</div>
                         <select name="Music_categories" id="musicCetegories" class="select_register_medium" >
                             <!-- here is the list from laravel of the Music categories table with select2 -->
+                            @foreach ($categories as $category)
+                                <option value="{{ $category->id }}">{{$category->description}}</option>
+                            @endforeach
                         </select>
                     <div class="p-b-15"></div>
                     <div class="questions">¿Qué servicios ofreces?</div>
-
+                    <select name="Music_services" id="musicServices" class="select_register_medium" >
+                        @foreach ($services as $service)
+                            <option value="{{ $service->id }}">{{$service->description}}</option>
+                        @endforeach
                         <!-- here is the list from laravel of the Music services table with check boxes-->
                     </select>
                     <div class="p-b-15"></div>
