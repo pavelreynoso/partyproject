@@ -11,7 +11,7 @@
                     <div class="questions">¿Cuánto tiempo necesitas para tener todo preparado para dar tu servicio?
                         <div class="p-b-15 center"></div>
 
-                        <select class="select_register" name="Preparation_time">
+                        <select class="select_register_medium" name="Preparation_time">
                             <option value="1 day">
                                 <h6>1 día</h6>
                             </option>

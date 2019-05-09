@@ -26,11 +26,11 @@
                         </h6>
                     </div>
 
-                    <div class="p-b-15"></div>
+                    <div class="p-b-5"></div>
                     <div class="questions">Ahora, selecciona para que tipos de eventos ofreces tus productos/servicios
                     </div>
 
-                    <select name="events" id="eventsSelect" style="color:black">
+                    <select class="select_register_medium" name="events" id="eventsSelect" style="color:black">
                         @foreach ($events as $event)
                             <option value=" {{$event->id}} "> {{$event->type}} </option>
                         @endforeach
@@ -38,14 +38,14 @@
 
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>
-                    <select name="articles" id="articlesSelect" style="color:black">
+                    <select class="select_register_medium" name="articles" id="articlesSelect" style="color:black">
                         @foreach($articles as $article)
                         <option value="{{$article->id}}">{{$article->type}}</option>
                         @endforeach
                     </select>
 
-                    <div class="p-b-100"></div>
-                    <div class="p-b-15 center">}
+                    <div class="p-b-15"></div>
+                    <div class="p-b-15 center, p-t-30">}
                         <a href="{{ route('200') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button"">Continuar</button>
                         </a>
