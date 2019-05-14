@@ -9,6 +9,10 @@
                 <h2 class="title">Calendario</h2>
                 <form method="POST">
                     <div id="calendar"></div>
+
+                    
+
+                    </div>
                     <div class="p-b-15 center">
                         <a href="{{ route('202') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>

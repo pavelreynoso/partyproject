@@ -9,7 +9,7 @@ class Provider extends Model
     protected $table = "providers";
 
     protected $fillable = [
-        'user_id', 'type_id', 'tradename', 'company_name', 'rfc', 'articles', 'events',
+        'user_id', 'type_id', 'tradename', 'company_name', 'rfc', 'articles', 'events', 'cateringcategories'
     ];
     public function User()
     {
@@ -26,6 +26,10 @@ class Provider extends Model
     public function Events_Categories()
     {
         return $this->hasMany('App\EventCategory','id','events');
+    }
+    public function Catering_Categories()
+    {
+        return $this->hasMany('App\CateringCategory','id','cateringcategories');
     }
 
     public function email()

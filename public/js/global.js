@@ -40,13 +40,7 @@ $(document).ready(function(){
     maxquantityHours();
  })
 
- function maxquantityHours()
- {
-   for (var a = 1; a <= 10; a++)
-   {
-     $("#maxquantityHours").append( $("<option></option>").attr("value", a).text(a));
-    }
- }
+ 
 
 (function ($) {
     'use strict';
@@ -123,6 +117,7 @@ $(document).ready(function(){
 
 /*-----js for checked box in 210---------No funciona*/
 
+
 var x = document.getElementById("Yes_Special_hourly_price");
 var y = document.getElementById("Yes_Special_hourly_price");
 if(x.checked){
@@ -135,6 +130,9 @@ else{
 
 }
 /*-----end of js for checked box in 210---------*/
+/*-----js for choosing page in 200--------*/
+var category=document.getElementById("Música");
+
 
 
 })(jQuery);

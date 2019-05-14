@@ -40,6 +40,7 @@ Route::group(['prefix' => 'affilliates'], function () {
     Route::get('/211', 'ProviderController@register211')->name('211');
     Route::get('/212', 'ProviderController@register212')->name('212');
     Route::get('/213', 'ProviderController@register213')->name('213');
+    Route::get('/214', 'ProviderController@register214')->name('214');
     Route::get('/301', 'ProviderController@register301')->name('301');
     Route::get('/302', 'ProviderController@register302')->name('302');
 });

@@ -8,9 +8,9 @@
                 <form method="POST">
 
                     <div class="questions">Elige la categoría de tu servicio de música:</div>
-                        <select name="Music_categories" id="musicCetegories" class="select_register_medium" >
+                        <select name="music_categories" id="musicCategories" class="select_register_medium" color:'black'>
                             <!-- here is the list from laravel of the Music categories table with select2 -->
-                            @foreach ($categories as $category)
+                            @foreach ($musiccategories as $category)
                                 <option value="{{ $category->id }}">{{$category->description}}</option>
                             @endforeach
                         </select>
@@ -33,6 +33,7 @@
                     </select>
                     <div class="p-b-100"></div>
                     <div class="p-b-15 center">
+
                         <a href="{{ route('100') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                         </a>

@@ -7,6 +7,7 @@ use App\ArticleCategory;
 use App\EventCategory;
 use App\MusicCategories;
 use App\MusicServices;
+use App\CateringCategories;
 
 class ProviderController extends Controller
 {
@@ -20,14 +21,14 @@ class ProviderController extends Controller
     {
         $articles = ArticleCategory::all();
         $events = EventCategory::all();
-        return view('dashboard.users.providers.100', compact('articles', 'events'));
+        return view('dashboard.users.providers.100', compact('articles', 'events', ));
     }
 
     public function register200()
     {
-        $categories = MusicCategories::all();
+        $musiccategories = MusicCategories::all();
         $services = MusicServices::all();
-        return view('dashboard.users.providers.200', compact('categories', 'services'));
+        return view('dashboard.users.providers.200', compact('musiccategories', 'services'));
     }
 
     public function register201()
@@ -93,6 +94,14 @@ class ProviderController extends Controller
     {
         return view('dashboard.users.providers.213');
     }
+    public function register214()
+    {
+
+        $cateringcategories = CateringCategories::all();
+        return view('dashboard.users.providers.214', compact('cateringcategories'));
+
+    }
+
 
     public function register301()
     {
