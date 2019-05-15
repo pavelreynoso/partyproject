@@ -45,3 +45,7 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+  {!! Html::script('public/js/209.js') !!}
+@endsection

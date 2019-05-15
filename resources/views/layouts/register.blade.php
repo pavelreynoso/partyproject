@@ -91,6 +91,7 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script src="vendor/select2/dist/js/select2.min.js"></script>
 
+    @yield('scripts')
 </body>
 
 </html>

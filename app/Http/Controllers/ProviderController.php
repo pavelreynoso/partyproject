@@ -21,7 +21,7 @@ class ProviderController extends Controller
     {
         $articles = ArticleCategory::all();
         $events = EventCategory::all();
-        return view('dashboard.users.providers.100', compact('articles', 'events', ));
+        return view('dashboard.users.providers.100', compact('articles', 'events'));
     }
 
     public function register200()
