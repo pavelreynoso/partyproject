@@ -76,6 +76,7 @@
     <link href="vendor/select2/dist/css/select2.min.css" rel="stylesheet" />
 
     <link href="{{asset('../vendors/colorbox/colorbox.css')}}" rel="stylesheet" type="text/css">
+    @yield('header_scripts')
 </head>
 
 <body>
@@ -91,6 +92,7 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script src="vendor/select2/dist/js/select2.min.js"></script>
 
+    <!--Our  Scripts -->
     @yield('scripts')
 </body>
 

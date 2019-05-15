@@ -1,8 +1,6 @@
 @extends('layouts.register')
 
 @section('content')
-
-
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
@@ -45,5 +43,5 @@
 @endsection
 
 @section('scripts')
-  {!! Html::script('public/js/209.js') !!}
+    <script type="text/javascript" src="{{asset('../js/209.js')}}"></script>
 @endsection
