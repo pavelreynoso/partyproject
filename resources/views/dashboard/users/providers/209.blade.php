@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+<script src="209.js"></script>
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
@@ -25,6 +25,8 @@
                                     name=max_hours></select></select>
                                 <span>Horas máximo</span>
                             </div>
+                            <select id='some_selector'></select>​
+
                             <div class="p-b-15"></div>
                         </div>
 
