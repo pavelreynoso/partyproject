@@ -1,3 +1,7 @@
+
+ $(document).ready(function(){
+    maxquantityHours();
+ })
 function maxquantityHours()
  {
    for (var a = 1; a <= 10; a++)

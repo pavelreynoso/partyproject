@@ -36,11 +36,8 @@ $(document).ready(function(){
 
 
 
- $(document).ready(function(){
-    maxquantityHours();
- })
 
- 
+
 
 (function ($) {
     'use strict';

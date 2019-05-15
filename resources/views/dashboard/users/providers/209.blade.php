@@ -17,7 +17,6 @@
                             <div class="p-b-15">
                                 <select id="minquantityhours" runat="server" class="select_register"
                                     name=min_hours></select>
-
                                 <span>Horas mínimo</span>
                             </div>
 
