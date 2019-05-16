@@ -98,7 +98,9 @@ class ProviderController extends Controller
     {
 
         $cateringcategories = CateringCategories::all();
-        return view('dashboard.users.providers.214', compact('cateringcategories'));
+        $cateringservices = CateringServices::all();
+
+        return view('dashboard.users.providers.214', compact('cateringcategories', 'cateringservices'));
 
     }
 

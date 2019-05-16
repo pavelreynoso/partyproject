@@ -10,12 +10,23 @@
                     <div class="questions">Elige la categoría de tu servicio banquetes y bebidas</div>
 
 
-                        <select name="catering_categories" id="cateringCetegories" class="select_register_medium" style="color:black" >
+                        <select name="catering_categories" id="cateringCetegories" class="select_register_medium" style="color:black">
                                 <!-- here is the list from laravel of the Music categories table with select2 -->
-                                @foreach ($cateringcategories as $category)
-                                    <option value="{{ $category->id }}">{{$category->description}}</option>
+                                @foreach ($cateringcategories as $cateringcategory)
+                                    <option value="{{ $cateringcategory->id }}">{{$cateringcategory->type}}</option>
                                 @endforeach
-                            </select>
+                        </select>
+                                <!--here is the code for the loop through Catering services-->
+                        <div class="questions">
+                            @foreach ($cateringservices as $cateringservice)
+                                <div class="checkbox checkbox-primary">
+                                    <input id="cateringservice" type="checkbox">
+                                    <label for="cateringservice">
+                                    <h6><option value=>{{$cateringservice->type}} </option></h6>
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
                     <div class="p-b-100"></div>
                     <div class="p-b-15 center">
                         <a href="{{ route('100') }}">

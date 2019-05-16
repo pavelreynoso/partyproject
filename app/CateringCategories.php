@@ -9,11 +9,6 @@ class CateringCategories extends Model
     protected $table = "catering_categories";
 
     protected $fillable = [
-        'description',
+        'type',
     ];
-
-    public function Provider()
-    {
-        return $this->belongsTo('App\Provider');
-    }
 }

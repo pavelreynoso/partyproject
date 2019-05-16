@@ -30,8 +30,8 @@
                     <div class="questions_group">¿A partir de cuántas horas se ofrecerá el precio especial?
                         <div class="p-b-15"></div>
                         <div class="p-b-15">
-                            <select id="minquantityhours" runat="server" class="select_register"
-                                name=min_hours_special></select></select>
+                            <select id="minhoursoffer" runat="server" class="select_register"
+                                name=min_hours_offer></select></select>
                             <span>horas</span>
                         </div>
 
@@ -54,4 +54,7 @@
         </div>
     </div>
 </div>
+@endsection
+@section('scripts')
+    <script type="text/javascript" src="{{asset('../js/210.js')}}"></script>
 @endsection

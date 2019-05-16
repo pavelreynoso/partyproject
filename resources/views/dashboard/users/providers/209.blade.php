@@ -23,7 +23,7 @@
                                     name=max_hours></select></select>
                                 <span>Horas máximo</span>
                             </div>
-                            <select id='some_selector'></select>​
+
 
                             <div class="p-b-15"></div>
                         </div>

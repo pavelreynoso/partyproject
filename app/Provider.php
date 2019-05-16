@@ -27,10 +27,6 @@ class Provider extends Model
     {
         return $this->hasMany('App\EventCategory','id','events');
     }
-    public function Catering_Categories()
-    {
-        return $this->hasMany('App\CateringCategory','id','cateringcategories');
-    }
 
     public function email()
     {
