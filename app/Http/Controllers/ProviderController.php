@@ -8,6 +8,7 @@ use App\EventCategory;
 use App\MusicCategories;
 use App\MusicServices;
 use App\CateringCategories;
+use App\CateringServices;
 
 class ProviderController extends Controller
 {
