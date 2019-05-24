@@ -18,11 +18,11 @@
                         </select>
                                 <!--here is the code for the loop through Catering services-->
                         <div class="questions">
-                            @foreach ($cateringservices as $cateringservice)
+                            @foreach ($cateringcategories as $cateringcategory)
                                 <div class="checkbox checkbox-primary">
-                                    <input id="cateringservice" type="checkbox">
-                                    <label for="cateringservice">
-                                    <h6><option value=>{{$cateringservice->type}} </option></h6>
+                                    <input id="cateringcathegory" type="checkbox">
+                                    <label for="cateringcathegory">
+                                    <h6><option value=>{{$cateringcategory->type}} </option></h6>
                                     </label>
                                 </div>
                             @endforeach
