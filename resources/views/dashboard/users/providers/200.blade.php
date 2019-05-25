@@ -9,6 +9,7 @@
 
                     <div class="questions">Elige la categoría de tu servicio de música:</div>
                         <select name="music_categories" id="musicCategories" class="select_register_medium" color:'black'>
+                            <option selected disabled>Selecciona...</option>
                             <!-- here is the list from laravel of the Music categories table with select2 -->
                             @foreach ($musiccategories as $category)
                                 <option value="{{ $category->id }}">{{$category->description}}</option>
@@ -16,15 +17,21 @@
                         </select>
                     <div class="p-b-15"></div>
                     <div class="questions">¿Qué servicios ofreces?</div>
-                    <select name="Music_services" id="musicServices" class="select_register_medium" >
+
+                    <div class="questions">
                         @foreach ($services as $service)
-                            <option value="{{ $service->id }}">{{$service->description}}</option>
+                            <div class="checkbox checkbox-primary">
+                                <input id="musicservice" type="checkbox">
+                                <label for="musicservice">
+                                <h6><option value="{{ $service->id }}">{{$service->description}} </option></h6>
+                                </label>
+                            </div>
                         @endforeach
-                        <!-- here is the list from laravel of the Music services table with check boxes-->
-                    </select>
-                    <div class="p-b-15"></div>
+                `   </div>
+
                     <div class="questions">¿Como se ofrece tu servicio?</div>
                     <select class="select_register_medium" name="article type">
+                        <option selected disabled>Selecciona...</option>
                         <option value="product">
                             <h6>Por Paquete</h6>
                         </option>

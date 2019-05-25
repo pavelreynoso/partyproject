@@ -8,6 +8,10 @@ use App\EventCategory;
 use App\MusicCategories;
 use App\MusicServices;
 use App\CateringCategories;
+use App\CateringServices;
+use App\CateringOfferType;
+
+
 
 class ProviderController extends Controller
 {
@@ -99,8 +103,10 @@ class ProviderController extends Controller
 
         $cateringcategories = CateringCategories::all();
         $cateringservices = CateringServices::all();
+        $cateringoffertypes=CateringOfferType::all();
 
-        return view('dashboard.users.providers.214', compact('cateringcategories', 'cateringservices'));
+
+        return view('dashboard.users.providers.214', compact('cateringcategories', 'cateringservices', 'cateringoffertypes'));
 
     }
 

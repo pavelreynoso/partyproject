@@ -27,14 +27,20 @@
                     </div>
 
                     <div class="p-b-5"></div>
+
                     <div class="questions">Ahora, selecciona para que tipos de eventos ofreces tus productos/servicios
                     </div>
-
-                    <select class="select_register_medium" name="events" id="eventsSelect" style="color:black">
+                    <div class="questions">
                         @foreach ($events as $event)
-                            <option value=" {{$event->id}} "> {{$event->type}} </option>
+                            <div class="checkbox checkbox-primary">
+                                <input id="event" type="checkbox">
+                                <label for="event">
+                                <h6><option value="{{ $event->id }}">{{$event->type}} </option></h6>
+                                </label>
+                            </div>
                         @endforeach
-                    </select>
+                `   </div>
+                
 
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>
