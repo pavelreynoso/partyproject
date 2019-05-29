@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ArticleCategory;
 use App\EventCategory;
-use App\MusicCategories;
-use App\MusicServices;
-use App\CateringCategories;
-use App\CateringServices;
+use App\MusicCategory;
+use App\MusicService;
+use App\CateringCategory;
+use App\CateringService;
 use App\CateringOfferType;
 
 
@@ -30,8 +30,8 @@ class ProviderController extends Controller
 
     public function register200()
     {
-        $musiccategories = MusicCategories::all();
-        $services = MusicServices::all();
+        $musiccategories = MusicCategory::all();
+        $services = MusicService::all();
         return view('dashboard.users.providers.200', compact('musiccategories', 'services'));
     }
 
@@ -100,14 +100,11 @@ class ProviderController extends Controller
     }
     public function register214()
     {
-
-        $cateringcategories = CateringCategories::all();
-        $cateringservices = CateringServices::all();
-        $cateringoffertypes=CateringOfferType::all();
-
+        $cateringcategories = CateringCategory::all();
+        $cateringservices = CateringService::all();
+        $cateringoffertypes = CateringOfferType::all();
 
         return view('dashboard.users.providers.214', compact('cateringcategories', 'cateringservices', 'cateringoffertypes'));
-
     }
 
 

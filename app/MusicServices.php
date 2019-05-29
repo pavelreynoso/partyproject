@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MusicServices extends Model
+class MusicService extends Model
 {
     protected $table = "music_services";
 
