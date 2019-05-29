@@ -8,26 +8,28 @@
                 <form method="POST">
 
                     <div class="questions">Elige la categoría de tu servicio de música:</div>
-                        <select name="music_categories" id="musicCategories" class="select_register_medium" color:'black'>
-                            <option selected disabled>Selecciona...</option>
-                            <!-- here is the list from laravel of the Music categories table with select2 -->
-                            @foreach ($musiccategories as $category)
-                                <option value="{{ $category->id }}">{{$category->description}}</option>
-                            @endforeach
-                        </select>
+                    <select name="music_categories" id="musicCategories" class="select_register_medium" color:'black'>
+                        <option selected disabled>Selecciona...</option>
+                        <!-- here is the list from laravel of the Music categories table with select2 -->
+                        @foreach ($musiccategories as $category)
+                        <option value="{{ $category->id }}">{{$category->description}}</option>
+                        @endforeach
+                    </select>
                     <div class="p-b-15"></div>
                     <div class="questions">¿Qué servicios ofreces?</div>
 
                     <div class="questions">
                         @foreach ($services as $service)
-                            <div class="checkbox checkbox-primary">
-                                <input id="musicservice" type="checkbox">
-                                <label for="musicservice">
-                                <h6><option value="{{ $service->id }}">{{$service->description}} </option></h6>
-                                </label>
-                            </div>
+                        <div class="checkbox checkbox-primary">
+                            <input id="musicservice" type="checkbox">
+                            <label for="musicservice">
+                                <h6>
+                                    <option value="{{ $service->id }}">{{$service->description}} </option>
+                                </h6>
+                            </label>
+                        </div>
                         @endforeach
-                `   </div>
+                        ` </div>
 
                     <div class="questions">¿Como se ofrece tu servicio?</div>
                     <select class="select_register_medium" name="article type">

@@ -42,11 +42,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'localhost'),
+            'host' => env('DB_HOST', 'ls-e0383fae91661fc953523d3ea6122a7c222887e0.czgkjgpnsdmf.us-east-1.rds.amazonaws.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'MariaDB'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'Fisica1201'),
+            'database' => env('DB_DATABASE', 'MySQL'),
+            'username' => env('DB_USERNAME', 'fevaldbadm'),
+            'password' => env('DB_PASSWORD', 'Fevalmx1.'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

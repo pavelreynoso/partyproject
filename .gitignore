@@ -16,3 +16,5 @@ yarn-error.log
 .env.example
 env
 config/database.php
+config/database.php
+config/database.php
