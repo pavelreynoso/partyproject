@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(MusicServicesSeeder::class);
         $this->call(CateringCategoriesSeeder::class);
         $this->call(CateringServicesSeeder::class);
+        $this->call(CateringOfferTypesSeeder::class);
         //$this->call(UsersTableSeeder::class);
         //$this->call(SepomexSeeder::class);
     }
