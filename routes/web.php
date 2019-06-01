@@ -20,6 +20,7 @@
 Route::get('/', function () {
     return view('dashboard.index');
 })->name('index');
+ /*=index in English here*/
 
 Route::get('/login', 'AuthController@showLogin');
 

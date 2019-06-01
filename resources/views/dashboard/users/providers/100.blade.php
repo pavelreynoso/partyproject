@@ -9,9 +9,8 @@
                 <form method="POST">
                     <div class="questions">Para empezar, indica que ofreces.</div>
                     <select class="select_register_medium" name="article type">
-                        <option value="product">
-                            <h6>Producto</h6>
-                        </option>
+                        <option selected disabled>Selecciona...</option>
+                        <option value="product">Producto</option>
                         <option value="service">Servicio</option>
                         <option value="both">Ambos</option>
                     </select>
@@ -40,7 +39,7 @@
                             </div>
                         @endforeach
                 `   </div>
-                
+
 
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>
@@ -53,7 +52,7 @@
                     <div class="p-b-15"></div>
                     <div class="p-b-15 center, p-t-30">}
                         <a href="{{ route('200') }}">
-                            <button class="btn2 btn--radius-2 btn-feval" type="button"">Continuar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button" onclick="validate()">Continuar</button>
                         </a>
                     </div>
                 </form>
@@ -61,6 +60,7 @@
         </div>
     </div>
 </div>
+
 <@script>
 $(document).ready(function(){
     $('#articles').select2({
@@ -68,4 +68,8 @@ $(document).ready(function(){
     });
 });
 </@script>
+@endsection
+@section('scripts')
+
+    <script type="text/javascript" src="{{asset('../js/100.js')}}"></script>
 @endsection

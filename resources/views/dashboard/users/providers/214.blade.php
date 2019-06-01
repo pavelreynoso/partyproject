@@ -8,8 +8,8 @@
                 <form method="POST">
                     <!--here is the code for the loop through Catering categories-->
                     <div class="questions">Elige la categoría de tu servicio banquetes y bebidas</div>
-                        <select name="catering_categories" id="cateringCetegories" class="select_register_medium" style="color:black">
-                                <option selected disabled>Selecciona...</option>
+                        <select name="catering_categories" id="cateringCategories" class="select_register_medium" style="color:black">
+                                <option selected disabled name="">Selecciona...</option>
                                 <!-- here is the list from laravel of the Music categories table with select2 -->
                                 @foreach ($cateringcategories as $cateringcategory)
                                     <option value="{{ $cateringcategory->id }}">{{$cateringcategory->type}}</option>
@@ -42,7 +42,7 @@
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                         </a>
                         <a href="{{ route('201') }}">
-                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button" onclick="validate()" href=#>Continuar</button>
                         </a>
                     </div>
                 </form>
@@ -52,4 +52,9 @@
 </div>
 
 
+@endsection
+
+
+@section('scripts')
+    <script type="text/javascript" src="{{asset('../js/214.js')}}"></script>
 @endsection
