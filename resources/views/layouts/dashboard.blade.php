@@ -50,10 +50,10 @@
 </head>
 
 <body>
-    @include('dashboard.navbar')
+    @include('dashboard.NavBars.navbar')
     <br>
     @yield('content')
-    @include('dashboard.footer')
+    @include('dashboard.NavBars.footer')
     <script type="text/javascript" src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>

@@ -103,7 +103,7 @@
                 </ul>
             </div>
         </div>
-        @include('dashboard.categoriesNavBar')
+        @include('dashboard.NavBars.categoriesNavBar')
         <!-- Mobile nav toggle-->
         <li class="nav-toggle">
             <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>

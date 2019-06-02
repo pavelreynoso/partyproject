@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
-@include('dashboard.navbar')
+@include('dashboard.NavBars.navbar')
 
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
     <div class="container">
