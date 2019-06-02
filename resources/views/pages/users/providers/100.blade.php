@@ -1,4 +1,5 @@
 @extends('layouts.register')
+
 @section('content')
 
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
@@ -40,7 +41,7 @@
                             </div>
                         @endforeach
                 `   </div>
-                
+
 
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>

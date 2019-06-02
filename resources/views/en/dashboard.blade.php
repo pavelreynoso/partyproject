@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang={{ str_replace('_', '-', app()->getLocale()) }}>
+<html lang=en>
 
 <head>
     <!--Meta-->
@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=11">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP">
-    <meta name="Description" content="Feval main page">
+    <meta name="Keywords" content="Feval,Party,Parties,Organizing,Event,Events,Planning,Planner">
+    <meta name="Description" content="Feval's Main Page">
 
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -64,10 +64,10 @@
 </head>
 
 <body>
-    @include('NavBars.navbar')
+    @include('NavBars.en_Navbar')
     <br>
     @yield('content')
-    @include('NavBars.footer')
+    @include('NavBars.en_Footer')
     <script type="text/javascript" src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
 </body>

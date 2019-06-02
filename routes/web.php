@@ -18,12 +18,19 @@
  */
 
 Route::get('/', function () {
-    return view('dashboard.index');
+    return view('pages.index');
 })->name('index');
 
+Route::get('/en', function() {
+    return view('en.index');
+})->name('EnglishIndex');
+
 Route::get('/login', 'AuthController@showLogin');
+Route::get('/en/login','AuthController@showEnLog');
+
 
 Route::get('/register', 'ClientController@register')->name('clientRegister');
+
 Route::group(['prefix' => 'affilliates'], function () {
     Route::get('/', 'ProviderController@register100')->name('100');
     Route::get('/200', 'ProviderController@register200')->name('200');
