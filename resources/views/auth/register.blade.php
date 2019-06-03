@@ -14,7 +14,6 @@
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
-
                             <div class="row row-space">
                                 <div class="col-md-6">
                                     <input id="name" type="text" placeholder="Nombre" class="input-group form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
