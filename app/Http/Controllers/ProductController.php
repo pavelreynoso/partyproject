@@ -16,10 +16,10 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view('dashboard.events.products');
+        return view('pages.events.products');
     }
     public function product_details()
     {
-        return view('dashboard.events.product');
+        return view('pages.events.product');
     }
 }

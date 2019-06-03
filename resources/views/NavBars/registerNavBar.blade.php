@@ -1,7 +1,4 @@
 <header>
-    <!-- header -->
-    <script src='resources\js\app.js'> </script>
-
     <div id="reg-header" style="z-index: 1">
 
         <div class="reg-head-container">

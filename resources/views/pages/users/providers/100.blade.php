@@ -1,4 +1,5 @@
 @extends('layouts.register')
+
 @section('content')
 
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">

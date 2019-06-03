@@ -17,16 +17,16 @@
                         <input class="input search-input" type="text" placeholder="Enter your keyword">
                         <select class="input search-categories">
                             <option value="0">All Categories</option>
-                            <option value="1">Cumpleaños</option>
-                            <option value="2">Reuniones</option>
-                            <option value="3">Fiestas Infantiles</option>
-                            <option value="4">XV Años</option>
-                            <option value="5">Religiosas</option>
+                            <option value="1">Birthdays</option>
+                            <option value="2">Get-Togethers</option>
+                            <option value="3">Kids' Parties</option>
+                            <option value="4">Coming of Age</option>
+                            <option value="5">Religious</option>
                             <option value="6">Baby Showers</option>
-                            <option value="7">Despedida de Soltera</option>
-                            <option value="8"}}"> Bodas</option>
-                            <option value="9">Graduaciones</option>
-                            <option value="10">Eventos Empresariales</option>
+                            <option value="7">Bachelorette's</option>
+                            <option value="8">Weddings</option>
+                            <option value="9">Graduation Parties</option>
+                            <option value="10">Corporate Events</option>
                         </select>
                         <button class="search-btn"><i class="fa fa-search"></i></button>
                     </form>
@@ -62,7 +62,6 @@
                             <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
                             <li><a href="#"><i class="fa fa-heart-o"></i> My Wishlist</a></li>
                             <li><a href="#"><i class="fa fa-exchange"></i> Compare</a></li>
-                            <li><a href="#"><i class="fa fa-money"></i> Vender</a></li>
                             <li><a href="#"><i class="fa fa-check"></i> Checkout</a></li>
                             <li><a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -103,13 +102,12 @@
                 </ul>
             </div>
         </div>
-        @include('dashboard.categoriesNavBar')
+        @include('NavBars.en_categoriesNavBar')
         <!-- Mobile nav toggle-->
         <li class="nav-toggle">
             <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
         </li>
         <!-- / Mobile nav toggle -->
-
         <br>
     </div>
 </header>

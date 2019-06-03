@@ -16,85 +16,85 @@ class ProviderController extends Controller
 
     public function index()
     {
-        return view('dashboard.users.providers.home');
+        return view('pages.users.providers.home');
     }
 
     public function register100()
     {
         $articles = ArticleCategory::all();
         $events = EventCategory::all();
-        return view('dashboard.users.providers.100', compact('articles', 'events'));
+        return view('pages.users.providers.100', compact('articles', 'events'));
     }
 
     public function register200()
     {
         $musiccategories = MusicCategory::all();
         $services = MusicService::all();
-        return view('dashboard.users.providers.200', compact('musiccategories', 'services'));
+        return view('pages.users.providers.200', compact('musiccategories', 'services'));
     }
 
     public function register201()
     {
-        return view('dashboard.users.providers.201');
+        return view('pages.users.providers.201');
     }
 
     public function register202()
     {
-        return view('dashboard.users.providers.202');
+        return view('pages.users.providers.202');
     }
 
     public function register203()
     {
-        return view('dashboard.users.providers.203');
+        return view('pages.users.providers.203');
     }
 
     public function register204()
     {
-        return view('dashboard.users.providers.204');
+        return view('pages.users.providers.204');
     }
 
     public function register205()
     {
-        return view('dashboard.users.providers.205');
+        return view('pages.users.providers.205');
     }
 
     public function register206()
     {
-        return view('dashboard.users.providers.206');
+        return view('pages.users.providers.206');
     }
 
     public function register207()
     {
-        return view('dashboard.users.providers.207');
+        return view('pages.users.providers.207');
     }
 
     public function register208()
     {
-        return view('dashboard.users.providers.208');
+        return view('pages.users.providers.208');
     }
 
     public function register209()
     {
-        return view('dashboard.users.providers.209');
+        return view('pages.users.providers.209');
     }
 
     public function register210()
     {
-        return view('dashboard.users.providers.210');
+        return view('pages.users.providers.210');
     }
 
     public function register211()
     {
-        return view('dashboard.users.providers.211');
+        return view('pages.users.providers.211');
     }
 
     public function register212()
     {
-        return view('dashboard.users.providers.212');
+        return view('pages.users.providers.212');
     }
     public function register213()
     {
-        return view('dashboard.users.providers.213');
+        return view('pages.users.providers.213');
     }
     public function register214()
     {
@@ -102,18 +102,18 @@ class ProviderController extends Controller
         $cateringservices = CateringService::all();
         $cateringoffertypes = CateringOfferType::all();
 
-        return view('dashboard.users.providers.214', compact('cateringcategories', 'cateringservices', 'cateringoffertypes'));
+        return view('pages.users.providers.214', compact('cateringcategories', 'cateringservices', 'cateringoffertypes'));
     }
 
 
     public function register301()
     {
-        return view('dashboard.users.providers.301');
+        return view('pages.users.providers.301');
     }
 
     public function register302()
     {
-        return view('dashboard.users.providers.302');
+        return view('pages.users.providers.302');
     }
 
 

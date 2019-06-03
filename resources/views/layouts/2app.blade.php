@@ -68,7 +68,7 @@
 
 <body>
     <div id="app">
-        @include('dashboard.navbar')
+        @include('NavBars.navbar')
         <!--
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">

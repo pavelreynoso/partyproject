@@ -22,11 +22,11 @@ class ClientController extends Controller
 
     public function index()
     {
-        return view('dashboard.users.clients.home');
+        return view('pages.users.clients.home');
     }
 
     public function register()
     {
-        return view('dashboard.users.clients.register');
+        return view('pages.users.clients.register');
     }
 }
