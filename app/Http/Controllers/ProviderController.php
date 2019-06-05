@@ -11,8 +11,6 @@ use App\CateringCategory;
 use App\CateringService;
 use App\CateringOfferType;
 
-
-
 class ProviderController extends Controller
 {
 

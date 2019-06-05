@@ -45,7 +45,7 @@
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                         </a>
                         <a href="{{ route('201') }}">
-                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button" onclick="validate()" href=#>Continuar</button>
                         </a>
                     </div>
                 </form>
@@ -55,4 +55,9 @@
 </div>
 
 
+@endsection
+
+
+@section('scripts')
+    <script type="text/javascript" src="{{asset('../js/214.js')}}"></script>
 @endsection

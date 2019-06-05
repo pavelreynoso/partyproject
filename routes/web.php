@@ -20,6 +20,7 @@
 Route::get('/', function () {
     return view('pages.index');
 })->name('index');
+ /*=index in English here*/
 
 Route::get('/en', function() {
     return view('en.index');
