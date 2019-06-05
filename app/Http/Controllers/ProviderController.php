@@ -65,11 +65,6 @@ class ProviderController extends Controller
         return view('pages.users.providers.206');
     }
 
-    public function register207()
-    {
-        return view('pages.users.providers.207');
-    }
-
     public function register208()
     {
         return view('pages.users.providers.208');

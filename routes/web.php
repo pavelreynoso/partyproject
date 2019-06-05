@@ -25,9 +25,8 @@ Route::get('/en', function() {
     return view('en.index');
 })->name('EnglishIndex');
 
-Route::get('/login', 'AuthController@showLogin');
-Route::get('/en/login','AuthController@showEnLog');
-
+Route::get('/login', 'AuthController@showLogin')->name('userLogin');
+Route::get('/en/login','AuthController@showEnLog')->name('enLogin');
 
 Route::get('/register', 'ClientController@register')->name('clientRegister');
 
@@ -40,7 +39,8 @@ Route::group(['prefix' => 'affilliates'], function () {
     Route::get('/204', 'ProviderController@register204')->name('204');
     Route::get('/205', 'ProviderController@register205')->name('205');
     Route::get('/206', 'ProviderController@register206')->name('206');
-    Route::get('/207', 'ProviderController@register207')->name('207');
+    Route::get('/207', 'AvailabilityController@index')->name('207');
+    Route::post('/207','AvailabilityController@add')->name('207.add');
     Route::get('/208', 'ProviderController@register208')->name('208');
     Route::get('/209', 'ProviderController@register209')->name('209');
     Route::get('/210', 'ProviderController@register210')->name('210');
