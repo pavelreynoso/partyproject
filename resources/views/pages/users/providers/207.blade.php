@@ -85,6 +85,14 @@
         </div>
     </div>
 </div>
+<!--
+/*
+ *
+ * Checar otro link para mejor
+ * https://quickadminpanel.com/blog/laravel-fullcalendar-edit-events-with-bootstrap-modal/
+ * https://github.com/LaravelDaily/LaraAppointments-QuickAdminPanel
+ * 
+-->
 @endsection
 @section('scripts')
 {{!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js')!!}
@@ -92,3 +100,4 @@
     {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js')!!}
     {!!$calendar_details->script()!!}
 @endsection
+

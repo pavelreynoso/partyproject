@@ -42,6 +42,6 @@ class AvailabilityController extends Controller
         $event->save();
 
         \Session::flash('success','Event added successfully.');
-        return Redirect::to('pages.users.providers.207');
+        return redirect()->route('pages.users.providers.207');
     }
 }
