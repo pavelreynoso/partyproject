@@ -39,9 +39,7 @@
                                 </label>
                             </div>
                         @endforeach
-                `   </div>
-
-
+                    </div>
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>
                     <select class="select_register_medium" name="articles" id="articlesSelect" style="color:black">

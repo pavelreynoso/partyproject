@@ -37,4 +37,9 @@ class Provider extends Model
     {
         return $this->User->name;
     }
+
+    public function products()
+    {
+        return $this->hasMany('App\Availability');
+    }
 }

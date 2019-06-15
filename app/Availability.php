@@ -11,4 +11,9 @@ class Availability extends Model
     protected $fillable = [
         'name', 'start_date', 'end_date',
     ];
+
+    public function provider()
+    {
+        return $this->belongsTo('App\Provider');
+    }
 }

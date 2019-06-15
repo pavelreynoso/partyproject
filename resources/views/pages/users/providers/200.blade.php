@@ -29,7 +29,7 @@
                             </label>
                         </div>
                         @endforeach
-                        ` </div>
+                    </div>
 
                     <div class="questions">¿Como se ofrece tu servicio?</div>
                     <select class="select_register_medium" name="article type">
