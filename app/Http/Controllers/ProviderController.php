@@ -111,5 +111,10 @@ class ProviderController extends Controller
         return view('pages.users.providers.302');
     }
 
+    public function register303()
+    {
+        return view('pages.users.providers.303');
+    }
+
 
 }
