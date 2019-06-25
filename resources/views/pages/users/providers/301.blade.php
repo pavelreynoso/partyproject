@@ -2,6 +2,8 @@
 
 @section('content')
 
+<input id="progress_percentage" value="50%" /> <!--Value for the progress on the registration (%)-->
+
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
@@ -18,7 +20,8 @@
 
                             <div class="p-b-15"></div>
                             Si cancelas un pedido porque la información de disponibilidad no era la correcta,
-                            tendrás que pagar una penalización y tu producto desaparecerá para evitar nuevos pedidos.
+                            tendrás que pagar una penalización y aparecera que el producto no tiene disponibilidad
+                            desaparecerá para evitar nuevos pedidos.
                         </div>
                         <div class="p-b-15"></div>
                         <div class="checkbox checkbox-primary">
@@ -29,7 +32,7 @@
                             <div class="p-b-15 center"></div>
                         </div>
                         <div class="p-b-15 center">
-                            <a href="{{ route('215') }}">
+                            <a href="{{ route('214') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                             </a>
                             <a href="{{ route('302') }}">

@@ -24,7 +24,7 @@
                                 <div class="questions">Describe todo lo que se incluye en tu paquete
                                     <div class="p-b-15"></div>
                                     <textarea id="package_description" name="package_description"
-                                    style="input_text_big"minlength="5" maxlength="200"></textarea>
+                                    style="input_text_big" minlength="5" maxlength="200"></textarea>
                                     <span class="text-besides" id="charactersRemainingDescription">200</span>
                                     <span class="text-besides"> caracteres</span>
                                 </div>

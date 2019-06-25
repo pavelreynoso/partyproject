@@ -962,6 +962,23 @@ input {
     font-weight:500px;
 
 }
+/* ==========================================================================
+   #PROGRESS BAR
+   ========================================================================== */
+   .progress-bar {
+    width: 100%;
+    background-color:  #fc2c77;
+  }
+
+  .meter {
+	height: 15px;  /* Can be anything */
+	position: relative;
+	background: #1bccc3;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: inset 0 -1px 1px #1bccc3;
+}
 
 /* ==========================================================================
    #TITLE

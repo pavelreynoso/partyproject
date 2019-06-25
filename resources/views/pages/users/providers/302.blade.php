@@ -7,6 +7,7 @@
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
             <div class="card-body">
+
                 <h2 class="title">Inventario</h2>
                 <form method="POST">
                     <div class="questions">¿Cuántos artículos tienes disponibles?
@@ -15,14 +16,14 @@
                     </div>
                     <div class="questions_group">¿Tu artículo se puede entregar en una fecha específica?
                         <div class="checkbox checkbox-primary">
-                            <input id="Yes_Special_hourly_price" type="checkbox">
-                            <label for="Yes_Special_hourly_price">
+                            <input id="Yes_specific_day_delivery" type="checkbox">
+                            <label for="Yes_specific_day_delivery">
                                 <h5>Si</h5>
                             </label>
                         </div>
                         <div class="checkbox checkbox-primary">
-                            <input id="No_Special_hourly_price" type="checkbox">
-                            <label for="No_Special_hourly_price">
+                            <input id="No_specific_day_delivery" type="checkbox">
+                            <label for="No_specific_day_delivery">
                                 <h5>No</h5>
                             </label>
                         </div>

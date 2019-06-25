@@ -65,6 +65,8 @@ else{
 
 }
 /*-----end of js for checked box in 210---------*/
+
+
 /*-----js for choosing page in 200--------*/
 var category=document.getElementById("Música");
 

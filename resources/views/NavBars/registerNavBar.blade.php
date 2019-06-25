@@ -11,7 +11,25 @@
                     </a>
                 </div>
                 <!-- /Logo -->
+                <!--Adding progress bar-->
+                <script>
+                    var progress_percentage;
+                    var progress;
+                    function getPercentage() {
+                        progress_percentage=document.getElementById('progress_percentage').value
+                        document.write(progress_percentage)
+                    }
+                    }
+                </script>
+
+                <!-- I need to link the value of the percentage -->
+                <div class="progress">
+                <div class="meter" style="width:30%"></div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+@section('scripts')
+    <script type="text/javascript" src="{{asset('../js/global.js')}}"></script>
+@endsection
