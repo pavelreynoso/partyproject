@@ -1,8 +1,10 @@
 @extends('layouts.register')
 
 @section('content')
-
-<input id="progress_percentage" value="50%" /> <!--Value for the progress on the registration (%)-->
+<script>
+        var progress_percentage;
+        progress_percentage='30%';
+</script>
 
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">

@@ -37,16 +37,16 @@
                         </div>
 
                     </div>
-                    <div class="questions_group">Define el mínimo numero de articulos por pedido
+                    <div class="questions_group">Define el mínimo numero de artículos por pedido
                         <div class="p-b-15"></div>
                         <input type="text" class="input_text" name="minimum_article_order" placeholder="# of articles"> artículos
                     </div>
 
                     <div class="p-b-15 center">
-                        <a href="{{ route('209') }}">
+                        <a href="{{ route('301') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                         </a>
-                        <a href="{{ route('211') }}">
+                        <a href="{{ route('303') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
                         </a>
                     </div>

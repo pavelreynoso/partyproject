@@ -20,11 +20,11 @@
                         document.write(progress_percentage)
                     }
                     }
-                </script>
 
-                <!-- I need to link the value of the percentage -->
+                </script>
+                <!-- We need to link the value of the percentage -->
                 <div class="progress">
-                <div class="meter" style="width:30%"></div>
+                <div class="meter" style="width:50%"></div>
                 </div>
             </div>
         </div>
