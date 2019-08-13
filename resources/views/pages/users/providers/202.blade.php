@@ -18,7 +18,7 @@
                                 style="width:200px; left; height:150px;"></button>
                         <div class="p-b-15"></div>
                     </div>
-                    <div class="questions">Agrega un par de fotos más para que tus clientes conozcan mejor tu servicio
+                    <div class="questions">Agrega un par de fotos más para que tus clientes conozcan mejor lo que ofreces
                         <div class="p-b-15"></div>
                         <button class="btn_images" name="add_first_picture" type="button" href=#><img
                                 src="{{asset('assets/img/Agregar_otra_foto.png' )}}"
@@ -52,7 +52,7 @@
                         <a href="{{ route('201') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                         </a>
-                        <a href="{{ route('203') }}">
+                        <a href="{{ route('204') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
                         </a>
                     </div>

@@ -50,7 +50,7 @@
 
                     <div class="p-b-15"></div>
                     <div class="p-b-15 center, p-t-30">}
-                        <a href="{{ route('200') }}">
+                        <a href="{{ route('201') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button" onclick="validate()">Continuar</button>
                         </a>
                     </div>

@@ -8,23 +8,14 @@
             <div class="card-body">
 
                 <form method="POST">
-                    <div class="title">Mantener tu calendario actualizado es un factor indispensable para ser un
-                        afiliado exitoso
+                    <div class="title">Mantener tu índice de respuesta es un factor indispensable para ser un
+                        afiliado exitoso y vender más
                         <div class="p-b-15 center"></div>
                         <div class="explanations"> Las reservaciones siempre tendrán que ser aprobadas por ti. Los
                             clientes
-                            mandarán una requisición de reserva en los días que aparezcan como disponibles en tu
-                            calendario.
+                            mandarán una requisición de reserva o compra.
                             Tendrás 24 horas para aceptar o rechazar.
-                            Mantén el calendario y la configuración de disponibilidad siempre actualizados para recibir
-                            reservas
-                            únicamente en los días en que puedas ofrecer tu servicio.
                             Recuerda que si cancelas, generarás contratiempos para los clientes.
-                            <div class="p-b-15"></div>
-                            Si cancelas una reserva porque la disponibilidad de tu calendario no era correcta,
-                            tendrás que pagar una penalización y las fechas se pondrán como no disponibles
-                            automaticamente para
-                            evitar alguna otra reservación no deseada.
                         </div>
                         <div class="p-b-15"></div>
                         <div class="checkbox checkbox-primary">
@@ -35,10 +26,10 @@
                             <div class="p-b-15 center"></div>
                         </div>
                         <div class="p-b-15 center">
-                            <a href="{{ route('204') }}">
+                            <a href="{{ route('205') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
                             </a>
-                            <a href="{{ route('206') }}">
+                            <a href="{{ route('211') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
                             </a>
                         </div>
