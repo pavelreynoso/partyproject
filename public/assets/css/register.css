@@ -345,11 +345,22 @@ h6 {
     color: #fff;
     font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
 }
-.btn_images {
+
+.btn_images_big > img {
+    width: auto;
+    height: 200px;
+}
+
+.btn_images_small > img {
+    width: auto;
+    height: 150px;
+}
+
+.btn_images_line {
     display: inline-block;
+    text-align: center;
     line-height: 60px;
     padding: 0px 0px;
-
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -378,24 +389,15 @@ h6 {
     border-radius: 20px;
 }
 
-.btn--green {
-    background: #57b846;
-}
-
-.btn--green:hover {
-    background: #4dae3c;
-}
-
-.btn--blue {
-    background: #4272d7;
-}
-
-.btn--blue:hover {
-    background: #3868cd;
-}
-
 .btn-feval {
     background: #1bccc3;
+}
+
+.btn-feval:hover {
+    background: #FB3C61;
+}
+.btn-feval:disabled, .btn-feval:disabled:hover {
+    background: #abf3f0;
 }
 
 /* ==========================================================================
@@ -413,7 +415,6 @@ h6 {
     border-color: #1bccc3;
     background-color: white;
     font-size: 16px;
-
   }
 
   .input_text_medium{

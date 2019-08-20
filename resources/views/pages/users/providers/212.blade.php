@@ -14,7 +14,7 @@
                         <input type="tel" class="input_text" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                             required>
 
-                        <div class="text-besides">Formato: 1234567890</div>
+                        <div class="text-besides">Formato de 10 digitos: (12) - 34567890</div>
                         <div class="p-b-15"></div>
                     </div>
                     <div class="questions">E-Mail
@@ -23,7 +23,7 @@
 
                         <input id="email" type="email"
                             class="input_text{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email"
-                            value="{{ old('email') }}" required>
+                            value="{{ old('email') }}" required placeholder="mail@mail.com">
 
                         @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
@@ -34,10 +34,10 @@
                     <div class="p-b-100"></div>
                     <div class="p-b-15 center">
                         <a href="{{ route('211') }}">
-                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                         </a>
                         <a href="{{ route('213') }}">
-                            <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                            <button class="btn2 btn--radius-2 btn-feval" type="button">Continuar</button>
                         </a>
                     </div>
                 </form>

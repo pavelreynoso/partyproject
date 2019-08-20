@@ -43,6 +43,7 @@
                     <div class="p-b-15"></div>
                     <div class="questions">¿En que categoría entra lo que ofreces?</div>
                     <select class="select_register_medium" name="articles" id="articlesSelect" style="color:black">
+                        <option selected disabled>Selecciona una...</option>
                         @foreach($articles as $article)
                         <option value="{{$article->id}}">{{$article->type}}</option>
                         @endforeach
@@ -69,6 +70,5 @@ $(document).ready(function(){
 </@script>
 @endsection
 @section('scripts')
-
     <script type="text/javascript" src="{{asset('../js/100.js')}}"></script>
 @endsection

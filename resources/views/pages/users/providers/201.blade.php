@@ -10,7 +10,7 @@
                     <form method="POST">
                         <div id="packageName">
                             <form id="messageForm">
-                                <div class="questions">Escribe el nombre con el que quieres que se dé a conocer lo que vendes
+                                <div class="questions">Escribe el nombre con el que quieres que se dé a conocer lo que vendes:
                                     <div class="p-b-15"></div>
                                     <input type="Text" id="package_name" class="input_text_big" name="Business_name" placeholder="">
                                     <span class="text-besides" id="charactersRemainingName">50</span>
@@ -21,7 +21,7 @@
                         <div class="p-b-15"></div>
                         <div id="packageDescription">
                             <form id="messageForm">
-                                <div class="questions">Describe todo lo que se incluye en lo que ofreces
+                                <div class="questions">Describe todo lo que se incluye en lo que ofreces:
                                     <div class="p-b-15"></div>
                                     <textarea id="package_description" name="package_description"
                                     style="input_text_big" minlength="5" maxlength="200"></textarea>
@@ -33,10 +33,10 @@
                         <div class="p-b-15"></div>
                         <div class="p-b-15 center">
                             <a href="{{ route('201') }}">
-                                <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
+                                <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                             </a>
                             <a href="{{ route('202') }}">
-                                <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                                <button class="btn2 btn--radius-2 btn-feval" type="button">Continuar</button>
                             </a>
                         </div>
                     </form>

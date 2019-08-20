@@ -6,16 +6,16 @@
             <div class="card-body">
                 <h2 class="title">Ahora define el precio de lo que ofreces</h2>
                 <form method="POST">
-                    <div class="questions">Indica el precio
+                    <div class="questions">Indica el precio final del producto.
                         <div class="p-b-15"></div>
-                        <input type="text" class="input_text" name="Based_package_price" placeholder="$"> MXN
+                        $<input type="text" class="input_text" name="Based_package_price" > MXN
                     </div>
                             <div class="p-b-15 center">
                                 <a href="{{ route('203') }}">
-                                    <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Regresar</button>
+                                    <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                                 </a>
                                 <a href="{{ route('205') }}">
-                                    <button class="btn2 btn--radius-2 btn-feval" type="button" href=#>Continuar</button>
+                                    <button class="btn2 btn--radius-2 btn-feval" type="button">Continuar</button>
                                 </a>
                             </div>
                         </div>
