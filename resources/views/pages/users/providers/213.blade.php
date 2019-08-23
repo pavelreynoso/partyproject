@@ -19,7 +19,7 @@
                             <a href="{{ route('212') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                             </a>
-                            <a href="{{ route('100') }}">
+                            <a href="{{ route('302') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button">Continuar</button>
                             </a>
                         </div>

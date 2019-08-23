@@ -66,3 +66,5 @@ Route::get('/places/product', 'ProductController@product_details')->name('produc
 
 Route::get('/places', 'ProductController@index')->name('products');
 Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
