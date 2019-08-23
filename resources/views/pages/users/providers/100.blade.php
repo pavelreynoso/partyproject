@@ -1,7 +1,7 @@
 @extends('layouts.register')
 
 @section('content')
-<input id="progress_percentage" value="0" /> <!--Value for the progress on the registration (%)-->
+<input id="progress_percentage" value="width:50%" /> <!--Value for the progress on the registration (%)-->
 <div class="page-wrapper bg-gra-03 p-t-15 p-b-100 font-poppins">
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
