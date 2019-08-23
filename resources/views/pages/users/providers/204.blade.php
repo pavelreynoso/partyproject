@@ -11,7 +11,7 @@
                         $<input type="text" class="input_text" name="Based_package_price" > MXN
                     </div>
                             <div class="p-b-15 center">
-                                <a href="{{ route('203') }}">
+                                <a href="{{ route('202') }}">
                                     <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                                 </a>
                                 <a href="{{ route('205') }}">
