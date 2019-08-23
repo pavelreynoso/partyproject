@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dashboard')
 
 @section('content')
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
