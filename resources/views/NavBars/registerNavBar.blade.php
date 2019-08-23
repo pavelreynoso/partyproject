@@ -17,7 +17,7 @@
                     var progress;
                     function getPercentage() {
                         progress_percentage=document.getElementById('progress_percentage').value
-                        document.write(progress_percentage)
+                        document.write(escrito)
                     }
                     }
 
