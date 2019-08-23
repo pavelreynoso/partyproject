@@ -12,4 +12,9 @@ class Profile extends Model
         'description'
     ];
 
+    public function profiles()
+    {
+        $this->belongsToMany('App\User');
+    }
+
   }

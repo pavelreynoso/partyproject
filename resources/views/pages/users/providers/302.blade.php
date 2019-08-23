@@ -43,10 +43,10 @@
                     </div>
 
                     <div class="p-b-15 center">
-                        <a href="{{ route('213') }}">
+                        <a href="{{ route('204') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                         </a>
-                        <a href="">
+                        <a href="{{ route('205') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button">Terminar</button>
                         </a>
                     </div>

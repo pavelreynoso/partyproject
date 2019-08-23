@@ -33,10 +33,6 @@ class User extends Authenticatable
         $this->notify(new MailResetPasswordNotification($token));
     }
 
-    public function profiles()
-    {
-        $this->belongsToMany()
-    }
     public function Profile()
     {
         return $this->hasOne('App\Profile', 'id', 'profile_id');
