@@ -6,7 +6,7 @@
             <div class="card-body">
                 <h2 class="title">Ahora define el precio de lo que ofreces</h2>
                 <form method="POST">
-                    <div class="questions">Indica el precio final del producto.
+                    <div class="questions">Indica el precio del producto.
                         <div class="p-b-15"></div>
                         $<input type="text" class="input_text" name="Based_package_price" > MXN
                     </div>
