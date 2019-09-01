@@ -33,6 +33,7 @@ Route::get('/register', 'ClientController@register')->name('clientRegister');
 
 Route::group(['prefix' => 'affilliates'], function () {
     Route::get('/', 'ProviderController@register100')->name('100');
+    Route::get('/101', 'ProviderController@register101')->name('101');
     Route::get('/200', 'ProviderController@register200')->name('200');
     Route::get('/201', 'ProviderController@register201')->name('201');
     Route::get('/202', 'ProviderController@register202')->name('202');

@@ -13,7 +13,6 @@ use App\CateringOfferType;
 
 class ProviderController extends Controller
 {
-
     public function index()
     {
         return view('pages.users.providers.home');
@@ -21,9 +20,14 @@ class ProviderController extends Controller
 
     public function register100()
     {
+
+        return view('pages.users.providers.100');
+    }
+    public function register101()
+    {
         $articles = ArticleCategory::all();
         $events = EventCategory::all();
-        return view('pages.users.providers.100', compact('articles', 'events'));
+        return view('pages.users.providers.101', compact('articles', 'events'));
     }
 
     public function register200()

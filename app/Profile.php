@@ -12,7 +12,7 @@ class Profile extends Model
         'description'
     ];
 
-    public function profiles()
+    public function users()
     {
         $this->belongsToMany('App\User');
     }

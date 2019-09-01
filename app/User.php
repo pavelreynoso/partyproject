@@ -16,7 +16,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'profile_id', 'password', 'date_of_birth', 'last_names'
+        'name',
+        'last_names',
+        'email',
+        'password',
+        'date_of_birth'
     ];
 
     /**
@@ -33,27 +37,22 @@ class User extends Authenticatable
         $this->notify(new MailResetPasswordNotification($token));
     }
 
-    public function Profile()
+    public function profiles()
     {
-        return $this->hasOne('App\Profile', 'id', 'profile_id');
+        return $this->belongsToMany('App\Profile');
     }
 
-    public function Admin()
+    public function hasAnyProfiles($profiles)
     {
-        return $this->hasOne('App\Admin', 'user_id', 'id');
+        return null !== $this->profiles()->whereIn('type', $profiles)->first();
     }
 
-    public function Client()
+    public function hasAnyProfile($profile)
     {
-        return $this->hasOne('App\Client', 'user_id', 'id');
+        return null !== $this->profiles()->where('type', $profile)->first();
     }
 
-    public function Provider()
-    {
-        return $this->hasOne('App\Provider', 'user_id', 'id');
-    }
-
-    public function FullName()
+    public function fullName()
     {
         return $this->name.' '.$this->last;
     }

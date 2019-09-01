@@ -12,15 +12,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Eloquent::unguard();
-        $this->call(ProfilesSeeder::class);
-        $this->call(EventCategoriesSeeder::class);
-        $this->call(ArticleCategoriesSeeder::class);
-        $this->call(MusicCategoriesSeeder::class);
-        $this->call(MusicServicesSeeder::class);
-        $this->call(CateringCategoriesSeeder::class);
-        $this->call(CateringServicesSeeder::class);
-        $this->call(CateringOfferTypesSeeder::class);
-        //$this->call(UsersTableSeeder::class);
+        $this->call(ProfilesTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(EventCategoriesTableSeeder::class);
+        $this->call(ArticleCategoriesTableSeeder::class);
+        $this->call(MusicCategoriesTableSeeder::class);
+        $this->call(MusicServicesTableSeeder::class);
+        $this->call(CateringCategoriesTableSeeder::class);
+        $this->call(CateringServicesTableSeeder::class);
+        $this->call(CateringOfferTypesTableSeeder::class);
         //$this->call(SepomexSeeder::class);
     }
 }

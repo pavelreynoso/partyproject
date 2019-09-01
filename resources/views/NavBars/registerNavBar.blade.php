@@ -15,21 +15,21 @@
                 <script>
                     var progress_percentage;
                     var progress;
+
                     function getPercentage() {
-                        progress_percentage=document.getElementById('progress_percentage').value
-                        
-                    }
+                        progress_percentage = document.getElementById('progress_percentage').value
+
                     }
 
                 </script>
                 <!-- We need to link the value of the percentage -->
                 <div class="progress">
-                <div class="meter" style="width:50%"></div>
+                    <div class="meter" style="width:50%"></div>
                 </div>
             </div>
         </div>
     </div>
 </header>
 @section('scripts')
-    <script type="text/javascript" src="{{asset('../js/global.js')}}"></script>
+<script type="text/javascript" src="{{asset('../js/global.js')}}"></script>
 @endsection
