@@ -119,6 +119,9 @@ class ProviderController extends Controller
     {
         return view('pages.users.providers.303');
     }
-
+    public function controlpanel()
+    {
+        return view('pages.users.providers.controlpanel');
+    }
 
 }
