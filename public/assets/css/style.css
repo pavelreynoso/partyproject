@@ -2919,7 +2919,7 @@ header .reg-pull-right {
     margin:auto;
     border-radius: 5px;
     width: 80%;
-    height: 600px;
+    height: 1000px;
 }
 .center {
     margin: auto;
@@ -2927,13 +2927,13 @@ header .reg-pull-right {
     padding: 10px;
   }
   .leftCard {
-    width:500px;
+    width:45%;
     float:left;
     background: #ffffff;
     margin: 15px
 }
 .rightCard {
-    width:500px;
+    width:45%;
 
     float:right;
     background: #ffffff;
