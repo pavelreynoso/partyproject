@@ -42,12 +42,12 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Profile');
     }
 
-    public function hasAnyProfiles($profiles)
+    public function hasAnyRoles($profiles)
     {
         return null !== $this->profiles()->whereIn('type', $profiles)->first();
     }
 
-    public function hasAnyProfile($profile)
+    public function hasAnyRole($profile)
     {
         return null !== $this->profiles()->where('type', $profile)->first();
     }

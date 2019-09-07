@@ -26,8 +26,8 @@ Route::get('/en', function() {
     return view('en.index');
 })->name('EnglishIndex');
 
-Route::get('/login', 'AuthController@showLogin')->name('userLogin');
-Route::get('/en/login','AuthController@showEnLog')->name('enLogin');
+Route::get('/login', 'Auth\LoginController@showLogin')->name('userLogin');
+//Route::get('/en/login','Auth\LoginController@showEnLog')->name('enLogin');
 
 Route::get('/register', 'ClientController@register')->name('clientRegister');
 
@@ -70,3 +70,16 @@ Route::get('/places', 'ProductController@index')->name('products');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', function(){
+    return 'You are an admin';
+})->middleware(['auth', 'auth.admin']);
+
+Route::get('/provider', function(){
+    return 'You are an Provider';
+})->middleware(['auth', 'auth.provider']);
+
+Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'auth.admin'])->name('admin.')->group(function(){
+    Route::resource('/users', 'UserController', ['except'=> ['show', 'create', 'store']]);
+});
+
