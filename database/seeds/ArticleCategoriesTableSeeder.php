@@ -12,16 +12,16 @@ class ArticleCategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('articles_categories')->insert([
-            'type'=> 'Música'
+            'type'=> 'Music'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Lugares para Eventos'
+            'type'=> 'Event Venues'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Comida Banquetes y Bebidas'
+            'type'=> 'Food, Catering and Drinks'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Organización de Eventos'
+            'type'=> 'Event-Planning'
         ]);
         DB::table('articles_categories')->insert([
             'type'=> 'Mobiliario y Decoración'
