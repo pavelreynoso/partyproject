@@ -7,29 +7,28 @@
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
             <div class="card-body">
-                <h2 class="title">Bienvenido</h2>
+                <h2 class="title">Welcome</h2>
                 <form method="POST">
-                    <div class="questions">Para empezar, indica que ofreces.</div>
+                    <div class="questions">To begin, choose what you offer.</div>
                     <select class="select_register_medium" name="article type">
-                        <option selected disabled>Selecciona...</option>
-                        <option value="product">Producto</option>
-                        <option value="service">Servicio</option>
-                        <option value="both">Ambos</option>
+                        <option selected disabled>Select...</option>
+                        <option value="product">Product</option>
+                        <option value="service">Service</option>
+                        <option value="both">Both</option>
                     </select>
 
                     <div>
                         <h6 class="explanations">
-                            Nota: Si lo que ofrece necesita tener un control sobre la disponibilidad en alguna fecha y
-                            tiempo específico se define como <strong> servicio</strong>. Un <strong>producto</strong>
-                            sólo tiene disponibilidad y tiempo de entrega. Por ejemplo, una hora de música es un
-                            <strong>servicio </strong>; y una bolsa de globos de decoración es un
-                            <strong>producto</strong>.
+                            Note: If what you offer needs to have control over availability and specific delivery time is defined as <strong>service</strong>. A <strong>product</strong>
+                            only has availability and delivery time. For example, an hour of music is a
+                            <strong>service </strong>; and a baloon bag for decoration is a
+                            <strong>product</strong>.
                         </h6>
                     </div>
 
                     <div class="p-b-5"></div>
 
-                    <div class="questions">Ahora, selecciona para que tipos de eventos ofreces tus productos/servicios
+                    <div class="questions">Now, select for what types of events you offer your products / services for
                     </div>
                     <div class="questions">
                         @foreach ($events as $event)
@@ -44,9 +43,9 @@
                         @endforeach
                     </div>
                     <div class="p-b-15"></div>
-                    <div class="questions">¿En que categoría entra lo que ofreces?</div>
+                    <div class="questions">In which cathegory falls what you offer?</div>
                     <select class="select_register_medium" name="articles" id="articlesSelect" style="color:black">
-                        <option selected disabled>Selecciona una...</option>
+                        <option selected disabled>Select one...</option>
                         @foreach($articles as $article)
                             <option value="{{$article->id}}">{{$article->type}}</option>
                         @endforeach
@@ -56,7 +55,7 @@
                     <div class="p-b-15 center p-t-30">}
                         <a href="{{ route('201') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button"
-                                onclick="validate()">Continuar</button>
+                                onclick="validate()">Continue</button>
                         </a>
                     </div>
                 </form>

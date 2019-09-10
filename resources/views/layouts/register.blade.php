@@ -8,7 +8,7 @@
 
 
     <!-- Title Page-->
-    <title>Registro</title>
+    <title>Register</title>
 
     <!-- Icons font CSS-->
     <link href="../vendors/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">

@@ -1,14 +1,14 @@
 <div id="categoriesNavBar">
     <ul>
-        <li><a href="#">Cumpleaños</a></li>
-        <li><a href="#">Reuniones</a></li>
-        <li><a href="#">Fiestas Infantiles</a></li>
-        <li><a href="#">XV años</a></li>
-        <li><a href="#">Religiosas</a></li>
+        <li><a href="#">Birthdays</a></li>
+        <li><a href="#">Get-Togethers</a></li>
+        <li><a href="#">Kids' parties</a></li>
+        <li><a href="#">Sweet sixteen</a></li>
+        <li><a href="#">Religious</a></li>
         <li><a href="#">Baby Shower</a></li>
-        <li><a href="#">Despedida de Soltera</a></li>
-        <li><a href="{{ route('products') }}">Bodas</a></li>
-        <li><a href="#">Graduaciones</a></li>
-        <li><a href="#">Eventos Empresariales</a></li>
+        <li><a href="#">Bachelorette's</a></li>
+        <li><a href="{{ route('products') }}">Weddings</a></li>
+        <li><a href="#">Graduations</a></li>
+        <li><a href="#">Business events</a></li>
     </ul>
 </div>

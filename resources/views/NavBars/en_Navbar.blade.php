@@ -20,13 +20,13 @@
                             <option value="1">Birthdays</option>
                             <option value="2">Get-Togethers</option>
                             <option value="3">Kids' Parties</option>
-                            <option value="4">Coming of Age</option>
+                            <option value="4">sweet sixteen</option>
                             <option value="5">Religious</option>
                             <option value="6">Baby Showers</option>
                             <option value="7">Bachelorette's</option>
                             <option value="8">Weddings</option>
                             <option value="9">Graduation Parties</option>
-                            <option value="10">Corporate Events</option>
+                            <option value="10">Business events</option>
                         </select>
                         <button class="search-btn"><i class="fa fa-search"></i></button>
                     </form>

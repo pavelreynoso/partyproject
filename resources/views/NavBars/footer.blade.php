@@ -21,50 +21,50 @@
                 <div class="col-lg-2 col-md-4 col-6">
                     <aside class="f_widget link_widget f_info_widget">
                         <div class="f_w_title">
-                            <h3>{{__('Nosotros')}}</h3>
+                            <h3>{{__('Feval')}}</h3>
                         </div>
                         <ul>
-                            <li><a href="#">{{__('Sobre nosotros')}}</a></li>
-                            <li><a href="#">{{__('Envíos')}}</a></li>
-                            <li><a href="#">{{__('Términos y condiciones')}}</a></li>
-                            <li><a href="#">{{__('Privacidad')}}</a></li>
-                            <li><a href="#">{{__('Políticas de Devolución')}}</a></a></li>
+                            <li><a href="#">{{__('About us')}}</a></li>
+                            <li><a href="#">{{__('Deliveries')}}</a></li>
+                            <li><a href="#">{{__('Terms and conditions')}}</a></li>
+                            <li><a href="#">{{__('Privacy')}}</a></li>
+                            <li><a href="#">{{__('Delivery policies')}}</a></a></li>
                         </ul>
                     </aside>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6">
                         <aside class="f_widget link_widget f_account_widget">
                             <div class="f_w_title">
-                                <h3>{{__('Red Feval')}}</h3>
+                                <h3>{{__('Feval network')}}</h3>
                             </div>
                             <ul>
-                            <li><a href="{{route('100')}}">{{__('Sé afiliado Feval')}}</a></li>
-                                <li><a href="#">{{__('Políticas de Afiliados')}}</a></li>
-                                <li><a href="#">{{__('¿Por qué ser parte de Feval')}}</a></li>
+                            <li><a href="{{route('100')}}">{{__('Be a Feval affiliate')}}</a></li>
+                                <li><a href="#">{{__('Afiliate policies')}}</a></li>
+                                <li><a href="#">{{__('Why to be part of Feval?')}}</a></li>
                             </ul>
                         </aside>
                     </div>
                 <div class="col-lg-2 col-md-4 col-6">
                     <aside class="f_widget link_widget f_extra_widget">
                         <div class="f_w_title">
-                            <h3>{{__('Servicios')}}</h3>
+                            <h3>{{__('Services')}}</h3>
                         </div>
                         <ul>
-                            <li><a href="#">{{__('Seguridad')}}</a></li>
-                            <li><a href="#">{{__('Tarjetas de Regalo')}}</a></li>
-                            <li><a href="#">{{__('Publicidad')}}</a></li>
-                            <li><a href="#">{{__('Ofertas y Promociones')}}</a></li>
+                            <li><a href="#">{{__('Security')}}</a></li>
+                            <li><a href="#">{{__('Gift cards')}}</a></li>
+                            <li><a href="#">{{__('Advertising')}}</a></li>
+                            <li><a href="#">{{__('Sales')}}</a></li>
                         </ul>
                     </aside>
                  </div>
                 <div class="col-lg-2 col-md-4 col-6">
                     <aside class="f_widget link_widget f_account_widget">
                         <div class="f_w_title">
-                            <h3>{{__('Ayuda')}}</h3>
+                            <h3>{{__('Help')}}</h3>
                         </div>
                         <ul>
-                            <li><a href="#">{{__('Devoluciones')}}</a></li>
-                            <li><a href="#">{{__('Ayuda de un Asesor')}}</a></li>
+                            <li><a href="#">{{__('Returns')}}</a></li>
+                            <li><a href="#">{{__('Help')}}</a></li>
                             <li><a href="#">{{__('FAQ')}}</a></li>
                         </ul>
                     </aside>
