@@ -6,13 +6,13 @@
         <div class="card card-4">
             <div class="card-body">
                 <h2 class="title">Elige algunas fotos y vídeos</h2>
-                <form method="POST">
+                <!-- form action=" { route('image.store') }}" method="POST" enctype="multipart/form-data"-->
+                <form method="POST" enctype="multipart/form-data">
                     <div class="questions">Agrega la foto de portada que les aparecerá a tus clientes cuando hagan su
                         búsqueda:
                         <div class="p-b-15"></div>
                         <div class="btn_images_line">
-                            <button class="btn_images_big" name="portrait" type="button"><img
-                                    src="{{asset('assets/img/Agregar_foto_portada.png' )}}"></button>
+                            <input class="btn_images_big" name="portrait" type="file" src="{{asset('assets/img/Agregar_foto_portada.png' )}}"></input>
                         </div>
                         <div class="p-b-15"></div>
                     </div>
@@ -20,11 +20,11 @@
                         ofreces:
                         <div class="p-b-15"></div>
                         <div class="btn_images_line">
-                            <button class="btn_images_small" name="add_first_picture" type="button" href=#><img
-                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></button>
+                            <input class="btn_images_small" name="add_first_picture" type="file"
+                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></input>
 
-                            <button class="btn_images_small" name="add_second_picture" type="button" href=#><img
-                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></button>
+                            <input class="btn_images_small" name="add_second_picture" type="file"
+                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></input>
                         </div>
                         <div class="p-b-15"></div>
                     </div>
@@ -33,8 +33,7 @@
                         <div class="p-b-15"></div>
 
                         <div class="btn_images_line">
-                        <button class="btn_images_small" name="add_second_picture" type="button" href=#><img
-                                src="{{asset('assets/img/Agregar_video.png' )}}"></button>
+                        <input class="btn_images_small" name="add_second_picture" type="file" src="{{asset('assets/img/Agregar_video.png' )}}"></input>
                         </div>
                         <!--cambiar diseño de Boton-->
                         <div class="checkbox checkbox-primary">

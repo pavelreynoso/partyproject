@@ -16,7 +16,7 @@ class AccessProvider
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()->hasAnyRoles(['Admin', 'Provider']))
+        if(Auth::user()->hasAnyRole('Provider'))
         {
             return $next($request);
         }
