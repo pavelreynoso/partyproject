@@ -12,7 +12,7 @@ class EventCategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('events_categories')->insert([
-            'type'=> 'Wedding'
+            'type'=> 'Weddings'
         ]);
         DB::table('events_categories')->insert([
             'type'=> 'Sweet sixteen'

@@ -21,10 +21,10 @@ class ArticleCategoriesTableSeeder extends Seeder
             'type'=> 'Food, Catering and Drinks'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Event-Planning'
+            'type'=> 'Event Planning'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Mobiliario y Decoración'
+            'type'=> 'Party Rentals and Decoration'
         ]);
         DB::table('articles_categories')->insert([
             'type'=> 'Entertainment'

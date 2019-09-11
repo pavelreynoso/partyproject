@@ -40,10 +40,10 @@
                                 </h6>
                             </label>
                         </div>
-                        @endforeach
+                        @endf
                     </div>
                     <div class="p-b-15"></div>
-                    <div class="questions">In which cathegory falls what you offer?</div>
+                    <div class="questions">In which category falls what you offer?</div>
                     <select class="select_register_medium" name="articles" id="articlesSelect" style="color:black">
                         <option selected disabled>Select one...</option>
                         @foreach($articles as $article)
