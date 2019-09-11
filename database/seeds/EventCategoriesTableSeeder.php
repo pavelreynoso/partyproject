@@ -12,37 +12,37 @@ class EventCategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('events_categories')->insert([
-            'type'=> 'Bodas'
+            'type'=> 'Wedding'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'XV años'
+            'type'=> 'Sweet sixteen'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Cumpleaños'
+            'type'=> 'Birthdays'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Fiestas Infantiles'
+            'type'=> 'Kids parties'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Eventos Empresariales'
+            'type'=> 'Business events'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Religiosos'
+            'type'=> 'Religious'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Despedida de Solteros'
+            'type'=> 'Bachelorettes'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Graduaciones'
+            'type'=> 'Graduations'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Baby Shower'
+            'type'=> 'Baby Showers'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Reuniones Casuales'
+            'type'=> 'Get-Togethers'
         ]);
         DB::table('events_categories')->insert([
-            'type'=> 'Todas las anteriores'
+            'type'=> 'All options'
         ]);
     }
 }

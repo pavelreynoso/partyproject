@@ -27,25 +27,25 @@ class ArticleCategoriesTableSeeder extends Seeder
             'type'=> 'Mobiliario y Decoración'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Animación'
+            'type'=> 'Entertainment'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Transporte'
+            'type'=> 'Transportation'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Fotografía y Vídeo'
+            'type'=> 'Photography and Video'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Vestimenta y Complementos'
+            'type'=> 'Clothing'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Regalos y Recuerdos'
+            'type'=> 'Gifts and Souvenirs'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Viajes'
+            'type'=> 'Travel'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Belleza'
+            'type'=> 'Beauty'
         ]);
     }
 }
