@@ -23,6 +23,7 @@
                         <label for="first-picture" class="btn2 btn--radius-2 btn-feval float=left">Select Image</label>
                         <input id="first-picture" style="visibility:hidden;" name="add-first-picture" type="file" accept="image/*" onchange="loadFile(event)" >
                         <div class="imageposition"><img id="output" style="max-width: 200px; max-height: 150px; border: none;"/>
+
                         </div>
                             <div class="p-b-15"></div>
                             <label for="second-picture" class="btn2 btn--radius-2 btn-feval float=left">Select Image</label>
