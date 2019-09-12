@@ -11,29 +11,32 @@
                     <div class="questions">Agrega la foto de portada que les aparecerá a tus clientes cuando hagan su
                         búsqueda:
                         <div class="p-b-15"></div>
-                        <div class="btn_images_line">
-                            <input class="btn_images_big" name="portrait" type="file" src="{{asset('assets/img/Agregar_foto_portada.png' )}}"></input>
-                        </div>
-                        <div class="p-b-15"></div>
+                            <label for="portrait" class="btn2 btn--radius-2 btn-feval">Select Image</label>
+                            <input id="portrait" style="visibility:hidden;" name="portrait" type="file" accept="image/*" onchange="loadFile(event)" >
+                            <div class="imageposition"><img id="output" style="max-width: 200px; max-height: 150px; border: none;"/>
+                            </div>
+                                <div class="p-b-15"></div>
                     </div>
                     <div class="questions">Agrega un par de fotos más para que tus clientes conozcan mejor lo que
                         ofreces:
                         <div class="p-b-15"></div>
-                        <div class="btn_images_line">
-                            <input class="btn_images_small" name="add_first_picture" type="file"
-                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></input>
-
-                            <input class="btn_images_small" name="add_second_picture" type="file"
-                                    src="{{asset('assets/img/Agregar_otra_foto.png' )}}"></input>
+                        <label for="first-picture" class="btn2 btn--radius-2 btn-feval float=left">Select Image</label>
+                        <input id="first-picture" style="visibility:hidden;" name="add-first-picture" type="file" accept="image/*" onchange="loadFile(event)" >
+                        <div class="imageposition"><img id="output" style="max-width: 200px; max-height: 150px; border: none;"/>
                         </div>
+                            <div class="p-b-15"></div>
+                            <label for="second-picture" class="btn2 btn--radius-2 btn-feval float=left">Select Image</label>
+                            <input id="second-picture" style="visibility:hidden;" name="add-second-picture" type="file" accept="image/*" onchange="loadFile(event)" >
+
                         <div class="p-b-15"></div>
                     </div>
                     <div class="questions">Puedes agregar un vídeo para que muestres tus servicios de manera más
                         dinámica:
                         <div class="p-b-15"></div>
 
-                        <div class="btn_images_line">
-                        <input class="btn_images_small" name="add_second_picture" type="file" src="{{asset('assets/img/Agregar_video.png' )}}"></input>
+                        <label for="video" class="btn2 btn--radius-2 btn-feval float=left">Select Video</label>
+                        <input id="video" style="visibility:hidden;" name="addVideo" type="file" accept="image/*" onchange="loadFile(event)" >
+                        <div class="imageposition"><img id="video" style="max-width: 200px; max-height: 150px; border: none;"/>
                         </div>
                         <!--cambiar diseño de Boton-->
                         <div class="checkbox checkbox-primary">
@@ -62,4 +65,7 @@
     </div>
 </div>
 </div>
+@endsection
+@section('scripts')
+    <script type="text/javascript" src="{{asset('../js/202.js')}}"></script>
 @endsection
