@@ -2934,12 +2934,13 @@ header .reg-pull-right {
 }
 .rightCard {
     width:45%;
-
     float:right;
     background: #ffffff;
     margin: 15px
 }
-
+.rightCard2 {
+    float:right;
+}
 .table {
     background: #fff;
     position:relative;

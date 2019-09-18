@@ -347,8 +347,12 @@ h6 {
 }
 
 .btn_images_big > img {
-    width: auto;
-    height: 200px;
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
 }
 
 .btn_images_small > img {
@@ -1019,7 +1023,9 @@ input {
 .left {
     text-align: left;
 }
-
+.right {
+    text-align: right;
+}
 .center {
     position: relative;
     display: center;
@@ -1097,4 +1103,8 @@ input {
 
 .list-arrows button {
     margin-bottom: 20px;
+}
+
+.imageposition {
+    text-align: center;
 }
