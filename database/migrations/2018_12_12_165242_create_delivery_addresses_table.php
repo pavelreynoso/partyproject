@@ -14,8 +14,8 @@ class CreateDeliveryAddressesTable extends Migration
     public function up()
     {
         Schema::create('delivery_address', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('article_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('article_id')->unsigned();
             $table->string('city');
             $table->string('zip_code');
             $table->string('country');

@@ -47,7 +47,7 @@ class User extends Authenticatable
         return null !== $this->profiles()->whereIn('type', $profiles)->first();
     }
 
-    public function hasAnyRole($profile)
+    public function hasRole($profile)
     {
         return null !== $this->profiles()->where('type', $profile)->first();
     }

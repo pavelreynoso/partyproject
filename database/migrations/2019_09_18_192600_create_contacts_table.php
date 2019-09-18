@@ -14,15 +14,15 @@ class CreateContactsTable extends Migration
     public function up()
     {
         Schema::create('contacts', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('provider_id')->unsigned();
-            $table->integer('phone');
-            $table->integer('cellphone');
-            $table->timestamps();
+            $table->bigIncrements('id');
+            $table->bigInteger('user_id')->unsigned();
+            $table->string('phone', 10)->unique();
+            $table->string('contact_email', 50)->unique();
             $table->engine = 'InnoDB';
+            $table->timestamps();
         });
         Schema::table('contacts',function ($table) {
-            $table->foreign('provider_id')->references('id')->on('providers');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

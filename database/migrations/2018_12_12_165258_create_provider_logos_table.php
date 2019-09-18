@@ -14,8 +14,8 @@ class CreateProviderLogosTable extends Migration
     public function up()
     {
         Schema::create('provider_logos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('provider_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('provider_id')->unsigned();
             $table->string('route');
             $table->engine='InnoDB';
         });

@@ -14,7 +14,7 @@ class CateringServices extends Migration
     public function up()
     {
         Schema::create('catering_services', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('type', 50);
             $table->engine = 'InnoDB';
         });

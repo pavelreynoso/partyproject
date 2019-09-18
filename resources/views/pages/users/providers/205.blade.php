@@ -26,10 +26,10 @@
                             <div class="p-b-15 center"></div>
                         </div>
                         <div class="p-b-15 center">
-                            <a href="{{ route('302') }}">
+                            <a href="{{ route('affiliates.302') }}">
                                 <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                             </a>
-                            <a href="{{ route('211') }}">
+                            <a href="{{ route('affiliates.211') }}">
                                 <button id="continue" class="btn2 btn--radius-2 btn-feval" type="button" disabled>Continuar</button>
                             </a>
                         </div>

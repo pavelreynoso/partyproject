@@ -14,10 +14,10 @@ class CreateOrderArticleTable extends Migration
     public function up()
     {
         Schema::create('order_article', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('order_id')->unsigned();
-            $table->integer('article_id')->unsigned();
-            $table->integer('quantity')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('order_id')->unsigned();
+            $table->bigInteger('article_id')->unsigned();
+            $table->mediumInteger('quantity')->unsigned();
             $table->dateTimeTz('delivery_time');
             $table->string('description');
             $table->string('status');

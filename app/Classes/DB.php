@@ -129,7 +129,7 @@ class Crud
                 break;
             case 1406:$error = "Houston, there's too much information to be saved! Check the fields you want to enter!";
                 break;
-            default:$error = "This error's description wasn't found.";
+            default:$error = "This error's description wasn't found. However, please contact support for help.";
                 break;
         }
 

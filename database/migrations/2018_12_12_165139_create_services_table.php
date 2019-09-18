@@ -14,8 +14,8 @@ class CreateServicesTable extends Migration
     public function up()
     {
         Schema::create('services', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('article_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('article_id')->unsigned();
             $table->boolean('available');
             $table->timestamps();
             $table->engine='InnoDB';

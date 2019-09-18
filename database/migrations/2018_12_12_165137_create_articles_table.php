@@ -14,15 +14,15 @@ class CreateArticlesTable extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('provider_id')->unsigned();
-            $table->integer('category_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('provider_id')->unsigned();
+            $table->bigInteger('category_id')->unsigned();
             $table->string('name');
             $table->string('description');
             $table->double('price',10,2);
             $table->string('preparation_time');
             $table->boolean('approval');
-            $table->integer('discount');
+            $table->smallInteger('discount');
             $table->timestamps();
             $table->engine='InnoDB';
         });

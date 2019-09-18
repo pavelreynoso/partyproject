@@ -14,7 +14,7 @@ class MusicServicesTable extends Migration
     public function up()
     {
         Schema::create('music_services', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('description', 50);
             $table->engine = 'InnoDB';
         });

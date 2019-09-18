@@ -41,7 +41,7 @@ class UsersTableSeeder extends Seeder
             'date_of_birth' => '1970-01-01',
             'last_names' => 'User',
         ]);
-
+        
         $admin->profiles()->attach($adminProfile);
         $provider->profiles()->attach($providerProfile);
         $user->profiles()->attach($userProfile);

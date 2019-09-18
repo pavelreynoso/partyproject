@@ -19,10 +19,10 @@
                         <textarea name="short_description_service" style="input_text_big"></textarea>
                     </div>
                     <div class="p-b-15 center">
-                        <a href="{{ route('205') }}">
+                        <a href="{{ route('affiliates.205') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button">Regresar</button>
                         </a>
-                        <a href="{{ route('212') }}">
+                        <a href="{{ route('affiliates.212') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="button">Continuar</button>
                         </a>
                     </div>

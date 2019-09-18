@@ -14,7 +14,7 @@ class CreateAvailabilityTable extends Migration
     public function up()
     {
         Schema::create('availability', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->date('start_date');
             $table->date('end_date');
             $table->timestamps();

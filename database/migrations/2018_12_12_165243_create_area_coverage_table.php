@@ -14,8 +14,8 @@ class CreateAreaCoverageTable extends Migration
     public function up()
     {
         Schema::create('area_coverage', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('provider_id')->unsigned();
+            $table->bigIncrements('id');
+            $table->bigInteger('provider_id')->unsigned();
             $table->string('city');
             $table->timestamps();
             $table->engine = 'InnoDB';
