@@ -14,8 +14,9 @@ class CreateEventsCategoriesTable extends Migration
     public function up()
     {
         Schema::create('events_categories', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->tinyIncrements('id');
             $table->string('type', 40);
+            $table->softDeletes();
             $table->engine = 'InnoDB';
         });
     }

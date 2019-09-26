@@ -15,8 +15,8 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('provider_id')->unsigned();
-            $table->bigInteger('category_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
+            $table->tinyInteger('category_id')->unsigned();
             $table->string('name');
             $table->string('description');
             $table->double('price',10,2);
@@ -24,10 +24,11 @@ class CreateArticlesTable extends Migration
             $table->boolean('approval');
             $table->smallInteger('discount');
             $table->timestamps();
+            $table->softDeletes();
             $table->engine='InnoDB';
         });
         Schema::table('articles',function ($table) {
-            $table->foreign('provider_id')->references('id')->on('providers');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('category_id')->references('id')->on('articles_categories');
         });
     }

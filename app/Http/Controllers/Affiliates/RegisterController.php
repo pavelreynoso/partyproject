@@ -84,7 +84,7 @@ class RegisterController extends Controller
 
     public function register212()
     {
-        return view('pages.users.providers.212');
+        return view('pages.users.providers.212.create');
     }
     public function register213()
     {
@@ -107,7 +107,7 @@ class RegisterController extends Controller
 
     public function register302()
     {
-        return view('pages.users.providers.302');
+        return view('pages.users.providers.302.index');
     }
 
     public function register303()

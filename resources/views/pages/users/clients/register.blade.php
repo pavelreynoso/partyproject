@@ -2,6 +2,7 @@
 
 @section('content')
 @include('NavBars.navbar')
+{{__('Client')}}
 <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
     <div class="container" style="overflow:hidden">
         <div class="row justify-content-center">
@@ -132,11 +133,11 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="id_profile" class="col-md-4 col-form-label text-md-right">{{ __('Profile')
+                                <label for="id_profile" class="col-md-4 col-form-label text-md-right">{{ __('Role')
                                     }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="id_profile" type="text" class="form-control{{ $errors->has('id_profile') ? ' is-invalid' : '' }}"
+                                    <input id="id_profile" type="hidden" class="form-control{{ $errors->has('id_profile') ? ' is-invalid' : '' }}"
                                         name="id_profile" value="{{ old('id_profile') }}" required>
 
                                     @if ($errors->has('id_profile'))

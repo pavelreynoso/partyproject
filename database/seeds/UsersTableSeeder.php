@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
-use App\Profile;
+use App\Role;
 use RandomLib\Source\Random;
 
 class UsersTableSeeder extends Seeder
@@ -14,9 +14,9 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $adminProfile = Profile::where('type', 'Admin')->first();
-        $providerProfile = Profile::where('type', 'Provider')->first();
-        $userProfile = Profile::where('type', 'User')->first();
+        $adminRole = Role::where('type', 'Admin')->first();
+        $providerRole = Role::where('type', 'Provider')->first();
+        $userRole = Role::where('type', 'User')->first();
 
         $admin = User::create([
             'name' => 'Admin',
@@ -41,9 +41,9 @@ class UsersTableSeeder extends Seeder
             'date_of_birth' => '1970-01-01',
             'last_names' => 'User',
         ]);
-        
-        $admin->profiles()->attach($adminProfile);
-        $provider->profiles()->attach($providerProfile);
-        $user->profiles()->attach($userProfile);
+
+        $admin->roles()->attach($adminRole);
+        $provider->roles()->attach($providerRole);
+        $user->roles()->attach($userRole);
     }
 }

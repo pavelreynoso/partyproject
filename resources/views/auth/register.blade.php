@@ -86,12 +86,12 @@
 
                             <div class="row row-space">
                                 <div class="col-md-6">
-                                    <input id="profile_id" type="text" placeholder="Perfil" class="input-group form-control{{ $errors->has('profile_id') ? ' is-invalid' : '' }}"
-                                        name="profile_id" value="{{ old('profile_id') }}" required autofocus>
+                                    <input id="role_id" type="hidden" class="input-group form-control{{ $errors->has('role_id') ? ' is-invalid' : '' }}"
+                                        name="role_id" value="{{$role}}">
 
-                                    @if ($errors->has('profile_id'))
+                                    @if ($errors->has('role_id'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('profile_id') }}</strong>
+                                        <strong>{{ $errors->first('role_id') }}</strong>
                                     </span>
                                     @endif
                                 </div>

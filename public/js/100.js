@@ -5,7 +5,7 @@ $(document).ready(function () {
 function validate() {
     var articletype = document.getElementById("article_type");
     if (articletype == "Selecciona...") {
-        alert("Porfavor seleccione");
+        alert("Por favor, seleccione alguna opción");
         return false;
     } else {
         return true;

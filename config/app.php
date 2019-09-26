@@ -177,6 +177,7 @@ return [
          */
         Collective\Html\HtmlServiceProvider::class,
         MaddHatter\LaravelFullcalendar\ServiceProvider::class,
+        App\Providers\BladeExtrasServiceProvider::class,
     ],
 
     /*

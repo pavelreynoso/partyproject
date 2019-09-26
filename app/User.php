@@ -5,10 +5,12 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -37,24 +39,41 @@ class User extends Authenticatable
         $this->notify(new MailResetPasswordNotification($token));
     }
 
-    public function profiles()
+    public function roles()
     {
-        return $this->belongsToMany('App\Profile');
+        return $this->belongsToMany('App\Role');
+    }
+    public function details()
+    {
+        return $this->hasOne('App\ProvidersDetails');
     }
 
-    public function hasAnyRoles($profiles)
+    public function hasAnyRoles($roles)
     {
-        return null !== $this->profiles()->whereIn('type', $profiles)->first();
+        return null !== $this->roles()->whereIn('type', $roles)->first();
     }
 
-    public function hasRole($profile)
+    public function hasRole($role)
     {
-        return null !== $this->profiles()->where('type', $profile)->first();
+        return null !== $this->roles()->where('type', $role)->first();
     }
 
+    public function articles()
+    {
+        return $this->hasMany('App\ArticleCategory');
+    }
+    public function eventes()
+    {
+        return $this->hasMany('App\EventCategory');
+    }
     public function fullName()
     {
-        return $this->name.' '.$this->last;
+        return $this->name.' '.$this->last_names;
+    }
+
+    public function recover()
+    {
+        $this->history()->restore();
     }
 
     public $timestamps = false;

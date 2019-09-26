@@ -71,7 +71,7 @@
                             <div class="col-md-8 offset-md-4">
                             </br>
                                 <a class="btn btn-link" href="{{ route('register') }}">
-                                    {{ __('Already have an account?') }}
+                                    {{ __('Don\'t have an account? Register now.') }}
                                 </a>
                             </div>
                         </div>

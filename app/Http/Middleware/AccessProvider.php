@@ -21,6 +21,6 @@ class AccessProvider
             return $next($request);
         }
         else
-            return redirect('index');
+            return redirect()->route('home');
     }
 }

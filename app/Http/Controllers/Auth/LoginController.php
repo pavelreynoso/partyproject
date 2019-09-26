@@ -29,17 +29,17 @@ class LoginController extends Controller
      */
     protected function authenticated(\Illuminate\Http\Request $request, $user)
     {
-        if($user->hasRole('provider'))
+        if($user->hasRole('Provider'))
         {
-            return redirect('affiliates.101');
+            return redirect()->route('affiliates.r101.create');
         }
-        elseif($user->hasRole('admin'))
+        elseif($user->hasRole('Admin'))
         {
-            return redirect('/admin');
+            return redirect()->route('admin.users.index');
         }
         else
         {
-            return redirect('home');
+            return redirect('/');
         }
     }
     //protected $redirectTo = '/home';

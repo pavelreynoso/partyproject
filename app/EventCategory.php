@@ -12,8 +12,8 @@ class EventCategory extends Model
         'type',
     ];
 
-    public function Provider()
+    public function providers()
     {
-        return $this->belongsTo('App\Provider');
+        return $this->belongsTo('App\ProviderDetails');
     }
 }

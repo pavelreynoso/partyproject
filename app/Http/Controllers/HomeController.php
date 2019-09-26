@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $session = Auth::user();
+        if($session->hasRole('Provider'))
+            return redirect()->route('affiliates.r101.create');
+        elseif($session->hasRole('Admin'))
+            return redirect()->route('admin.users.index');
+        else
+            return view('index');
     }
 }

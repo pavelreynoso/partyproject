@@ -80,6 +80,7 @@
 
 <body>
     @include('NavBars.registerNavBar')
+    @include('partials.alerts')
     @yield('content')
 
     <!-- Jquery JS-->

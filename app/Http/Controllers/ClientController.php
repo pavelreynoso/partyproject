@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Client;
-use App\Profile;
+use App\Role;
 use App\Classes\BD;
 use DataTables;
 use Response;
@@ -27,6 +27,7 @@ class ClientController extends Controller
 
     public function register()
     {
-        return view('pages.users.clients.register');
+        $role = 'User';
+        return view('pages.users.clients.register',compact('role'));
     }
 }

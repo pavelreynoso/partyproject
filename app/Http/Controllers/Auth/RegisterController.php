@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -28,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = 'home';
 
     /**
      * Create a new controller instance.
@@ -51,7 +52,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:40'],
             'last_names' => ['required', 'string', 'max:50'],
-            'profile_id' => ['required', 'max:1'],
+            'role_id' => ['required', 'max:1'],
             'email' => ['required', 'string', 'email', 'max:50', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'max:20','confirmed'],
             'date_of_birth' => ['required', 'date'],
@@ -66,13 +67,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'last_names' => $data['last_names'],
-            'profile_id' => $data['profile_id'],
+            'role_id' => $data['role_id'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'date_of_birth' => $data['date_of_birth']
         ]);
+        $role = Role::select('id')->where('type', 'user')->first();
+
+        $user->roles()->attach($role);
+        return $user;
     }
 }

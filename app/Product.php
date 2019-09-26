@@ -9,19 +9,33 @@ class Product extends Model
     protected $table = "products";
 
     protected $fillable = [
-        'provider_id', 'name', 'category_id', 'description', 'price', 'preparation_time',
-        'discount', 'quantity_available',
+        'user_id',
+        'name',
+        'category_id',
+        'description',
+        'portrait',
+        'images',
+        'video',
+        'compliance',
+        'price',
     ];
-    public function Provider()
+    public function user()
     {
-        return $this->hasOne('App\Provider', 'id', 'provider_id');
+        return $this->belongsTo('App\User', 'id', 'user_id');
     }
-    public function Provider_Type()
+
+    public function articleCategory()
     {
-        return $this->hasOne('App\Provider_Type','id','type_id');
+        return $this->belongsToMany('App\ArticleCategory','id','category_id');
     }
-    public function Category()
+
+    public function hasAnyArticles($arts)
     {
-        return $this->hasOne('App\Provider','services','category_id');
+        return null !== $this->articleCategory()->whereIn('type', $arts)->first();
+    }
+
+    public function hasArticle($art)
+    {
+        return null !== $this->article()->where('type', $art)->first();
     }
 }

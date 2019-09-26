@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Eloquent::unguard();
-        $this->call(ProfilesTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
         $this->call(UsersTableSeeder::class);
         $this->call(EventCategoriesTableSeeder::class);
         $this->call(ArticleCategoriesTableSeeder::class);
@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CateringCategoriesTableSeeder::class);
         $this->call(CateringServicesTableSeeder::class);
         $this->call(CateringOfferTypesTableSeeder::class);
+        $this->call(OfferCategoriesSeeder::class);
         //$this->call(SepomexSeeder::class);
     }
 }

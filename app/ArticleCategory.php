@@ -11,4 +11,14 @@ class ArticleCategory extends Model
     protected $fillable = [
         'type',
     ];
+
+    public function providers()
+    {
+        $this->belongsToMany('App\ProviderDetails');
+    }
+
+    public function articles()
+    {
+        $this->hasMany('App\Product');
+    }
 }

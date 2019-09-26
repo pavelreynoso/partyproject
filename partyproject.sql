@@ -27,11 +27,11 @@ USE `partyproject`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `profiles`
+-- Table structure for table `roles`
 --
 
-DROP TABLE IF EXISTS `profiles`;
-CREATE TABLE IF NOT EXISTS `profiles` (
+DROP TABLE IF EXISTS `roles`;
+CREATE TABLE IF NOT EXISTS `roles` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `DESCRIPTION` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`ID`)

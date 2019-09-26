@@ -33,7 +33,7 @@
 </head>
 
 <body class="gray-bg">
-
+    @include('partials.alerts')
     @yield('content')
 
     <!-- Mainly scripts -->
