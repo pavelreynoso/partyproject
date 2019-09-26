@@ -65,9 +65,6 @@ class ProviderDetailsController extends Controller
             return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
         }
         ProviderDetails::create($request->all());
-        $user = User::find(1);
-        $user->provider_details()->attach($request->id);
-        $request->user()->sync($user->id);
         return redirect()->route('affiliates.r212.create')->with('success','Provider details saved successfully.');
     }
     /**

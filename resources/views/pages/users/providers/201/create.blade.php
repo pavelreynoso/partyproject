@@ -7,7 +7,7 @@
         <div class="card card-4">
             <div class="card-body">
                 <h2 class="title">Let's define what you offer.</h2>
-                <form action="pages.users.providers.201.store" method="POST">
+                <form action=" {{ route('affiliates.r201.store') }} " method="POST">
                     @csrf
                     <div id="packageName">
                         <form id="messageForm">
@@ -23,7 +23,7 @@
                     <div class="p-b-15"></div>
                     <div id="packageDescription">
                         <form id="messageForm">
-                            <div class="questions">Describe everything it include:
+                            <div class="questions">Describe everything it includes:
                                 <div class="p-b-15"></div>
                                 <textarea id="package_description" name="package_description" style="input_text_big"
                                     minlength="5" maxlength="200"></textarea>

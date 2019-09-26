@@ -48,7 +48,7 @@
                             <a href="{{ route('login') }}">{{ __('Login') }}</a>
                             <div id="text">/</div>
                             @if (Route::has('register'))
-                            <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a href="{{ route('register',[3]) }}">{{ __('Register') }}</a>
                             @endif
                             @else
                             <a class="text-uppercase">

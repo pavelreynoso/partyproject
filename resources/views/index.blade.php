@@ -15,13 +15,13 @@
     </div>
     <div class="section">
         <div class="container">
-            <h2>Categorías</h2>
+            <h2>Categories</h2>
             <div class="row">
                 <div class="col-md-2">
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner01.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Música</h2>
+                            <h2 class="white-color">Music</h2>
                         </div>
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner02.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Lugares Para Eventos</h2>
+                            <h2 class="white-color">Event halls</h2>
                         </div>
                     </a>
                 </div>
@@ -37,7 +37,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner03.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Comida, banquetes y bebidas</h2>
+                            <h2 class="white-color">Food, Catering, and drinks</h2>
                         </div>
                     </a>
                 </div>
@@ -45,7 +45,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner04.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Fotografía y vídeo</h2>
+                            <h2 class="white-color">Photography and video</h2>
                         </div>
                     </a>
                 </div>
@@ -53,7 +53,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner05.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Mobiliario y decoración</h2>
+                            <h2 class="white-color">Party rentals and decoration</h2>
                         </div>
                     </a>
                 </div>
@@ -61,7 +61,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner06.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Vestimenta</h2>
+                            <h2 class="white-color">Clothing</h2>
                         </div>
                     </a>
                 </div>
@@ -69,7 +69,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner07.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Regalos y recuerdos</h2>
+                            <h2 class="white-color">Gifts</h2>
                         </div>
                     </a>
                 </div>
@@ -77,7 +77,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner08.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Planeación de eventos</h2>
+                            <h2 class="white-color">Event plannign</h2>
                         </div>
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner09.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Animación</h2>
+                            <h2 class="white-color">Entertainment</h2>
                         </div>
                     </a>
                 </div>
@@ -93,7 +93,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner10.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Viajes</h2>
+                            <h2 class="white-color">Travel</h2>
                         </div>
                     </a>
                 </div>
@@ -101,7 +101,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner11.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Belleza</h2>
+                            <h2 class="white-color">Beauty</h2>
                         </div>
                     </a>
                 </div>
@@ -109,7 +109,7 @@
                     <a class="banner banner-1" href="#">
                         <img src="../assets/img/banner12.jpg" alt="" height="170">
                         <div class="banner-caption text-center">
-                            <h2 class="white-color">Transporte</h2>
+                            <h2 class="white-color">Transport</h2>
                         </div>
                     </a>
                 </div>

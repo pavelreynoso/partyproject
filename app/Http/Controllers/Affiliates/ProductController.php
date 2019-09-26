@@ -42,7 +42,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         request()->validate([
-            'name' => 'required|50',
+            'name' => 'required|string|50',
             'description' => 'required|255',
             'portrait' => 'required',
             'portrait.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -61,7 +61,7 @@ class ProductController extends Controller
         }
         Product::create($request->all());
 
-        return redirect()->route('pages.users.affiliates.201.create')->withSuccess('Great! Product has been successfully uploaded.');
+        return redirect()->route('pages.users.providers.201.create')->withSuccess('Great! Product has been successfully uploaded.');
     }
 
     /**

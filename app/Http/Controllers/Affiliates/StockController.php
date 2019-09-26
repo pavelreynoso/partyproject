@@ -14,7 +14,7 @@ class StockController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.users.providers.302.index');
     }
 
     /**
@@ -35,7 +35,15 @@ class StockController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'quantity' => 'required|integer',
+            'specific_time' => 'required',
+            'anticipation_time' => 'required',
+            'minimum' => 'required',
+        ]);
+        ProviderDetails::index($request->all());
+
+        return redirect()->route('pages.users.providers.205.create')->with('success','Compliance details saved successfully.');
     }
 
     /**

@@ -30,15 +30,12 @@
                             class="input_text{{ $errors->has('contact_email') ? ' is-invalid' : '' }}"
                             name="contact_email" value="{{ old('contact_email') }}" required
                             placeholder="mail@mail.com">
-
                         @if ($errors->has('contact_email'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('email') }}</strong>
                         </span>
                         @endif
                     </div>
-                    {{$user = Auth::user()}}
-                    {!! Form::hidden('provider_id', $user->id) !!}
                     <div class="p-b-100"></div>
                     <div class="p-b-15 center">
                         <a href="{{ route('affiliates.r101.create') }}">

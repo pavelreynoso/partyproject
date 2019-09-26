@@ -24,7 +24,7 @@ class ComplianceController extends Controller
      */
     public function create()
     {
-        return view('pages.users.affiliates.205.create');
+        return view('pages.users.providers.205.create');
     }
 
     /**

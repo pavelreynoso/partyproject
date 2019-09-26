@@ -16,7 +16,7 @@
                     <div class="questions">Company name:
                         <div class="p-b-15"></div>
                         <input type="Text" class="input_text_big" name="company_name"
-                            placeholder="Example: Feval Enterprises" value="{{ old('company_name') }}">
+                            placeholder="Example: Feval Entreprise" value="{{ old('company_name') }}">
                     </div>
                     <div class="questions">Brief description of your company, the services you offer, etc.
                         <div class="p-b-15"></div>
@@ -26,7 +26,7 @@
                     <br>
                     <div class="questions">To begin, choose what you offer.</div>
                     <select class="select_register_medium" name="offer_type">
-                        <option selected disabled>Selecciona...</option>
+                        <option selected disabled>Choose...</option>
                         @foreach ($offers as $offer)
                         <option value='{{ $offer->id }}' {{ (old('product') == "product" ? "selected":"") }}>
                             {{ $offer->type }}</option>
@@ -62,7 +62,7 @@
                     <div class="p-b-15"></div>
                     <div class="questions">What type of articles do you offer?</div>
                     <select class="select_register_medium" name="article_type" id="articlesSelect" style="color:black">
-                        <option selected disabled>Selecciona una...</option>
+                        <option selected disabled>Choose one...</option>
                         @foreach($articles as $article)
                         <option value="{{$ar = $article->id}}" {{ (old('ar') == $article->id ? "selected":"") }}>
                             {{$article->type}}
@@ -74,7 +74,7 @@
                     <div class="p-b-15 center p-t-30">}
                         <a href="{{ route('affiliates.r212.create') }}">
                             <button class="btn2 btn--radius-2 btn-feval" type="submit"
-                                onclick="validate()">Continuar</button>
+                                onclick="validate()">Continue</button>
                         </a>
                     </div>
                 </form>

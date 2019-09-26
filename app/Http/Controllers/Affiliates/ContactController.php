@@ -41,15 +41,13 @@ class ContactController extends Controller
         $validator = Validator::make($request->all(), [
             'phone' => 'required|max:10',
             'contact_email' => 'required|max:50',
-            'provider_id' => 'required',
         ]);
         if($validator->fails())
         {
             return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
         }
-        $provider_id = $request->input('provider_id');
         Contact::create($request->all());
-        return redirect()->route('affiliates.r302.create')->with('success','Contact saved successfully.');
+        return redirect()->route('affiliates.r201.create')->with('success','Contact saved successfully.');
     }
 
     /**
