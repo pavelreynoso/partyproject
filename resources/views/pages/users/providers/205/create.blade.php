@@ -9,7 +9,8 @@
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
             <div class="card-body">
-                <form method="POST">
+                <form action=" {{route('affiliates.r205.store')}} " method="POST">
+                    @csrf
                     <div class="title">Maintaining your response rate is an indispensable factor to be a successful affiliate and selling more
                         <div class="p-b-15 center"></div>
                         <div class="explanations"> Reservations will always have to be approved by you.

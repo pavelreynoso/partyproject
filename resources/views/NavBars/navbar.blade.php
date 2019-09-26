@@ -43,7 +43,6 @@
                                     <i class="fa fa-user-o"></i>
                                 </div>
                             </div>
-                        -->
                             @guest
                             <a href="{{ route('login') }}">{{ __('Login') }}</a>
                             <div id="text">/</div>

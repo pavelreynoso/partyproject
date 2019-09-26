@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <div class="card card-4">
                     <div class="card-header">
-                        <h2 class="title">{{__('Regístrate aquí')}}</h2>
+                        <h2 class="title">{{__('Register here!')}}</h2>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">

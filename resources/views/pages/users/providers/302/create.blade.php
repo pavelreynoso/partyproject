@@ -9,7 +9,8 @@
             <div class="card-body">
 
                 <h2 class="title">Stock</h2>
-                <form method="POST">
+                <form action=" {{route('affiliates.r302.store')}} "method="POST">
+                    @csrf
                     <div class="questions">How many items do you have of this product?
                         <div class="p-b-15"></div>
                         <input type="text" class="input_text" name="available_pieces" placeholder="#"> items.
