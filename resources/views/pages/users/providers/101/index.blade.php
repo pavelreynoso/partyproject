@@ -7,23 +7,24 @@
     <div class="wrapper wrapper--w900">
         <div class="card card-4">
             <div class="card-header"><br>
-                <h2 class="title">Bienvenido</h2>
+                <h2 class="title">Welcome!</h2>
             </div>
             <div class="card-body">
                 <form action="{{ route('affiliates.r101.store') }}" method="POST">
                     @csrf
-                    <h2 class="title">Primero, vamos a definir cómo te conocerán los clientes</h2>
-                    <div class="questions">Nombre de tu negocio:
+                    <h2 class="title">First, we will define how customer will know you.</h2>
+                    <div class="questions">Company name:
                         <div class="p-b-15"></div>
                         <input type="Text" class="input_text_big" name="company_name"
-                            placeholder="Ejm: Grupo musical Con Sabor" value="{{ old('company_name') }}">
+                            placeholder="Example: Feval Enterprises" value="{{ old('company_name') }}">
                     </div>
-                    <div class="questions">Breve descripción de tu empresa, los servicios que ofreces, etc.
+                    <div class="questions">Brief description of your company, the services you offer, etc.
                         <div class="p-b-15"></div>
                         <textarea name="description" style="input_text_big"></textarea>
                     </div>
-                    <h2 class="title">Ahora, vamos a definir qué es lo que haces</h2>
+                    <h2 class="title">Now, let's define what you do.</h2>
                     <br>
+                    <div class="questions">To begin, choose what you offer.</div>
                     <select class="select_register_medium" name="offer_type">
                         <option selected disabled>Selecciona...</option>
                         @foreach ($offers as $offer)
@@ -34,31 +35,32 @@
 
                     <div>
                         <h6 class="explanations">
-                            Nota: Si lo que ofrece necesita tener un control sobre la disponibilidad en alguna fecha y
-                            tiempo específico se define como <strong> servicio</strong>. Un <strong>producto</strong>
-                            sólo tiene disponibilidad y tiempo de entrega. Por ejemplo, una hora de música es un
-                            <strong>servicio </strong>; y una bolsa de globos de decoración es un
-                            <strong>producto</strong>.
+                            Note: If what you offer needs to have control over availability and specific delivery time
+                            is defined as <strong>service</strong>. A <strong>product</strong>
+                            only has availability and delivery time. For example, an hour of music is a
+                            <strong>service </strong>; and a baloon bag for decoration is a
+                            <strong>product</strong>.
                         </h6>
                     </div>
 
                     <div class="p-b-5"></div>
 
-                    <div class="questions">Ahora, selecciona para que tipos de eventos ofreces tus productos/servicios
+                    <div class="questions">Now, select the types of events you offer your products or services for.
                     </div>
                     <div class="questions">
-                        @foreach ($events as $event)
+                        @foreach ($events as $key=>$event)
                         <div class="checkbox checkbox-primary">
                             <input id="event_type" type="checkbox" name="event_type[]" value="{{ $event->id }}">
-                            <h6>
-                                <option value="{{ $event->id }}">{{$event->type}} </option>
-                            </h6>
+                            <label for="event_type">
+                                <h6>
+                                    <option value="{{ $key }}">{{$event->type}} </option>
+                                </h6>
                             </label>
                         </div>
                         @endforeach
                     </div>
                     <div class="p-b-15"></div>
-                    <div class="questions">¿En que categoría entra lo que ofreces?</div>
+                    <div class="questions">What type of articles do you offer?</div>
                     <select class="select_register_medium" name="article_type" id="articlesSelect" style="color:black">
                         <option selected disabled>Selecciona una...</option>
                         @foreach($articles as $article)

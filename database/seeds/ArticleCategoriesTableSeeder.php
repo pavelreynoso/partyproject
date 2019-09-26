@@ -12,40 +12,40 @@ class ArticleCategoriesTableSeeder extends Seeder
     public function run()
     {
         DB::table('articles_categories')->insert([
-            'type'=> 'Música'
+            'type'=> 'Music'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Lugares para Eventos'
+            'type'=> 'Event Venues'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Comida Banquetes y Bebidas'
+            'type'=> 'Food, Catering and Drinks'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Organización de Eventos'
+            'type'=> 'Event Planning'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Mobiliario y Decoración'
+            'type'=> 'Party Rentals and Decoration'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Animación'
+            'type'=> 'Entertainment'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Transporte'
+            'type'=> 'Transportation'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Fotografía y Vídeo'
+            'type'=> 'Photography and Video'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Vestimenta y Complementos'
+            'type'=> 'Clothing'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Regalos y Recuerdos'
+            'type'=> 'Gifts and Souvenirs'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Viajes'
+            'type'=> 'Travel'
         ]);
         DB::table('articles_categories')->insert([
-            'type'=> 'Belleza'
+            'type'=> 'Beauty'
         ]);
     }
 }
