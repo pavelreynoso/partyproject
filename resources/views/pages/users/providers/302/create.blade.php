@@ -13,17 +13,17 @@
                     @csrf
                     <div class="questions">How many items do you have of this product?
                         <div class="p-b-15"></div>
-                        <input type="text" class="input_text" name="available_pieces" placeholder="#"> items.
+                        <input type="text" class="input_text" name="quantity" placeholder="#"> items.
                     </div>
                     <div class="questions_group">Can your item be delivered at a time before the event of your clients?
                         <div class="checkbox checkbox-primary">
-                            <input id="Yes_specific_day_delivery" type="checkbox">
+                            <input id="Yes_specific_day_delivery" type="radio" name="specific_name">
                             <label for="Yes_specific_day_delivery" name="anticipation">
                                 <h5>Yes</h5>
                             </label>
                         </div>
                         <div class="checkbox checkbox-primary">
-                            <input id="No_specific_day_delivery" type="checkbox">
+                            <input id="No_specific_day_delivery" type="radio" name="specific_name">
                             <label for="No_specific_day_delivery" name="anticipation">
                                 <h5>No</h5>
                             </label>
@@ -33,14 +33,13 @@
                         <div class="p-b-15"></div>
                         <div class="p-b-15">
                             <select id="deliveryanticipation" runat="server" class="select_register"
-                                name=min_hours_offer></select></select>
+                                name="anticipation_time"></select></select>
                             <span>working days.</span>
                         </div>
-
                     </div>
                     <div class="questions_group">Define the minimum quantity of items clients can order
                         <div class="p-b-15"></div>
-                        <input type="text" class="input_text" name="minimum_article_order" placeholder="# of items"> items
+                        <input type="text" class="input_text" name="minimum" placeholder="# of items"> items
                     </div>
 
                     <div class="p-b-15 center">

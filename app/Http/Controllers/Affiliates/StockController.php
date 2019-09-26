@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Affiliates;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Validator;
 
 class StockController extends Controller
 {
@@ -35,13 +36,18 @@ class StockController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'quantity' => 'required|integer',
             'specific_time' => 'required',
             'anticipation_time' => 'required',
             'minimum' => 'required',
         ]);
-        ProviderDetails::index($request->all());
+        if($validator->fails())
+        {
+            return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
+        }
+
+        Stock::index($request->all());
 
         return redirect()->route('pages.users.providers.205.create')->with('success','Compliance details saved successfully.');
     }
