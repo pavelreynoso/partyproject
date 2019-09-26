@@ -7,6 +7,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+use App\ProviderDetails;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -43,7 +45,7 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Role');
     }
-    public function details()
+    public function provider_details()
     {
         return $this->hasOne('App\ProvidersDetails');
     }
@@ -62,7 +64,7 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\ArticleCategory');
     }
-    public function eventes()
+    public function events()
     {
         return $this->hasMany('App\EventCategory');
     }

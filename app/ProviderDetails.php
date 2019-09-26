@@ -39,6 +39,11 @@ class ProviderDetails extends Model
         $this->hasOne('App\OfferCategory');
     }
 
+    public function contact()
+    {
+        $this->hasOne('App\Contact');
+    }
+
     public function hasAnyEvents($events)
     {
         return null !== $this->events()->whereIn('type', $events)->first();

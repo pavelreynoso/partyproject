@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Affiliates;
 
+use App\Contact;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Validator;
 
 class ContactController extends Controller
 {
@@ -14,7 +17,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.users.providers.212.index');
     }
 
     /**
@@ -35,7 +38,18 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'phone' => 'required|max:10',
+            'contact_email' => 'required|max:50',
+            'provider_id' => 'required',
+        ]);
+        if($validator->fails())
+        {
+            return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
+        }
+        $provider_id = $request->input('provider_id');
+        Contact::create($request->all());
+        return redirect()->route('affiliates.r302.create')->with('success','Contact saved successfully.');
     }
 
     /**

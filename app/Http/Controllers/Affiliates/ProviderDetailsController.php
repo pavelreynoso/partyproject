@@ -7,7 +7,10 @@ use App\Http\Controllers\Controller;
 use App\ArticleCategory;
 use App\EventCategory;
 use App\OfferCategory;
+use App\User;
+
 use App\ProviderDetails;
+
 use Validator;
 
 class ProviderDetailsController extends Controller
@@ -62,6 +65,9 @@ class ProviderDetailsController extends Controller
             return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
         }
         ProviderDetails::create($request->all());
+        $user = User::find(1);
+        $user->provider_details()->attach($request->id);
+        $request->user()->sync($user->id);
         return redirect()->route('affiliates.r212.create')->with('success','Provider details saved successfully.');
     }
     /**
@@ -74,12 +80,6 @@ class ProviderDetailsController extends Controller
     {
         return view('pages.users.providers.101.show');
     }
-
-    public function showCompliance($id)
-    {
-        //
-    }
-
     /**
      * Show the form for editing the specified resource.
      *
