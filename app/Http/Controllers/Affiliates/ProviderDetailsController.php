@@ -8,7 +8,6 @@ use App\ArticleCategory;
 use App\EventCategory;
 use App\OfferCategory;
 use App\User;
-use Auth, DB;
 
 use App\ProviderDetails;
 
@@ -64,7 +63,7 @@ class ProviderDetailsController extends Controller
         if($validator->fails())
         {
             return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
-        }
+        }           
         ProviderDetails::create($request->all());
         return redirect()->route('affiliates.r212.create')->with('success','Provider details saved successfully.');
     }
