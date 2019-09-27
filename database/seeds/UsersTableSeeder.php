@@ -34,6 +34,14 @@ class UsersTableSeeder extends Seeder
             'last_names' => 'Provider',
         ]);
 
+        $nat = User::create([
+            'name' => 'Natalia',
+            'email' => 'rnataliajesus@hotmail.com',
+            'password' => bcrypt('nat12345'),
+            'date_of_birth' => '1970-01-01',
+            'last_names' => 'Reynoso',
+        ]);
+
         $user = User::create([
             'name' => 'User',
             'email' => 'user@user.com',
@@ -44,6 +52,7 @@ class UsersTableSeeder extends Seeder
 
         $admin->roles()->attach($adminRole);
         $provider->roles()->attach($providerRole);
+        $nat->roles()->attach($providerRole);
         $user->roles()->attach($userRole);
     }
 }

@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 
+use App\Stock;
+
 class StockController extends Controller
 {
     /**
@@ -38,7 +40,7 @@ class StockController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'quantity' => 'required|integer',
-            'specific_time' => 'required',
+            'specific_date' => 'required',
             'anticipation_time' => 'required',
             'minimum' => 'required',
         ]);
@@ -47,9 +49,9 @@ class StockController extends Controller
             return redirect()->back()->with('danger', 'There was an error')->withInput()->withErrors($validator);
         }
 
-        Stock::index($request->all());
+        Stock::create($request->all());
 
-        return redirect()->route('pages.users.providers.205.create')->with('success','Compliance details saved successfully.');
+        return redirect()->route('affiliates.r205.create')->with('success','Compliance details saved successfully.');
     }
 
     /**

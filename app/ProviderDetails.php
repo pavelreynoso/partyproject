@@ -25,6 +25,11 @@ class ProviderDetails extends Model
         $this->belongsTo('App\User');
     }
 
+    public function id()
+    {
+        return $this->id;
+    }
+
     public function events()
     {
         $this->hasMany('App\EventCategory');

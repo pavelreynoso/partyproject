@@ -18,7 +18,7 @@
                         </div>
                         <div class="p-b-15"></div>
                         <div class="checkbox checkbox-primary">
-                            <input id="compliance1" type="checkbox">
+                            <input id="compliance1" type="checkbox" name="update_compliance">
                             <label for="compliance1">
                                 <h5>I agree</h5>
                             </label>
@@ -34,7 +34,7 @@
                             Customers who meet Feval requirements may send the reservation request for your service. You will have 24 hours to accept or decline the reservation. In case the client has a special request, you can also respond before accepting the reservation.
                             <div class="p-b-100"></div>
                             <div class="checkbox checkbox-primary">
-                                <input id="compliance2" type="checkbox">
+                                <input id="compliance2" type="checkbox" name="terms_accepted">
                                 <label for="compliance2">
                                     <h5>I have read and fully accept Feval's Terms and Conditions.</h5>
                                 </label>

@@ -8,6 +8,7 @@ use App\ArticleCategory;
 use App\EventCategory;
 use App\OfferCategory;
 use App\User;
+use Auth, DB;
 
 use App\ProviderDetails;
 

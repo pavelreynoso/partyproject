@@ -10,7 +10,7 @@ class Stock extends Model
 
     protected $fillable = [
         'quantity',
-        'specific_time',
+        'specific_date',
         'anticipation_time',
         'minimum',
     ];

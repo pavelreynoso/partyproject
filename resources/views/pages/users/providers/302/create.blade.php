@@ -9,21 +9,30 @@
             <div class="card-body">
 
                 <h2 class="title">Stock</h2>
-                <form action=" {{route('affiliates.r302.store')}} "method="POST">
+                <form action=" {{route('affiliates.r302.store')}} " method="POST">
                     @csrf
+                    @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
                     <div class="questions">How many items do you have of this product?
                         <div class="p-b-15"></div>
                         <input type="text" class="input_text" name="quantity" placeholder="#"> items.
                     </div>
                     <div class="questions_group">Can your item be delivered at a time before the event of your clients?
                         <div class="checkbox checkbox-primary">
-                            <input id="Yes_specific_day_delivery" type="radio" name="specific_name">
+                            <input id="Yes_specific_day_delivery" type="radio" name="specific_date" value="1">
                             <label for="Yes_specific_day_delivery" name="anticipation">
                                 <h5>Yes</h5>
                             </label>
                         </div>
                         <div class="checkbox checkbox-primary">
-                            <input id="No_specific_day_delivery" type="radio" name="specific_name">
+                            <input id="No_specific_day_delivery" type="radio" name="specific_date" value="0">
                             <label for="No_specific_day_delivery" name="anticipation">
                                 <h5>No</h5>
                             </label>
@@ -57,5 +66,5 @@
 </div>
 @endsection
 @section('scripts')
-    <script type="text/javascript" src="{{asset('../js/302.js')}}"></script>
+<script type="text/javascript" src="{{asset('../js/302.js')}}"></script>
 @endsection

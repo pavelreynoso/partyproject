@@ -47,7 +47,7 @@ class User extends Authenticatable
     }
     public function provider_details()
     {
-        return $this->hasOne('App\ProvidersDetails');
+        $this->belongsTo('App\ProvidersDetails');
     }
 
     public function hasAnyRoles($roles)
